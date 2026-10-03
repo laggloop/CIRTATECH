@@ -1,0 +1,1588 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="icon" type="image/png" href="dental.png">
+
+    <!-- ====================================================================== -->
+    <!-- SEO & META TAGS AVANCÉS                                                -->
+    <!-- ====================================================================== -->
+    <title>Clinique Dentaire Happy Smile | Alger - Gué de Constantine</title>
+    <meta name="description" content="Découvrez Happy Smile, votre clinique dentaire de référence à la Cité 720 Logements, Gué de Constantine, Alger. Implantologie, orthodontie et esthétique dentaire.">
+    <meta name="keywords" content="Clinique dentaire Alger, Happy Smile, Dentiste Gué de Constantine, Implant dentaire Alger, Facettes dentaires, Urgence dentaire, Orthodontie">
+    <meta name="author" content="Clinique Dentaire Happy Smile">
+    <meta name="robots" content="index, follow, max-image-preview:large">
+    <meta name="theme-color" content="#ffffff">
+    
+    <!-- Open Graph / Réseaux Sociaux -->
+    <meta property="og:locale" content="fr_FR">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.happysmile-alger.dz/">
+    <meta property="og:title" content="Clinique Dentaire Happy Smile | Votre santé bucco-dentaire à Alger">
+    <meta property="og:description" content="Une équipe d'experts et un plateau technique de dernière génération à Gué de Constantine pour un sourire éclatant.">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1606811841689-23dfddce3e95?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80">
+    <meta property="og:site_name" content="Happy Smile">
+    
+    <!-- ====================================================================== -->
+    <!-- DONNÉES STRUCTURÉES (JSON-LD) - RÉFÉRENCEMENT LOCAL MÉDICAL            -->
+    <!-- ====================================================================== -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Dentist",
+      "name": "Clinique Dentaire Happy Smile",
+      "image": "https://images.unsplash.com/photo-1606811841689-23dfddce3e95?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      "@id": "https://www.happysmile-alger.dz",
+      "url": "https://www.happysmile-alger.dz",
+      "telephone": "+213557174235",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Cité 720 Logements",
+        "addressLocality": "Gué de Constantine, Alger",
+        "postalCode": "16000",
+        "addressCountry": "DZ"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 36.6991,
+        "longitude": 3.0805
+      },
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Saturday"
+        ],
+        "opens": "08:30",
+        "closes": "18:00"
+      },
+      "medicalSpecialty": [
+        "https://schema.org/Dentistry",
+        "Implantology",
+        "Orthodontics",
+        "Cosmetic Dentistry"
+      ],
+      "priceRange": "$$"
+    }
+    </script>
+
+    <!-- ====================================================================== -->
+    <!-- TYPOGRAPHIE & ICÔNES                                                   -->
+    <!-- ====================================================================== -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- ====================================================================== -->
+    <!-- TAILWIND CSS CONFIGURATION                                             -->
+    <!-- ====================================================================== -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        heading: ['Poppins', 'sans-serif'],
+                    },
+                    colors: {
+                        medical: {
+                            50: '#f0f9ff',
+                            100: '#e0f2fe',
+                            200: '#bae6fd',
+                            300: '#7dd3fc',
+                            400: '#38bdf8',
+                            500: '#0ea5e9',
+                            600: '#0284c7', /* Bleu principal */
+                            700: '#0369a1',
+                            800: '#075985',
+                            900: '#0c4a6e', /* Bleu marine profond */
+                            950: '#082f49',
+                        },
+                        teal: {
+                            50: '#f0fdfa',
+                            100: '#ccfbf1',
+                            200: '#99f6e4',
+                            300: '#5eead4',
+                            400: '#2dd4bf',
+                            500: '#14b8a6', /* Accent Cyan/Teal */
+                            600: '#0d9488',
+                            700: '#0f766e',
+                        },
+                        whatsapp: {
+                            DEFAULT: '#25D366',
+                            hover: '#128C7E',
+                        },
+                        surface: {
+                            light: '#ffffff',
+                            muted: '#f8fafc',
+                            alt: '#f1f5f9',
+                        }
+                    },
+                    boxShadow: {
+                        'soft': '0 4px 20px -2px rgba(0, 0, 0, 0.03)',
+                        'float': '0 10px 40px -10px rgba(2, 132, 199, 0.15)',
+                        'intense': '0 20px 40px -10px rgba(2, 132, 199, 0.25)',
+                        'nav': '0 4px 20px -2px rgba(0, 0, 0, 0.08)',
+                    },
+                    animation: {
+                        'fade-in-up': 'fadeInUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards',
+                        'zoom-in': 'zoomIn 1.2s cubic-bezier(0.16, 1, 0.3, 1) forwards',
+                        'pulse-slow': 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                        'blob': 'blob 10s infinite',
+                    },
+                    keyframes: {
+                        fadeInUp: {
+                            '0%': { opacity: '0', transform: 'translateY(40px)' },
+                            '100%': { opacity: '1', transform: 'translateY(0)' },
+                        },
+                        zoomIn: {
+                            '0%': { opacity: '0', transform: 'scale(1.05)' },
+                            '100%': { opacity: '1', transform: 'scale(1)' },
+                        },
+                        blob: {
+                            '0%': { transform: 'translate(0px, 0px) scale(1)' },
+                            '33%': { transform: 'translate(30px, -50px) scale(1.1)' },
+                            '66%': { transform: 'translate(-20px, 20px) scale(0.9)' },
+                            '100%': { transform: 'translate(0px, 0px) scale(1)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- ====================================================================== -->
+    <!-- CUSTOM CSS AVANCÉ                                                      -->
+    <!-- ====================================================================== -->
+    <style>
+        :root {
+            --medical-main: #0284c7;
+            --medical-dark: #0c4a6e;
+            --medical-accent: #14b8a6;
+            --medical-light: #e0f2fe;
+        }
+
+        html { scroll-behavior: smooth; }
+        
+        /* 
+         * FIX NAVBAR : On ajoute un padding-top au body correspondant 
+         * exactement à la hauteur du header fixe pour éviter que le 
+         * contenu ne glisse en dessous au chargement.
+         */
+        body {
+            background-color: #ffffff;
+            color: #334155;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            overflow-x: hidden;
+            padding-top: 115px; /* Hauteur estimée du header complet */
+        }
+
+        /* ------------------------------------------------ */
+        /* UI Components : Navbar & Progress                */
+        /* ------------------------------------------------ */
+        .scroll-progress-bar {
+            position: absolute; bottom: 0; left: 0; height: 3px;
+            background: linear-gradient(90deg, var(--medical-accent), var(--medical-main));
+            width: 0%; z-index: 100; transition: width 0.1s ease;
+        }
+
+        .nav-link {
+            position: relative; color: #475569; font-weight: 500; transition: color 0.3s ease;
+        }
+        .nav-link:hover { color: var(--medical-main); }
+        .nav-link::after {
+            content: ''; position: absolute; bottom: -4px; left: 0;
+            width: 0%; height: 2px; background-color: var(--medical-accent);
+            transition: width 0.3s ease; border-radius: 2px;
+        }
+        .nav-link:hover::after { width: 100%; }
+
+        /* ------------------------------------------------ */
+        /* UI Components : Booking Widget & Forms           */
+        /* ------------------------------------------------ */
+        .booking-widget {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px);
+            border-radius: 1.5rem;
+            box-shadow: 0 25px 50px -12px rgba(2, 132, 199, 0.15);
+            border-top: 5px solid var(--medical-accent);
+        }
+
+        .input-group { position: relative; }
+        .input-group select, .input-group input {
+            appearance: none; -webkit-appearance: none;
+            width: 100%; background: #f8fafc; border: 1px solid #e2e8f0;
+            border-radius: 0.75rem; padding: 0.875rem 1rem 0.875rem 2.5rem;
+            font-family: 'Inter', sans-serif; color: #334155; font-size: 0.95rem;
+            transition: all 0.3s ease; outline: none;
+        }
+        .input-group select:focus, .input-group input:focus {
+            border-color: var(--medical-main); background: #ffffff;
+            box-shadow: 0 0 0 3px rgba(2, 132, 199, 0.1);
+        }
+        .input-icon {
+            position: absolute; left: 1rem; top: 50%; transform: translateY(-50%);
+            color: var(--medical-main); font-size: 1.1rem; pointer-events: none;
+        }
+        .input-group input[type="date"]::-webkit-calendar-picker-indicator {
+            background: transparent; bottom: 0; color: transparent; cursor: pointer;
+            height: auto; left: 0; position: absolute; right: 0; top: 0; width: auto;
+        }
+        .custom-select-icon {
+            position: absolute; right: 1rem; top: 50%; transform: translateY(-50%);
+            color: #94a3b8; pointer-events: none; font-size: 0.8rem;
+        }
+
+        /* ------------------------------------------------ */
+        /* Composant Inédit : Slider Avant / Après          */
+        /* ------------------------------------------------ */
+        .before-after-slider {
+            position: relative; width: 100%; max-width: 800px; margin: 0 auto;
+            border-radius: 1.5rem; overflow: hidden; box-shadow: 0 20px 40px -10px rgba(0,0,0,0.2);
+            border: 4px solid white;
+            user-select: none;
+        }
+        .before-after-img {
+            display: block; width: 100%; height: auto; object-fit: cover; pointer-events: none;
+        }
+        .img-background { position: relative; width: 100%; height: 100%; }
+        .img-foreground {
+            position: absolute; top: 0; left: 0; width: 50%; height: 100%;
+            overflow: hidden; z-index: 2;
+        }
+        .img-foreground img {
+            width: 200%; max-width: none; height: 100%; object-fit: cover;
+        }
+        .slider-handle {
+            position: absolute; top: 0; bottom: 0; left: 50%; width: 4px;
+            background: white; z-index: 3; cursor: ew-resize; transform: translateX(-50%);
+        }
+        .slider-handle::after {
+            content: '\f337'; /* FontAwesome arrows-left-right */
+            font-family: 'Font Awesome 6 Free'; font-weight: 900;
+            position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
+            width: 40px; height: 40px; background: var(--medical-main); color: white;
+            border-radius: 50%; display: flex; align-items: center; justify-content: center;
+            border: 3px solid white; box-shadow: 0 2px 10px rgba(0,0,0,0.3); font-size: 1rem;
+        }
+        .ba-label {
+            position: absolute; top: 20px; padding: 5px 15px; border-radius: 20px;
+            background: rgba(0,0,0,0.6); color: white; font-size: 0.8rem; font-weight: bold;
+            backdrop-filter: blur(4px); z-index: 4; text-transform: uppercase; letter-spacing: 1px;
+        }
+        .ba-label-before { left: 20px; }
+        .ba-label-after { right: 20px; }
+
+        /* ------------------------------------------------ */
+        /* UI Components : Cards, Hover effects & Decor     */
+        /* ------------------------------------------------ */
+        .text-gradient {
+            background: linear-gradient(135deg, var(--medical-dark) 0%, var(--medical-main) 100%);
+            -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .bg-pattern-dots {
+            background-image: radial-gradient(#cbd5e1 1px, transparent 1px);
+            background-size: 30px 30px;
+        }
+
+        .hover-lift {
+            transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.4s cubic-bezier(0.4, 0, 0.2, 1), border-color 0.4s ease;
+        }
+        .hover-lift:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 40px -10px rgba(2, 132, 199, 0.12);
+            border-color: var(--medical-light);
+        }
+
+        .service-card {
+            border: 1px solid #f1f5f9; border-radius: 1.5rem; background: #ffffff;
+            overflow: hidden; transition: all 0.4s ease; position: relative;
+            z-index: 1;
+        }
+        .service-card::before {
+            content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+            background: linear-gradient(180deg, transparent 0%, rgba(20, 184, 166, 0.03) 100%);
+            z-index: -1; opacity: 0; transition: opacity 0.4s ease;
+        }
+        .service-card:hover {
+            box-shadow: 0 15px 30px -5px rgba(2, 132, 199, 0.1); border-color: var(--medical-light);
+            transform: translateY(-5px);
+        }
+        .service-card:hover::before { opacity: 1; }
+
+        .service-icon-wrapper {
+            width: 70px; height: 70px; border-radius: 1.2rem;
+            background: var(--medical-light); color: var(--medical-main);
+            display: flex; align-items: center; justify-content: center;
+            font-size: 2rem; margin-bottom: 1.5rem; transition: all 0.4s ease;
+        }
+        .service-card:hover .service-icon-wrapper {
+            background: var(--medical-main); color: #ffffff; transform: scale(1.1) rotate(-5deg);
+        }
+
+        /* ------------------------------------------------ */
+        /* UI Components : Lightbox & Floating Buttons      */
+        /* ------------------------------------------------ */
+        .gallery-item {
+            cursor: pointer; overflow: hidden; position: relative; border-radius: 1rem;
+        }
+        .gallery-item img { transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1); }
+        .gallery-item::after {
+            content: '\f00e'; font-family: 'Font Awesome 6 Free'; font-weight: 900;
+            position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%) scale(0);
+            color: white; font-size: 2.5rem; opacity: 0; transition: all 0.4s ease; z-index: 10;
+        }
+        .gallery-overlay {
+            position: absolute; inset: 0; background: rgba(12, 74, 110, 0.6);
+            opacity: 0; transition: opacity 0.4s ease;
+        }
+        .gallery-item:hover img { transform: scale(1.08); }
+        .gallery-item:hover .gallery-overlay { opacity: 1; }
+        .gallery-item:hover::after { opacity: 1; transform: translate(-50%, -50%) scale(1); }
+
+        .lightbox {
+            position: fixed; inset: 0; z-index: 9999; background: rgba(15, 23, 42, 0.95);
+            display: flex; align-items: center; justify-content: center;
+            opacity: 0; pointer-events: none; transition: opacity 0.4s ease;
+            backdrop-filter: blur(10px);
+        }
+        .lightbox.active { opacity: 1; pointer-events: auto; }
+        .lightbox img {
+            max-width: 90%; max-height: 85vh; object-fit: contain;
+            border-radius: 0.5rem; box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+            transform: scale(0.95); transition: transform 0.4s ease;
+        }
+        .lightbox.active img { transform: scale(1); }
+        .lightbox-close {
+            position: absolute; top: 1.5rem; right: 2rem;
+            color: white; font-size: 2.5rem; cursor: pointer;
+            transition: color 0.3s ease; background: rgba(255,255,255,0.1);
+            width: 50px; height: 50px; border-radius: 50%;
+            display: flex; align-items: center; justify-content: center;
+        }
+        .lightbox-close:hover { color: var(--medical-accent); background: rgba(255,255,255,0.2); }
+
+        .float-wa {
+            position: fixed; bottom: 2rem; right: 2rem;
+            background-color: #25D366; color: white;
+            width: 65px; height: 65px; border-radius: 50%;
+            text-align: center; font-size: 35px;
+            box-shadow: 0px 4px 20px rgba(37, 211, 102, 0.4);
+            z-index: 1000; transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            display: flex; align-items: center; justify-content: center;
+            animation: pulse-wa 2.5s infinite;
+        }
+        .float-wa:hover {
+            transform: scale(1.1) rotate(-5deg); background-color: #128C7E;
+            box-shadow: 0px 8px 25px rgba(37, 211, 102, 0.6);
+            animation: none;
+        }
+        @keyframes pulse-wa {
+            0% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7); }
+            70% { box-shadow: 0 0 0 20px rgba(37, 211, 102, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
+        }
+
+        /* ------------------------------------------------ */
+        /* Utilities                                        */
+        /* ------------------------------------------------ */
+        ::-webkit-scrollbar { width: 12px; }
+        ::-webkit-scrollbar-track { background: #f8fafc; }
+        ::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 6px; border: 3px solid #f8fafc; }
+        ::-webkit-scrollbar-thumb:hover { background: #94a3b8; }
+
+        .reveal { opacity: 0; transform: translateY(40px); transition: all 0.8s cubic-bezier(0.16, 1, 0.3, 1); }
+        .reveal.active { opacity: 1; transform: translateY(0); }
+        
+        a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible {
+            outline: 2px solid var(--medical-accent); outline-offset: 2px; border-radius: 0.25rem;
+        }
+
+        /* Tabs Médicaux */
+        .med-tab-content { display: none; animation: fadeIn 0.5s ease-out; }
+        .med-tab-content.active { display: block; }
+        .med-tab-btn {
+            padding: 1rem 1.5rem; border-radius: 1rem; font-family: 'Poppins', sans-serif;
+            font-weight: 600; color: #64748b; background: transparent;
+            transition: all 0.3s ease; display: flex; align-items: center; gap: 0.5rem;
+        }
+        .med-tab-btn:hover { background: var(--medical-light); color: var(--medical-main); }
+        .med-tab-btn.active { background: var(--medical-main); color: #ffffff; box-shadow: 0 4px 15px rgba(2, 132, 199, 0.2); }
+        
+        /* Carousel Témoignages */
+        .testimonial-carousel { display: flex; overflow-x: auto; scroll-snap-type: x mandatory; scroll-behavior: smooth; gap: 2rem; padding-bottom: 2rem; -ms-overflow-style: none; scrollbar-width: none; }
+        .testimonial-carousel::-webkit-scrollbar { display: none; }
+        .testimonial-card { scroll-snap-align: center; flex: 0 0 100%; min-width: 100%; }
+        @media (min-width: 768px) { .testimonial-card { flex: 0 0 calc(50% - 1rem); min-width: calc(50% - 1rem); } }
+        @media (min-width: 1024px) { .testimonial-card { flex: 0 0 calc(33.333% - 1.33rem); min-width: calc(33.333% - 1.33rem); } }
+
+    </style>
+</head>
+<body class="selection:bg-medical-500 selection:text-white relative">
+
+    <!-- ====================================================================== -->
+    <!-- EN-TÊTE FIXE GLOBALE (Top Bar + Navbar)                                -->
+    <!-- ====================================================================== -->
+    <header id="main-header" class="fixed top-0 left-0 w-full z-50 flex flex-col bg-white/95 backdrop-blur-md shadow-nav border-b border-slate-100">
+        
+        <!-- BARRE D'INFORMATION SUPÉRIEURE (Top Bar) -->
+        <div id="top-bar" class="bg-medical-900 text-white text-xs md:text-sm py-2 hidden md:block w-full">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center">
+                <div class="flex gap-6">
+                    <span class="flex items-center gap-2"><i class="fa-solid fa-clock text-teal-400"></i> Lun - Sam : 08h30 - 18h00</span>
+                    <span class="flex items-center gap-2"><i class="fa-solid fa-location-dot text-teal-400"></i> Cité 720 Logements, Gué de Constantine, Alger</span>
+                </div>
+                <div class="flex gap-4 items-center">
+                    <span class="font-semibold">Urgences :</span>
+                    <a href="tel:+213557174235" class="hover:text-teal-300 transition-colors font-bold tracking-wider">
+                        <i class="fa-solid fa-phone mr-1"></i> +213 55 71 74 235
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- NAVIGATION PRINCIPALE (Navbar) -->
+        <nav id="navbar" class="w-full py-4 relative" aria-label="Menu principal de navigation">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex justify-between items-center">
+                    
+                    <!-- Logo Clinique -->
+                    <a href="#" class="flex-shrink-0 flex items-center gap-3 focus:outline-none group" aria-label="Retour à l'accueil">
+                        <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-medical-500 to-medical-700 shadow-float flex items-center justify-center p-2 group-hover:scale-105 transition-transform duration-300">
+                            <!-- Icône Dent stylisée en SVG pur -->
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-full h-full text-white">
+                                <path d="M12 2c-.828 0-1.5.672-1.5 1.5 0 .248-.052.482-.137.697C9.553 6.012 8.353 7 7 7c-2.206 0-4 1.794-4 4 0 2.221.758 4.254 2.11 5.86l.608.724a2.983 2.983 0 0 0 .542 3.102C7.151 21.6 8.324 22 9.5 22c.983 0 1.956-.34 2.5-.83.544.49 1.517.83 2.5.83 1.176 0 2.349-.4 3.24-1.314a2.983 2.983 0 0 0 .542-3.102l.608-.724C20.242 15.254 21 13.221 21 11c0-2.206-1.794-4-4-4-1.353 0-2.553-.988-3.363-2.803A1.492 1.492 0 0 0 13.5 3.5C13.5 2.672 12.828 2 12 2zm0 13.5c-.828 0-1.5-.672-1.5-1.5s.672-1.5 1.5-1.5 1.5.672 1.5 1.5-.672 1.5-1.5 1.5z"/>
+                            </svg>
+                        </div>
+                        <div class="flex flex-col">
+                            <span class="font-heading font-bold text-xl md:text-2xl tracking-tight text-slate-900 leading-none">Happy <span class="text-medical-600">Smile</span></span>
+                            <span class="text-[10px] uppercase tracking-widest text-slate-500 font-semibold mt-0.5">Clinique Dentaire</span>
+                        </div>
+                    </a>
+                    
+                    <!-- Navigation Bureau -->
+                    <div class="hidden lg:flex space-x-8 items-center">
+                        <a href="#about" class="nav-link focus:outline-none">La Clinique</a>
+                        <a href="#services" class="nav-link focus:outline-none">Traitements</a>
+                        <a href="#plateau" class="nav-link focus:outline-none">Plateau Technique</a>
+                        <a href="#processus" class="nav-link focus:outline-none">Parcours Patient</a>
+                        
+                        <!-- CTA WhatsApp Header -->
+                        <a href="https://wa.me/213557174235?text=Bonjour,%20je%20souhaite%20prendre%20rendez-vous." target="_blank" rel="noopener noreferrer" class="ml-2 inline-flex items-center justify-center px-6 py-2.5 text-sm font-bold text-white bg-medical-600 rounded-xl hover:bg-medical-700 transition-all duration-300 shadow-float hover:shadow-intense hover:-translate-y-0.5 focus:outline-none">
+                            <i class="fa-regular fa-calendar-check mr-2 text-lg"></i> Rendez-vous
+                        </a>
+                    </div>
+
+                    <!-- Bouton Hamburger Mobile -->
+                    <div class="lg:hidden flex items-center">
+                        <button id="mobile-menu-btn" aria-expanded="false" aria-controls="mobile-menu" aria-label="Ouvrir le menu" class="text-medical-900 focus:outline-none p-2 bg-medical-50 hover:bg-medical-100 rounded-lg transition-colors">
+                            <i class="fa-solid fa-bars text-xl" id="menu-icon"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Menu Déroulant Mobile -->
+            <div id="mobile-menu" class="hidden lg:hidden bg-white border-t border-slate-100 absolute w-full shadow-2xl mt-4 origin-top transition-all">
+                <div class="px-4 pt-4 pb-8 space-y-2">
+                    <a href="#about" class="mobile-link block px-4 py-3 rounded-xl text-base font-medium text-slate-700 hover:bg-medical-50 hover:text-medical-600 transition-colors">La Clinique</a>
+                    <a href="#services" class="mobile-link block px-4 py-3 rounded-xl text-base font-medium text-slate-700 hover:bg-medical-50 hover:text-medical-600 transition-colors">Traitements & Soins</a>
+                    <a href="#plateau" class="mobile-link block px-4 py-3 rounded-xl text-base font-medium text-slate-700 hover:bg-medical-50 hover:text-medical-600 transition-colors">Plateau Technique</a>
+                    <a href="#processus" class="mobile-link block px-4 py-3 rounded-xl text-base font-medium text-slate-700 hover:bg-medical-50 hover:text-medical-600 transition-colors">Parcours Patient</a>
+                    <a href="#faq" class="mobile-link block px-4 py-3 rounded-xl text-base font-medium text-slate-700 hover:bg-medical-50 hover:text-medical-600 transition-colors">Questions Fréquentes</a>
+                    
+                    <div class="pt-4 mt-4 border-t border-slate-100">
+                        <a href="https://wa.me/213557174235" target="_blank" class="w-full inline-flex items-center justify-center px-4 py-4 rounded-xl shadow-md text-base font-bold text-white bg-medical-600 hover:bg-medical-700 transition-colors">
+                            <i class="fa-regular fa-calendar-check mr-2"></i> Prendre Rendez-vous
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Barre de progression scroll attachée au bas de la navbar -->
+            <div class="scroll-progress-bar" id="scrollIndicator"></div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- ====================================================================== -->
+        <!-- SECTION 1 : HERO BANNER & FORMULAIRE DE RENDEZ-VOUS INTELLIGENT        -->
+        <!-- ====================================================================== -->
+        <section class="relative pt-10 pb-20 lg:pt-24 lg:pb-32 bg-surface-muted overflow-hidden">
+            
+            <!-- Décorations d'arrière-plan douces -->
+            <div class="absolute top-0 right-0 w-[600px] h-[600px] bg-medical-200/40 rounded-full blur-[100px] transform translate-x-1/3 -translate-y-1/4 animate-blob pointer-events-none"></div>
+            <div class="absolute bottom-0 left-0 w-[500px] h-[500px] bg-teal-200/30 rounded-full blur-[80px] transform -translate-x-1/3 translate-y-1/4 animate-blob pointer-events-none" style="animation-delay: 2s;"></div>
+            <div class="absolute inset-0 bg-pattern-dots opacity-30 pointer-events-none"></div>
+
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+                <div class="flex flex-col lg:flex-row gap-12 items-center">
+                    
+                    <!-- Texte d'introduction -->
+                    <div class="lg:w-1/2 text-center lg:text-left">
+                        <div class="animate-fade-in-up inline-flex items-center gap-2 px-4 py-2 rounded-full border border-teal-200 bg-teal-50 text-teal-700 text-xs font-bold mb-6 shadow-sm uppercase tracking-widest">
+                            <i class="fa-solid fa-heart-pulse text-teal-500"></i> L'Excellence Dentaire
+                        </div>
+                        <h1 class="animate-fade-in-up font-heading text-5xl md:text-6xl lg:text-7xl font-extrabold tracking-tight mb-6 leading-[1.15] text-slate-900" style="animation-delay: 0.1s;">
+                            Révélez l'éclat de <br>
+                            <span class="text-gradient">votre vrai sourire.</span>
+                        </h1>
+                        <p class="animate-fade-in-up text-lg md:text-xl text-slate-600 mb-8 leading-relaxed font-light" style="animation-delay: 0.2s;">
+                            Une technologie de pointe, une écoute bienveillante et une approche sans douleur pour des soins dentaires d'exception à Gué de Constantine.
+                        </p>
+                        
+                        <div class="animate-fade-in-up flex flex-wrap justify-center lg:justify-start gap-4 mb-8" style="animation-delay: 0.3s;">
+                            <span class="flex items-center gap-2 text-sm font-medium text-slate-700 bg-white px-4 py-2 rounded-lg shadow-sm border border-slate-100"><i class="fa-solid fa-check text-medical-500"></i> Douleur Maîtrisée</span>
+                            <span class="flex items-center gap-2 text-sm font-medium text-slate-700 bg-white px-4 py-2 rounded-lg shadow-sm border border-slate-100"><i class="fa-solid fa-check text-medical-500"></i> Technologie 3D</span>
+                            <span class="flex items-center gap-2 text-sm font-medium text-slate-700 bg-white px-4 py-2 rounded-lg shadow-sm border border-slate-100"><i class="fa-solid fa-check text-medical-500"></i> Hygiène Stricte</span>
+                        </div>
+                    </div>
+
+                    <!-- Widget de Prise de Rendez-vous -->
+                    <div class="lg:w-1/2 w-full max-w-md mx-auto animate-zoom-in" style="animation-delay: 0.4s;">
+                        <div class="booking-widget p-8">
+                            <div class="text-center mb-6">
+                                <h3 class="font-heading font-bold text-2xl text-slate-900">Prendre Rendez-vous</h3>
+                                <p class="text-sm text-slate-500 mt-1">Réponse rapide via notre secrétariat WhatsApp</p>
+                            </div>
+                            
+                            <form id="appointment-form" onsubmit="handleAppointment(event)" class="space-y-5">
+                                
+                                <!-- Nom Patient -->
+                                <div>
+                                    <label for="patientName" class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-2">Nom & Prénom</label>
+                                    <div class="input-group">
+                                        <i class="fa-regular fa-user input-icon"></i>
+                                        <input type="text" id="patientName" placeholder="Ex: Ahmed Benali" required>
+                                    </div>
+                                </div>
+
+                                <!-- Motif de consultation -->
+                                <div>
+                                    <label for="consultationType" class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-2">Motif de consultation</label>
+                                    <div class="input-group">
+                                        <i class="fa-solid fa-tooth input-icon"></i>
+                                        <select id="consultationType" required>
+                                            <option value="" disabled selected>Sélectionnez un soin...</option>
+                                            <option value="Urgence dentaire">Urgence Dentaire (Douleur)</option>
+                                            <option value="Consultation générale">Consultation Générale / Contrôle</option>
+                                            <option value="Implantologie">Implantologie (Implant dentaire)</option>
+                                            <option value="Orthodontie">Orthodontie (Appareil / Gouttières)</option>
+                                            <option value="Blanchiment dentaire">Esthétique (Blanchiment / Facettes)</option>
+                                            <option value="Soins pédiatriques">Dentisterie Pédiatrique (Enfant)</option>
+                                        </select>
+                                        <i class="fa-solid fa-chevron-down custom-select-icon"></i>
+                                    </div>
+                                </div>
+                                
+                                <!-- Date & Heure (Flex) -->
+                                <div class="flex gap-4">
+                                    <div class="w-3/5">
+                                        <label for="prefDate" class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-2">Date souhaitée</label>
+                                        <div class="input-group">
+                                            <i class="fa-regular fa-calendar input-icon"></i>
+                                            <input type="date" id="prefDate" required>
+                                        </div>
+                                    </div>
+                                    <div class="w-2/5">
+                                        <label for="prefTime" class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-2">Créneau</label>
+                                        <div class="input-group">
+                                            <select id="prefTime" required class="pl-3">
+                                                <option value="Matin">Matin</option>
+                                                <option value="Midi">Midi</option>
+                                                <option value="Après-midi">Après-midi</option>
+                                            </select>
+                                            <i class="fa-solid fa-chevron-down custom-select-icon"></i>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Submit -->
+                                <div class="pt-2">
+                                    <button type="submit" class="w-full bg-medical-600 hover:bg-medical-700 text-white font-bold py-4 rounded-xl transition-all duration-300 shadow-float hover:shadow-intense flex items-center justify-center gap-3 text-lg">
+                                        Demander le créneau <i class="fa-brands fa-whatsapp text-2xl"></i>
+                                    </button>
+                                    <p class="text-center text-[10px] text-slate-400 mt-3 font-medium uppercase tracking-widest"><i class="fa-solid fa-lock mr-1"></i> Données médicales confidentielles</p>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ====================================================================== -->
+        <!-- SECTION 2 : CHIFFRES & RÉASSURANCE (KPI)                               -->
+        <!-- ====================================================================== -->
+        <section class="py-12 border-y border-slate-100 bg-white relative z-20">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-8 divide-x divide-slate-100 text-center">
+                    
+                    <div class="reveal px-4">
+                        <div class="flex justify-center items-baseline text-4xl md:text-5xl font-heading font-extrabold text-medical-600 mb-2">
+                            +<span class="counter" data-target="15">0</span>
+                        </div>
+                        <h3 class="text-xs md:text-sm text-slate-500 uppercase tracking-widest font-bold">Années d'expérience</h3>
+                    </div>
+                    
+                    <div class="reveal px-4" style="transition-delay: 100ms;">
+                        <div class="flex justify-center items-baseline text-4xl md:text-5xl font-heading font-extrabold text-slate-800 mb-2">
+                            +<span class="counter" data-target="8500">0</span>
+                        </div>
+                        <h3 class="text-xs md:text-sm text-slate-500 uppercase tracking-widest font-bold">Sourires Retrouvés</h3>
+                    </div>
+                    
+                    <div class="reveal px-4" style="transition-delay: 200ms;">
+                        <div class="flex justify-center items-baseline text-4xl md:text-5xl font-heading font-extrabold text-slate-800 mb-2">
+                            100%
+                        </div>
+                        <h3 class="text-xs md:text-sm text-slate-500 uppercase tracking-widest font-bold">Stérilisation Normée</h3>
+                    </div>
+                    
+                    <div class="reveal px-4" style="transition-delay: 300ms;">
+                        <div class="text-4xl md:text-5xl font-heading font-extrabold text-teal-500 mb-2 flex justify-center items-center gap-2">
+                            6/7j
+                        </div>
+                        <h3 class="text-xs md:text-sm text-slate-500 uppercase tracking-widest font-bold">Prise en charge</h3>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+
+        <!-- ====================================================================== -->
+        <!-- SECTION 3 : PRÉSENTATION DE LA CLINIQUE (À propos)                     -->
+        <!-- ====================================================================== -->
+        <section id="about" class="py-24 bg-surface-light relative overflow-hidden">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                
+                <div class="flex flex-col lg:flex-row gap-16 items-center">
+                    
+                    <!-- Colonne Image Premium (Unsplash fiable) -->
+                    <div class="lg:w-1/2 reveal order-2 lg:order-1">
+                        <div class="relative p-2 bg-white rounded-[2rem] shadow-intense border border-slate-100">
+                            <!-- Image Cabinet -->
+                            <img src="https://images.unsplash.com/photo-1606811841689-23dfddce3e95?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Salle de soins dentaires de la clinique Happy Smile" class="w-full h-auto object-cover rounded-[1.5rem]" loading="lazy">
+                            
+                            <!-- Badge Certification -->
+                            <div class="absolute -top-6 -right-6 bg-white p-5 rounded-2xl shadow-float border border-slate-100 flex items-center gap-4">
+                                <div class="w-12 h-12 rounded-full bg-medical-50 flex items-center justify-center text-medical-600 relative">
+                                    <i class="fa-solid fa-award text-2xl"></i>
+                                </div>
+                                <div>
+                                    <p class="text-xs text-slate-500 font-semibold uppercase tracking-wider">Qualité</p>
+                                    <p class="text-sm font-bold text-slate-900">Soins Haut de Gamme</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Colonne Contenu -->
+                    <div class="lg:w-1/2 reveal order-1 lg:order-2" style="transition-delay: 200ms;">
+                        <span class="text-medical-600 font-bold uppercase tracking-widest text-xs mb-3 block">Bienvenue chez Happy Smile</span>
+                        <h2 class="text-4xl font-heading font-extrabold text-slate-900 mb-6 leading-tight">
+                            Redéfinissons l'expérience chez le dentiste.
+                        </h2>
+                        <p class="text-lg text-slate-600 mb-8 leading-relaxed">
+                            Installée à la Cité 720 Logements (Gué de Constantine), notre clinique a été pensée pour effacer l'anxiété liée aux soins dentaires. Notre approche combine une écoute attentive, des protocoles de gestion de la douleur rigoureux et les dernières avancées technologiques.
+                        </p>
+                        
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                            <div class="bg-surface-muted p-5 rounded-2xl border border-slate-100">
+                                <i class="fa-solid fa-stethoscope text-2xl text-teal-500 mb-3"></i>
+                                <h4 class="font-bold text-slate-900 mb-1">Diagnostic Précis</h4>
+                                <p class="text-sm text-slate-500">Plan de traitement détaillé expliqué avec pédagogie.</p>
+                            </div>
+                            <div class="bg-surface-muted p-5 rounded-2xl border border-slate-100">
+                                <i class="fa-solid fa-spray-can-sparkles text-2xl text-teal-500 mb-3"></i>
+                                <h4 class="font-bold text-slate-900 mb-1">Hygiène Absolue</h4>
+                                <p class="text-sm text-slate-500">Salle de stérilisation dédiée répondant aux normes internationales.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ====================================================================== -->
+        <!-- SECTION AVANT / APRÈS (Nouveau composant interactif pur JS)            -->
+        <!-- ====================================================================== -->
+        <section class="py-24 bg-surface-alt border-y border-slate-200 relative overflow-hidden">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                
+                <div class="text-center max-w-3xl mx-auto mb-16 reveal">
+                    <span class="text-medical-600 font-bold uppercase tracking-widest text-xs mb-3 block">Cas Clinique</span>
+                    <h2 class="text-4xl font-heading font-extrabold text-slate-900 mb-4">L'art de la transformation.</h2>
+                    <p class="text-slate-600">Glissez le curseur pour observer le résultat de nos traitements esthétiques et implantaires.</p>
+                </div>
+
+                <!-- Slider Avant/Après -->
+                <div class="reveal max-w-4xl mx-auto">
+                    <div class="before-after-slider" id="ba-slider">
+                        <div class="ba-label ba-label-before">Avant</div>
+                        <div class="ba-label ba-label-after">Après</div>
+                        
+                        <div class="img-background">
+                            <!-- Image APRÈS (Unsplash: Sourire blanc parfait) -->
+                            <img src="https://www.americansmile.co.uk/wp-content/uploads/2020/03/Missing-Tooth-After-555x278.jpg" alt="Sourire après traitement" class="before-after-img">
+                        </div>
+                        
+                        <div class="img-foreground" id="ba-foreground" style="display: flex;flex-direction: row; justify-content: center; align-content: center; align-items: center;">
+                            <!-- Image AVANT (Simulation : On utilise ici une image différente pour illustrer la comparaison de sourire) -->
+                            <img src="https://www.americansmile.co.uk/wp-content/uploads/2020/03/Missing-Tooth-Before-555x278.jpg" alt="Sourire avant traitement" class="before-after-img" id="ba-img-front">
+                        </div>
+                        
+                        <div class="slider-handle" id="ba-handle"></div>
+                    </div>
+                    <p class="text-center text-sm text-slate-500 mt-4"><i class="fa-solid fa-arrows-left-right mr-2"></i>Interagissez avec le curseur</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ====================================================================== -->
+        <!-- SECTION 4 : NOS SPÉCIALITÉS (Tabs Interactifs)                         -->
+        <!-- ====================================================================== -->
+        <section id="services" class="py-24 bg-slate-900 relative border-y border-slate-800 text-white overflow-hidden">
+            <!-- Background Elements -->
+            <div class="absolute inset-0 bg-pattern-dots opacity-10"></div>
+            <div class="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l from-medical-900/50 to-transparent pointer-events-none"></div>
+
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+                
+                <div class="text-center max-w-3xl mx-auto mb-16 reveal">
+                    <span class="text-teal-400 font-bold uppercase tracking-widest text-xs mb-3 block">Pôles d'Excellence</span>
+                    <h2 class="text-4xl font-heading font-extrabold text-white">Traitements & Soins Spécialisés</h2>
+                </div>
+
+                <!-- Tabs Navigation -->
+                <div class="reveal flex flex-wrap justify-center gap-3 mb-12">
+                    <button class="med-tab-btn active" data-target="tab-implant">
+                        <i class="fa-solid fa-tooth"></i> Implantologie
+                    </button>
+                    <button class="med-tab-btn" data-target="tab-esthetic">
+                        <i class="fa-solid fa-face-smile-beam"></i> Esthétique
+                    </button>
+                    <button class="med-tab-btn" data-target="tab-ortho">
+                        <i class="fa-solid fa-teeth-open"></i> Orthodontie
+                    </button>
+                    <button class="med-tab-btn" data-target="tab-soins">
+                        <i class="fa-solid fa-notes-medical"></i> Soins Généraux
+                    </button>
+                </div>
+
+                <!-- Tab Content 1: Implantologie -->
+                <div id="tab-implant" class="med-tab-content active reveal">
+                    <div class="flex flex-col md:flex-row gap-10 items-center bg-slate-800/50 p-8 md:p-12 rounded-3xl border border-slate-700 backdrop-blur-sm">
+                        <div class="md:w-1/2">
+                            <h3 class="text-3xl font-heading font-bold mb-4 text-white">Implantologie & Prothèses</h3>
+                            <p class="text-slate-300 leading-relaxed mb-6">
+                                Remplacez vos dents manquantes par des racines artificielles en titane biocompatible. Notre équipe utilise la chirurgie guidée par ordinateur pour une précision millimétrique, réduisant considérablement le temps d'intervention et de cicatrisation.
+                            </p>
+                            <ul class="space-y-3 mb-8">
+                                <li class="flex items-center text-sm font-medium text-slate-300"><i class="fa-solid fa-circle-check text-teal-400 mr-3"></i>Implants haut de gamme (Titane pur).</li>
+                                <li class="flex items-center text-sm font-medium text-slate-300"><i class="fa-solid fa-circle-check text-teal-400 mr-3"></i>Couronnes en Zircone aspect naturel.</li>
+                                <li class="flex items-center text-sm font-medium text-slate-300"><i class="fa-solid fa-circle-check text-teal-400 mr-3"></i>Chirurgie mini-invasive sous anesthésie locale.</li>
+                            </ul>
+                            <button onclick="openModalWithService('Implantologie')" class="text-teal-400 font-bold hover:text-teal-300 transition-colors flex items-center gap-2 group">
+                                Bilan implantaire <i class="fa-solid fa-arrow-right transform group-hover:translate-x-1 transition-transform"></i>
+                            </button>
+                        </div>
+                        <div class="md:w-1/2 w-full">
+                            <img src="https://media.istockphoto.com/id/1402568717/photo/dental-implant.jpg?s=612x612&w=0&k=20&c=rhJVWlHUjHz1MtWNQgLo6Oqv_uGA465MP6u3e3-33YU=" alt="Exemple d'implant dentaire et prothèse" class="w-full h-64 object-cover rounded-2xl shadow-intense border border-slate-600">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tab Content 2: Esthétique -->
+                <div id="tab-esthetic" class="med-tab-content">
+                    <div class="flex flex-col md:flex-row gap-10 items-center bg-slate-800/50 p-8 md:p-12 rounded-3xl border border-slate-700 backdrop-blur-sm">
+                        <div class="md:w-1/2">
+                            <h3 class="text-3xl font-heading font-bold mb-4 text-white">Esthétique & Facettes</h3>
+                            <p class="text-slate-300 leading-relaxed mb-6">
+                                Corrigez la forme, la teinte ou l'alignement léger de vos dents grâce au "Hollywood Smile". Nos facettes en céramique ultra-fines (E-max, Lumineers) sont conçues sur-mesure pour un sourire éclatant et naturel.
+                            </p>
+                            <ul class="space-y-3 mb-8">
+                                <li class="flex items-center text-sm font-medium text-slate-300"><i class="fa-solid fa-circle-check text-teal-400 mr-3"></i>Blanchiment professionnel au laser.</li>
+                                <li class="flex items-center text-sm font-medium text-slate-300"><i class="fa-solid fa-circle-check text-teal-400 mr-3"></i>Facettes céramiques haute résistance.</li>
+                                <li class="flex items-center text-sm font-medium text-slate-300"><i class="fa-solid fa-circle-check text-teal-400 mr-3"></i>Gingivectomie au laser (correction du sourire gingival).</li>
+                            </ul>
+                            <button onclick="openModalWithService('Blanchiment dentaire')" class="text-teal-400 font-bold hover:text-teal-300 transition-colors flex items-center gap-2 group">
+                                Simulation de sourire <i class="fa-solid fa-arrow-right transform group-hover:translate-x-1 transition-transform"></i>
+                            </button>
+                        </div>
+                        <div class="md:w-1/2 w-full">
+                            <img src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Sourire esthétique après traitement" class="w-full h-64 object-cover rounded-2xl shadow-intense border border-slate-600">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tab Content 3: Orthodontie -->
+                <div id="tab-ortho" class="med-tab-content">
+                    <div class="flex flex-col md:flex-row gap-10 items-center bg-slate-800/50 p-8 md:p-12 rounded-3xl border border-slate-700 backdrop-blur-sm">
+                        <div class="md:w-1/2">
+                            <h3 class="text-3xl font-heading font-bold mb-4 text-white">Orthodontie (Adulte & Enfant)</h3>
+                            <p class="text-slate-300 leading-relaxed mb-6">
+                                Retrouvez un alignement dentaire parfait pour des raisons esthétiques et fonctionnelles. Nous proposons les bagues traditionnelles, mais aussi les gouttières transparentes d'alignement, pratiquement invisibles.
+                            </p>
+                            <ul class="space-y-3 mb-8">
+                                <li class="flex items-center text-sm font-medium text-slate-300"><i class="fa-solid fa-circle-check text-teal-400 mr-3"></i>Appareils multi-attaches (Métal ou Céramique).</li>
+                                <li class="flex items-center text-sm font-medium text-slate-300"><i class="fa-solid fa-circle-check text-teal-400 mr-3"></i>Gouttières invisibles (Invisalign).</li>
+                                <li class="flex items-center text-sm font-medium text-slate-300"><i class="fa-solid fa-circle-check text-teal-400 mr-3"></i>Orthodontie préventive pour enfants.</li>
+                            </ul>
+                            <button onclick="openModalWithService('Orthodontie')" class="text-teal-400 font-bold hover:text-teal-300 transition-colors flex items-center gap-2 group">
+                                Bilan orthodontique <i class="fa-solid fa-arrow-right transform group-hover:translate-x-1 transition-transform"></i>
+                            </button>
+                        </div>
+                        <div class="md:w-1/2 w-full">
+                            <img src="https://media.istockphoto.com/id/2186773813/photo/is-it-worth-getting-braces-on-your-teeth.jpg?s=612x612&w=0&k=20&c=gZ57oLyWndT7NkkiiaJokYdgBMmDUz2XrN_AZhfZr2I=" alt="Traitement orthodontique avec bagues" class="w-full h-64 object-cover rounded-2xl shadow-intense border border-slate-600">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tab Content 4: Soins -->
+                <div id="tab-soins" class="med-tab-content">
+                    <div class="flex flex-col md:flex-row gap-10 items-center bg-slate-800/50 p-8 md:p-12 rounded-3xl border border-slate-700 backdrop-blur-sm">
+                        <div class="md:w-1/2">
+                            <h3 class="text-3xl font-heading font-bold mb-4 text-white">Soins Conservateurs & Parodontie</h3>
+                            <p class="text-slate-300 leading-relaxed mb-6">
+                                La base de la santé bucco-dentaire. Nous traitons les caries, soignons les gencives malades (déchaussement) et réalisons les dévitalisations avec un équipement rotatif de haute précision pour préserver vos dents naturelles au maximum.
+                            </p>
+                            <ul class="space-y-3 mb-8">
+                                <li class="flex items-center text-sm font-medium text-slate-300"><i class="fa-solid fa-circle-check text-teal-400 mr-3"></i>Traitement des caries (Composites esthétiques).</li>
+                                <li class="flex items-center text-sm font-medium text-slate-300"><i class="fa-solid fa-circle-check text-teal-400 mr-3"></i>Détartrage et surfaçage radiculaire.</li>
+                                <li class="flex items-center text-sm font-medium text-slate-300"><i class="fa-solid fa-circle-check text-teal-400 mr-3"></i>Prise en charge des urgences dentaires.</li>
+                            </ul>
+                            <button onclick="openModalWithService('Consultation générale')" class="text-teal-400 font-bold hover:text-teal-300 transition-colors flex items-center gap-2 group">
+                                Prendre rendez-vous <i class="fa-solid fa-arrow-right transform group-hover:translate-x-1 transition-transform"></i>
+                            </button>
+                        </div>
+                        <div class="md:w-1/2 w-full">
+                            <img src="https://images.unsplash.com/photo-1606265752439-1f18756aa5fc?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Patiente recevant des soins dentaires généraux" class="w-full h-64 object-cover rounded-2xl shadow-intense border border-slate-600">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ====================================================================== -->
+        <!-- SECTION 5 : PLATEAU TECHNIQUE                                          -->
+        <!-- ====================================================================== -->
+        <section id="plateau" class="py-24 bg-surface-muted relative">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                
+                <div class="text-center max-w-3xl mx-auto mb-16 reveal">
+                    <h2 class="text-3xl font-heading font-extrabold text-slate-900 mb-4">Notre Plateau Technique</h2>
+                    <p class="text-slate-600">La dentisterie moderne ne se conçoit pas sans une technologie de pointe pour des diagnostics précis et des soins indolores.</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 reveal">
+                    
+                    <article class="service-card p-6">
+                        <div class="service-icon-wrapper">
+                            <i class="fa-solid fa-x-ray"></i>
+                        </div>
+                        <h3 class="text-lg font-bold text-slate-900 mb-3">Imagerie 3D (Cone Beam)</h3>
+                        <p class="text-sm text-slate-600 leading-relaxed">Radiographie panoramique et scanner 3D sur place pour sécuriser la pose d'implants avec une précision extrême.</p>
+                    </article>
+
+                    <article class="service-card p-6">
+                        <div class="service-icon-wrapper">
+                            <i class="fa-solid fa-camera"></i>
+                        </div>
+                        <h3 class="text-lg font-bold text-slate-900 mb-3">Scanner Intra-oral</h3>
+                        <p class="text-sm text-slate-600 leading-relaxed">Fini l'empreinte avec de la pâte désagréable. Notre caméra numérique prend une empreinte 3D de vos dents en quelques minutes.</p>
+                    </article>
+
+                    <article class="service-card p-6">
+                        <div class="service-icon-wrapper">
+                            <i class="fa-solid fa-wand-magic-sparkles"></i>
+                        </div>
+                        <h3 class="text-lg font-bold text-slate-900 mb-3">Laser Dentaire</h3>
+                        <p class="text-sm text-slate-600 leading-relaxed">Utilisé en chirurgie des gencives ou pour le blanchiment. Le laser permet une intervention aseptisée et une cicatrisation ultra-rapide.</p>
+                    </article>
+
+                    <article class="service-card p-6">
+                        <div class="service-icon-wrapper">
+                            <i class="fa-solid fa-pump-medical"></i>
+                        </div>
+                        <h3 class="text-lg font-bold text-slate-900 mb-3">Stérilisation Autoclave</h3>
+                        <p class="text-sm text-slate-600 leading-relaxed">Une chaîne de stérilisation de classe B (norme hospitalière) pour garantir l'asepsie absolue de tous les instruments.</p>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ====================================================================== -->
+        <!-- SECTION 6 : PARCOURS PATIENT (Processus de Soin)                       -->
+        <!-- ====================================================================== -->
+        <section id="processus" class="py-24 bg-white relative overflow-hidden border-t border-slate-100">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                
+                <div class="text-center max-w-3xl mx-auto mb-20 reveal">
+                    <span class="text-medical-600 font-bold uppercase tracking-widest text-xs mb-3 block">Votre Santé en 4 Étapes</span>
+                    <h2 class="text-4xl font-heading font-extrabold text-slate-900">Le Parcours Patient.</h2>
+                    <p class="mt-4 text-slate-600">Un accompagnement clair et rassurant à chaque étape de votre traitement pour une sérénité totale.</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-4 gap-8 relative">
+                    <!-- Ligne horizontale de connexion (Desktop uniquement) -->
+                    <div class="hidden md:block absolute top-12 left-0 w-full h-px bg-slate-200"></div>
+
+                    <!-- Étape 1 -->
+                    <div class="relative reveal text-center group" data-aos-delay="0">
+                        <div class="w-24 h-24 mx-auto bg-white border-4 border-slate-100 rounded-full flex items-center justify-center shadow-soft relative z-10 mb-6 group-hover:border-medical-200 transition-colors">
+                            <span class="text-3xl font-heading font-black text-slate-300 group-hover:text-medical-400 transition-colors">01</span>
+                        </div>
+                        <h4 class="text-xl font-bold text-slate-900 mb-3">Consultation Bilan</h4>
+                        <p class="text-sm text-slate-600 leading-relaxed px-2">Examen clinique complet et radiographie panoramique pour évaluer précisément votre santé bucco-dentaire.</p>
+                    </div>
+
+                    <!-- Étape 2 -->
+                    <div class="relative reveal text-center group" data-aos-delay="100">
+                        <div class="w-24 h-24 mx-auto bg-white border-4 border-slate-100 rounded-full flex items-center justify-center shadow-soft relative z-10 mb-6 group-hover:border-medical-200 transition-colors">
+                            <span class="text-3xl font-heading font-black text-slate-300 group-hover:text-medical-400 transition-colors">02</span>
+                        </div>
+                        <h4 class="text-xl font-bold text-slate-900 mb-3">Plan de Traitement</h4>
+                        <p class="text-sm text-slate-600 leading-relaxed px-2">Explication pédagogique des soins nécessaires et remise d'un devis transparent et détaillé, sans surprise.</p>
+                    </div>
+
+                    <!-- Étape 3 (Mise en avant harmonisée) -->
+                    <div class="relative reveal text-center group" data-aos-delay="200">
+                        <div class="w-24 h-24 mx-auto bg-white border-4 border-slate-100 rounded-full flex items-center justify-center shadow-soft relative z-10 mb-6 group-hover:border-medical-200 transition-colors">
+                            <span class="text-3xl font-heading font-black text-slate-300 group-hover:text-medical-400 transition-colors">03</span>
+                        </div>
+                        <h4 class="text-xl font-bold text-slate-900 mb-3">Intervention Médicale</h4>
+                        <p class="text-sm text-slate-600 leading-relaxed px-2">Réalisation des soins dans des conditions d'asepsie strictes, avec une gestion totale de l'anxiété et de la douleur.</p>
+                    </div>
+
+                    <!-- Étape 4 -->
+                    <div class="relative reveal text-center group" data-aos-delay="300">
+                        <div class="w-24 h-24 mx-auto bg-white border-4 border-slate-100 rounded-full flex items-center justify-center shadow-soft relative z-10 mb-6 group-hover:border-medical-200 transition-colors">
+                            <span class="text-3xl font-heading font-black text-slate-300 group-hover:text-medical-400 transition-colors">04</span>
+                        </div>
+                        <h4 class="text-xl font-bold text-slate-900 mb-3">Suivi & Contrôle</h4>
+                        <p class="text-sm text-slate-600 leading-relaxed px-2">Rendez-vous de vérification post-opératoire et conseils personnalisés pour maintenir une hygiène dentaire optimale.</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ====================================================================== -->
+        <!-- SECTION 7 : TARIFS & MUTUELLE (Transparence)                           -->
+        <!-- ====================================================================== -->
+        <section id="tarifs" class="py-24 bg-surface-alt relative border-y border-slate-200">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+                
+                <div class="text-center mb-16 reveal">
+                    <span class="text-medical-600 font-bold uppercase tracking-widest text-xs mb-3 block">Transparence</span>
+                    <h2 class="text-3xl font-heading font-extrabold text-slate-900 mb-4">Honoraires & Prise en charge</h2>
+                    <p class="text-slate-600">Un devis détaillé vous sera toujours remis et expliqué avant tout acte médical important.</p>
+                </div>
+
+                <div class="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-soft reveal">
+                    <table class="w-full text-left border-collapse">
+                        <thead>
+                            <tr class="bg-slate-50">
+                                <th class="py-4 px-6 font-bold text-slate-900 border-b border-slate-200">Type de Prestation</th>
+                                <th class="py-4 px-6 font-bold text-slate-900 border-b border-slate-200 text-right">Tarif indicatif</th>
+                            </tr>
+                        </thead>
+                        <tbody class="text-sm text-slate-700">
+                            <tr class="border-b border-slate-100 hover:bg-slate-50 transition-colors">
+                                <td class="py-4 px-6">Consultation & Bilan initial (avec radio)</td>
+                                <td class="py-4 px-6 text-right font-medium">Sur devis</td>
+                            </tr>
+                            <tr class="border-b border-slate-100 hover:bg-slate-50 transition-colors">
+                                <td class="py-4 px-6">Détartrage complet (Ultrasons)</td>
+                                <td class="py-4 px-6 text-right font-medium">Sur devis</td>
+                            </tr>
+                            <tr class="border-b border-slate-100 hover:bg-slate-50 transition-colors">
+                                <td class="py-4 px-6">Blanchiment Dentaire au Laser</td>
+                                <td class="py-4 px-6 text-right font-medium">Sur devis</td>
+                            </tr>
+                            <tr class="border-b border-slate-100 hover:bg-slate-50 transition-colors">
+                                <td class="py-4 px-6">Implant Dentaire (Titane haut de gamme)</td>
+                                <td class="py-4 px-6 text-right font-medium">Sur devis</td>
+                            </tr>
+                            <tr class="border-b border-slate-100 hover:bg-slate-50 transition-colors">
+                                <td class="py-4 px-6">Facettes Dentaires (E-max / Céramique)</td>
+                                <td class="py-4 px-6 text-right font-medium">Sur devis / par dent</td>
+                            </tr>
+                            <tr class="hover:bg-slate-50 transition-colors">
+                                <td class="py-4 px-6">Traitement Orthodontique (Bagues / Gouttières)</td>
+                                <td class="py-4 px-6 text-right font-medium">Sur devis</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    
+                    <div class="bg-medical-50 p-6 flex items-start gap-4 border-t border-slate-200">
+                        <i class="fa-solid fa-file-invoice text-2xl text-medical-600 mt-1"></i>
+                        <div>
+                            <h4 class="font-bold text-slate-900 text-sm">Assurances & Mutuelles</h4>
+                            <p class="text-xs text-slate-600 mt-1 leading-relaxed">
+                                Les soins conservateurs sont généralement conventionnés. Pour la prothèse, l'orthodontie et l'implantologie, nous vous fournissons tous les documents nécessaires (facture, feuille de soins) pour le remboursement par votre mutuelle ou organisme assureur (CNAS/CASNOS).
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ====================================================================== -->
+        <!-- SECTION 8 : TÉMOIGNAGES (Carousel)                                     -->
+        <!-- ====================================================================== -->
+        <section class="py-24 bg-slate-900 relative text-white overflow-hidden">
+            <!-- Décorations de fond -->
+            <div class="absolute -top-40 -right-40 w-96 h-96 bg-medical-600/20 rounded-full blur-3xl pointer-events-none"></div>
+            <div class="absolute -bottom-40 -left-40 w-96 h-96 bg-teal-500/20 rounded-full blur-3xl pointer-events-none"></div>
+
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+                <div class="text-center max-w-3xl mx-auto mb-16 reveal">
+                    <span class="text-teal-400 font-bold uppercase tracking-widest text-xs mb-3 block">Avis Patients</span>
+                    <h2 class="text-3xl font-heading font-extrabold text-white mb-4">Ils nous ont fait confiance.</h2>
+                </div>
+
+                <div class="testimonial-carousel reveal flex gap-6 overflow-x-auto pb-8 snap-x snap-mandatory hide-scrollbar">
+                    
+                    <div class="testimonial-card snap-center min-w-[300px] md:min-w-[400px] bg-slate-800/80 p-8 rounded-2xl border border-slate-700 backdrop-blur-sm">
+                        <div class="flex text-yellow-400 mb-4 text-sm"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                        <p class="text-slate-300 text-sm leading-relaxed mb-6 italic">"J'avais une peur bleue du dentiste. L'équipe d'Happy Smile a su me rassurer, m'expliquer chaque étape, et l'extraction s'est passée sans aucune douleur. Je recommande les yeux fermés."</p>
+                        <div class="flex items-center gap-3">
+                            <div class="w-10 h-10 rounded-full bg-slate-700 flex items-center justify-center font-bold text-slate-300">AM</div>
+                            <div>
+                                <h5 class="text-white text-sm font-bold">Amine M.</h5>
+                                <span class="text-xs text-slate-500">Implantologie</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-card snap-center min-w-[300px] md:min-w-[400px] bg-slate-800/80 p-8 rounded-2xl border border-slate-700 backdrop-blur-sm">
+                        <div class="flex text-yellow-400 mb-4 text-sm"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                        <p class="text-slate-300 text-sm leading-relaxed mb-6 italic">"Résultat incroyable pour mon blanchiment. La clinique est d'une propreté clinique irréprochable et le matériel est ultra moderne. Merci pour ce professionnalisme."</p>
+                        <div class="flex items-center gap-3">
+                            <div class="w-10 h-10 rounded-full bg-slate-700 flex items-center justify-center font-bold text-slate-300">SB</div>
+                            <div>
+                                <h5 class="text-white text-sm font-bold">Sarah B.</h5>
+                                <span class="text-xs text-slate-500">Esthétique</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-card snap-center min-w-[300px] md:min-w-[400px] bg-slate-800/80 p-8 rounded-2xl border border-slate-700 backdrop-blur-sm">
+                        <div class="flex text-yellow-400 mb-4 text-sm"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                        <p class="text-slate-300 text-sm leading-relaxed mb-6 italic">"Très bon suivi orthodontique pour ma fille. L'équipe est très pédagogue avec les enfants, ce qui rend les visites agréables. Mention spéciale pour la facilité de prise de RDV."</p>
+                        <div class="flex items-center gap-3">
+                            <div class="w-10 h-10 rounded-full bg-slate-700 flex items-center justify-center font-bold text-slate-300">FK</div>
+                            <div>
+                                <h5 class="text-white text-sm font-bold">Fatima K.</h5>
+                                <span class="text-xs text-slate-500">Orthodontie</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ====================================================================== -->
+        <!-- SECTION 9 : FAQ ACCORDÉON (Questions Patients)                         -->
+        <!-- ====================================================================== -->
+        <section id="faq" class="py-24 bg-white border-t border-slate-200">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+                
+                <div class="text-center mb-16 reveal">
+                    <h2 class="text-3xl font-heading font-extrabold text-slate-900 mb-4">Questions Fréquentes</h2>
+                    <p class="text-slate-600">Pour un premier rendez-vous en toute sérénité.</p>
+                </div>
+                
+                <div class="space-y-4 reveal" role="tablist">
+                    
+                    <article class="bg-surface-muted border border-slate-200 rounded-2xl overflow-hidden transition-colors duration-300 hover:border-medical-300">
+                        <button class="faq-toggle w-full px-6 py-5 md:px-8 md:py-6 text-left flex justify-between items-center focus:outline-none" aria-expanded="false" role="tab" aria-controls="faq-content-1">
+                            <span class="font-bold text-slate-900 text-base md:text-lg pr-4">La pose d'implants dentaires fait-elle mal ?</span>
+                            <div class="w-8 h-8 rounded-full bg-white flex items-center justify-center flex-shrink-0 text-medical-600 border border-slate-200 transition-transform duration-300 icon-container" aria-hidden="true">
+                                <i class="fa-solid fa-plus"></i>
+                            </div>
+                        </button>
+                        <div id="faq-content-1" role="tabpanel" class="faq-content hidden px-6 pb-5 md:px-8 md:pb-6 text-slate-600 border-t border-slate-200 pt-4 leading-relaxed text-sm md:text-base">
+                            <p>La pose d'implants est réalisée sous anesthésie locale. L'intervention en elle-même est totalement indolore. Après dissipation de l'anesthésie, une légère gêne peut être ressentie, mais elle est parfaitement maîtrisée par les antalgiques prescrits.</p>
+                        </div>
+                    </article>
+
+                    <article class="bg-surface-muted border border-slate-200 rounded-2xl overflow-hidden transition-colors duration-300 hover:border-medical-300">
+                        <button class="faq-toggle w-full px-6 py-5 md:px-8 md:py-6 text-left flex justify-between items-center focus:outline-none" aria-expanded="false" role="tab" aria-controls="faq-content-2">
+                            <span class="font-bold text-slate-900 text-base md:text-lg pr-4">Comment fonctionne le blanchiment dentaire ?</span>
+                            <div class="w-8 h-8 rounded-full bg-white flex items-center justify-center flex-shrink-0 text-medical-600 border border-slate-200 transition-transform duration-300 icon-container" aria-hidden="true">
+                                <i class="fa-solid fa-plus"></i>
+                            </div>
+                        </button>
+                        <div id="faq-content-2" role="tabpanel" class="faq-content hidden px-6 pb-5 md:px-8 md:pb-6 text-slate-600 border-t border-slate-200 pt-4 leading-relaxed text-sm md:text-base">
+                            <p>Nous utilisons un gel blanchissant activé par une lampe spécifique (ou laser) directement au fauteuil. Cette méthode est sûre pour l'émail et permet de gagner plusieurs teintes de blanc en une seule séance d'environ 45 minutes.</p>
+                        </div>
+                    </article>
+
+                    <article class="bg-surface-muted border border-slate-200 rounded-2xl overflow-hidden transition-colors duration-300 hover:border-medical-300">
+                        <button class="faq-toggle w-full px-6 py-5 md:px-8 md:py-6 text-left flex justify-between items-center focus:outline-none" aria-expanded="false" role="tab" aria-controls="faq-content-3">
+                            <span class="font-bold text-slate-900 text-base md:text-lg pr-4">Prenez-vous les urgences dentaires sans rendez-vous ?</span>
+                            <div class="w-8 h-8 rounded-full bg-white flex items-center justify-center flex-shrink-0 text-medical-600 border border-slate-200 transition-transform duration-300 icon-container" aria-hidden="true">
+                                <i class="fa-solid fa-plus"></i>
+                            </div>
+                        </button>
+                        <div id="faq-content-3" role="tabpanel" class="faq-content hidden px-6 pb-5 md:px-8 md:pb-6 text-slate-600 border-t border-slate-200 pt-4 leading-relaxed text-sm md:text-base">
+                            <p>En cas de douleur aiguë ou de traumatisme (dent cassée), nous faisons tout notre possible pour vous intercaler dans notre planning le jour même. Nous vous conseillons de nous contacter via WhatsApp ou par téléphone avant de vous déplacer.</p>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ====================================================================== -->
+        <!-- SECTION 10 : CONTACT, CARTE & CTA FINAL                                -->
+        <!-- ====================================================================== -->
+        <section id="contact" class="py-24 relative bg-slate-900 overflow-hidden">
+            <div class="absolute inset-0 opacity-20 bg-pattern-dots pointer-events-none"></div>
+            
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 reveal">
+                
+                <div class="flex flex-col lg:flex-row gap-12 bg-white rounded-[2.5rem] shadow-intense overflow-hidden">
+                    
+                    <!-- Informations de Contact (Gauche) -->
+                    <div class="lg:w-1/3 p-10 bg-medical-900 text-white flex flex-col justify-between relative overflow-hidden">
+                        <div class="absolute -bottom-20 -right-20 w-64 h-64 bg-medical-600/30 rounded-full blur-2xl"></div>
+                        
+                        <div class="relative z-10">
+                            <h3 class="text-3xl font-heading font-bold mb-2">Notre Cabinet</h3>
+                            <p class="text-medical-200 mb-10 text-sm">Stationnement facile et accès PMR.</p>
+                            
+                            <ul class="space-y-8">
+                                <li class="flex items-start">
+                                    <i class="fa-solid fa-location-dot mt-1 w-8 text-teal-400 text-2xl"></i>
+                                    <div>
+                                        <h4 class="font-bold text-white uppercase text-xs tracking-wider mb-1">Adresse</h4>
+                                        <p class="text-medical-100 text-sm leading-relaxed">Happy Smile<br>Cité 720 Logements<br>Gué de Constantine, Alger</p>
+                                    </div>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fa-regular fa-clock mt-1 w-8 text-teal-400 text-2xl"></i>
+                                    <div>
+                                        <h4 class="font-bold text-white uppercase text-xs tracking-wider mb-1">Horaires</h4>
+                                        <p class="text-medical-100 text-sm leading-relaxed">Dim - Jeu : 08h30 - 18h00<br>Samedi : 09h00 - 14h00<br>Vendredi : Fermé</p>
+                                    </div>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fa-brands fa-whatsapp mt-1 w-8 text-whatsapp text-2xl"></i>
+                                    <div>
+                                        <h4 class="font-bold text-white uppercase text-xs tracking-wider mb-1">Secrétariat & Rdv</h4>
+                                        <a href="https://wa.me/213557174235" target="_blank" class="text-white hover:text-teal-300 font-bold transition-colors text-lg block">
+                                            +213 (5) 57 17 42 35
+                                        </a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Carte Google Maps & Bouton (Droite) -->
+                    <div class="lg:w-2/3 flex flex-col">
+                        <div class="flex-grow min-h-[300px] lg:min-h-0 bg-slate-100 relative">
+                            <!-- iframe Google Maps pointant vers Gué de Constantine -->
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12797.353381666838!2d3.072230491871239!3d36.69911978550186!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x128fad5e4f4fb3d7%3A0xc3cf338dc9550b07!2sGu%C3%A9%20de%20Constantine%2C%20Alg%C3%A9rie!5e0!3m2!1sfr!2sfr!4v1700000000000!5m2!1sfr!2sfr" class="absolute inset-0 w-full h-full" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" aria-label="Carte d'accès clinique"></iframe>
+                        </div>
+                        <div class="p-8 md:p-10 flex flex-col md:flex-row items-center justify-between gap-6 bg-white border-t border-slate-100">
+                            <div>
+                                <h4 class="text-xl font-bold text-slate-900 mb-1">Prêt pour votre consultation ?</h4>
+                                <p class="text-sm text-slate-500">Réservez votre créneau en 2 minutes via WhatsApp.</p>
+                            </div>
+                            <button onclick="window.scrollTo(0,0)" class="px-8 py-4 bg-medical-600 text-white font-bold rounded-xl hover:bg-medical-700 transition-colors shadow-float whitespace-nowrap focus:outline-none">
+                                Prendre Rendez-vous <i class="fa-solid fa-arrow-up ml-2"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ====================================================================== -->
+    <!-- PIED DE PAGE (FOOTER)                                                  -->
+    <!-- ====================================================================== -->
+    <footer class="bg-slate-950 pt-16 pb-8 border-t-[6px] border-medical-600 text-slate-400 text-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-12 mb-12">
+                
+                <!-- Colonne Marque -->
+                <div class="lg:col-span-5">
+                    <a href="#" class="flex items-center gap-3 mb-6 focus:outline-none">
+                        <div class="w-10 h-10 rounded-lg bg-medical-600 flex items-center justify-center p-2">
+                            <!-- SVG Dent -->
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-full h-full text-white">
+                                <path d="M12 2c-.828 0-1.5.672-1.5 1.5 0 .248-.052.482-.137.697C9.553 6.012 8.353 7 7 7c-2.206 0-4 1.794-4 4 0 2.221.758 4.254 2.11 5.86l.608.724a2.983 2.983 0 0 0 .542 3.102C7.151 21.6 8.324 22 9.5 22c.983 0 1.956-.34 2.5-.83.544.49 1.517.83 2.5.83 1.176 0 2.349-.4 3.24-1.314a2.983 2.983 0 0 0 .542-3.102l.608-.724C20.242 15.254 21 13.221 21 11c0-2.206-1.794-4-4-4-1.353 0-2.553-.988-3.363-2.803A1.492 1.492 0 0 0 13.5 3.5C13.5 2.672 12.828 2 12 2zm0 13.5c-.828 0-1.5-.672-1.5-1.5s.672-1.5 1.5-1.5 1.5.672 1.5 1.5-.672 1.5-1.5 1.5z"/>
+                            </svg>
+                        </div>
+                        <span class="font-heading font-extrabold text-xl text-white">Happy Smile</span>
+                    </a>
+                    <p class="leading-relaxed mb-6 pr-8 text-slate-400">
+                        Votre clinique dentaire de référence à Alger (Gué de Constantine). Nous combinons expertise médicale, hygiène rigoureuse et technologie de pointe pour sublimer votre sourire.
+                    </p>
+                    <div class="flex gap-3">
+                        <a href="#" aria-label="Facebook" class="w-9 h-9 rounded-full bg-slate-800 flex items-center justify-center text-slate-300 hover:bg-medical-600 hover:text-white transition-colors focus:outline-none"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Instagram" class="w-9 h-9 rounded-full bg-slate-800 flex items-center justify-center text-slate-300 hover:bg-medical-600 hover:text-white transition-colors focus:outline-none"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+                
+                <!-- Colonne Liens Utiles -->
+                <div class="lg:col-span-3 lg:col-start-7">
+                    <h4 class="font-heading font-bold text-white mb-6 text-base tracking-wide uppercase">La Clinique</h4>
+                    <ul class="space-y-3 font-medium">
+                        <li><a href="#about" class="hover:text-medical-400 transition-colors flex items-center focus:outline-none"><i class="fa-solid fa-angle-right text-[10px] mr-2 text-medical-600"></i> À propos</a></li>
+                        <li><a href="#services" class="hover:text-medical-400 transition-colors flex items-center focus:outline-none"><i class="fa-solid fa-angle-right text-[10px] mr-2 text-medical-600"></i> Nos Traitements</a></li>
+                        <li><a href="#tarifs" class="hover:text-medical-400 transition-colors flex items-center focus:outline-none"><i class="fa-solid fa-angle-right text-[10px] mr-2 text-medical-600"></i> Tarifs & Mutuelles</a></li>
+                        <li><a href="#plateau" class="hover:text-brand-400 transition-colors flex items-center focus:outline-none"><i class="fa-solid fa-angle-right text-[10px] mr-2 text-medical-600"></i> Plateau Technique</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Colonne Urgence -->
+                <div class="lg:col-span-4">
+                    <h4 class="font-heading font-bold text-white mb-6 text-base tracking-wide uppercase">Urgence Dentaire</h4>
+                    <p class="mb-4 text-slate-400">En cas de forte douleur ou d'accident dentaire, contactez notre service de régulation.</p>
+                    <a href="https://wa.me/213557174235?text=Bonjour,%20j'ai%20une%20urgence%20dentaire." target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center w-full px-4 py-3 rounded-xl bg-slate-900 hover:bg-slate-800 text-white font-bold transition-all border border-slate-800 hover:border-medical-500 focus:outline-none">
+                        <i class="fa-solid fa-truck-medical text-red-500 text-xl mr-3"></i> Déclarer une Urgence
+                    </a>
+                </div>
+            </div>
+            
+            <!-- Mentions Légales & Signature B2B -->
+            <div class="border-t border-slate-800 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-xs font-medium">
+                <p>&copy; <span id="copyright-year">2026</span> Clinique Happy Smile. Tous droits réservés.</p>
+                <div class="flex gap-4">
+                    <a href="#" class="hover:text-white transition-colors focus:outline-none">Mentions Légales</a>
+                </div>
+                <!-- Signature "Innovate IT" -->
+                <p class="text-slate-500">
+                    Développé avec <i class="fa-solid fa-heart text-medical-600 mx-1"></i> par <a href="#" class="font-bold text-slate-300 hover:text-white transition-colors">CIRTATECH</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ====================================================================== -->
+    <!-- LIGHTBOX (Galerie d'images en plein écran)                             -->
+    <!-- ====================================================================== -->
+    <div id="lightbox" class="lightbox" onclick="closeLightbox()" aria-hidden="true" role="dialog" aria-modal="true">
+        <button class="lightbox-close" onclick="closeLightbox()" aria-label="Fermer l'image">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+        <img id="lightbox-img" src="" alt="Aperçu grand format">
+    </div>
+
+    <!-- ====================================================================== -->
+    <!-- BOUTON FLOTTANT WHATSAPP GLOBAL                                        -->
+    <!-- ====================================================================== -->
+    <a href="https://wa.me/213557174235?text=Bonjour,%20je%20souhaite%20prendre%20rendez-vous%20à%20la%20clinique%20Happy%20Smile." target="_blank" class="float-wa" aria-label="Prendre rendez-vous sur WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <!-- ====================================================================== -->
+    <!-- MOTEUR JAVASCRIPT (Comportement SPA & Formulaire intelligent)          -->
+    <!-- ====================================================================== -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            
+            // 1. DATE DYNAMIQUE DU COPYRIGHT
+            const yearSpan = document.getElementById('copyright-year');
+            if(yearSpan) {
+                yearSpan.textContent = new Date().getFullYear();
+            }
+
+            // 2. CONFIGURATION DU FORMULAIRE DE RENDEZ-VOUS
+            const dateInput = document.getElementById('prefDate');
+            if(dateInput) {
+                const today = new Date();
+                const formatDate = (date) => date.toISOString().split('T')[0];
+                dateInput.min = formatDate(today);
+                dateInput.value = formatDate(today); 
+            }
+
+            // 3. GESTION DU MENU MOBILE
+            const mobileBtn = document.getElementById('mobile-menu-btn');
+            const mobileMenu = document.getElementById('mobile-menu');
+            const iconMenu = document.getElementById('menu-icon');
+
+            function toggleMobileMenu() {
+                const isExpanded = mobileBtn.getAttribute('aria-expanded') === 'true';
+                mobileBtn.setAttribute('aria-expanded', !isExpanded);
+                mobileMenu.classList.toggle('hidden');
+                
+                if(!isExpanded) {
+                    iconMenu.classList.remove('fa-bars');
+                    iconMenu.classList.add('fa-xmark');
+                } else {
+                    iconMenu.classList.remove('fa-xmark');
+                    iconMenu.classList.add('fa-bars');
+                }
+            }
+
+            if(mobileBtn) mobileBtn.addEventListener('click', toggleMobileMenu);
+
+            document.querySelectorAll('.mobile-link').forEach(link => {
+                link.addEventListener('click', () => {
+                    if (!mobileMenu.classList.contains('hidden')) toggleMobileMenu();
+                });
+            });
+
+            // 4. EFFETS DE NAVIGATION AU SCROLL (CORRECTION NAVBAR)
+            const topBar = document.getElementById('top-bar');
+            const navbar = document.getElementById('navbar');
+            const progressBar = document.getElementById('scrollIndicator');
+
+            function handleScroll() {
+                // Rétractation fluide de la Top Bar
+                if (window.scrollY > 20) {
+                    if(topBar) {
+                        topBar.style.maxHeight = '0px';
+                        topBar.style.opacity = '0';
+                    }
+                    navbar.classList.add('navbar-scrolled');
+                } else {
+                    if(topBar) {
+                        topBar.style.maxHeight = '50px';
+                        topBar.style.opacity = '1';
+                    }
+                    navbar.classList.remove('navbar-scrolled');
+                }
+
+                // Barre de progression
+                const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+                const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+                const scrolled = height > 0 ? (winScroll / height) * 100 : 0;
+                if(progressBar) progressBar.style.width = scrolled + "%";
+            }
+
+            window.addEventListener('scroll', handleScroll, { passive: true });
+            handleScroll(); // Check au chargement
+
+            // 5. GESTION DES ONGLETS DE SPÉCIALITÉS
+            const tabBtns = document.querySelectorAll('.med-tab-btn');
+            const tabContents = document.querySelectorAll('.med-tab-content');
+
+            tabBtns.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    tabBtns.forEach(b => b.classList.remove('active'));
+                    tabContents.forEach(c => c.classList.remove('active'));
+
+                    btn.classList.add('active');
+                    const targetId = btn.getAttribute('data-target');
+                    const targetContent = document.getElementById(targetId);
+                    if(targetContent) targetContent.classList.add('active');
+                });
+            });
+
+            // 6. GESTION DE L'ACCORDÉON FAQ
+            const faqToggles = document.querySelectorAll('.faq-toggle');
+            
+            faqToggles.forEach(toggle => {
+                toggle.addEventListener('click', () => {
+                    const content = document.getElementById(toggle.getAttribute('aria-controls'));
+                    const icon = toggle.querySelector('i');
+                    const isExpanded = toggle.getAttribute('aria-expanded') === 'true';
+                    
+                    toggle.setAttribute('aria-expanded', !isExpanded);
+                    
+                    if (!isExpanded) {
+                        content.classList.remove('hidden');
+                        icon.classList.remove('fa-plus');
+                        icon.classList.add('fa-minus');
+                        toggle.classList.add('text-medical-600');
+                    } else {
+                        content.classList.add('hidden');
+                        icon.classList.remove('fa-minus');
+                        icon.classList.add('fa-plus');
+                        toggle.classList.remove('text-medical-600');
+                    }
+                });
+            });
+
+            // 7. ANIMATIONS AU DÉFILEMENT (Reveal)
+            const revealElements = document.querySelectorAll('.reveal');
+            const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+            if(!prefersReducedMotion && 'IntersectionObserver' in window) {
+                const revealOptions = { threshold: 0.1, rootMargin: "0px 0px -50px 0px" };
+                const revealOnScroll = new IntersectionObserver((entries, observer) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            entry.target.classList.add('active');
+                            observer.unobserve(entry.target);
+                        }
+                    });
+                }, revealOptions);
+
+                revealElements.forEach(el => revealOnScroll.observe(el));
+            } else {
+                revealElements.forEach(el => el.classList.add('active'));
+            }
+
+            // 8. ANIMATION DES COMPTEURS (Statistiques / KPI)
+            const counters = document.querySelectorAll('.counter');
+            let hasCounted = false;
+
+            if('IntersectionObserver' in window) {
+                const counterObserver = new IntersectionObserver((entries) => {
+                    if(entries[0].isIntersecting && !hasCounted) {
+                        hasCounted = true;
+                        counters.forEach(counter => {
+                            const target = +counter.getAttribute('data-target');
+                            const duration = 2500; // ms
+                            const increment = target / (duration / 16);
+                            
+                            let current = 0;
+                            const updateCounter = () => {
+                                current += increment;
+                                if(current < target) {
+                                    counter.innerText = Math.ceil(current);
+                                    requestAnimationFrame(updateCounter);
+                                } else {
+                                    counter.innerText = target;
+                                }
+                            };
+                            updateCounter();
+                        });
+                    }
+                }, { threshold: 0.5 });
+
+                if(counters.length > 0) {
+                    counterObserver.observe(counters[0].closest('section'));
+                }
+            } else {
+                counters.forEach(c => c.innerText = c.getAttribute('data-target'));
+            }
+
+            // 9. GESTION DU SLIDER AVANT/APRÈS (Composant Interactif)
+            const slider = document.getElementById('ba-slider');
+            const foreground = document.getElementById('ba-foreground');
+            const handle = document.getElementById('ba-handle');
+            let isDragging = false;
+
+            if (slider && foreground && handle) {
+                const moveHandle = (e) => {
+                    if (!isDragging) return;
+                    
+                    let rect = slider.getBoundingClientRect();
+                    // Obtenir la position X (souris ou touch)
+                    let x = (e.type.includes('mouse') ? e.clientX : e.touches[0].clientX) - rect.left;
+                    
+                    // Limiter les bords
+                    x = Math.max(0, Math.min(x, rect.width));
+                    
+                    let percentage = (x / rect.width) * 100;
+                    
+                    foreground.style.width = `${percentage}%`;
+                    handle.style.left = `${percentage}%`;
+                };
+
+                // Mouse events
+                handle.addEventListener('mousedown', () => isDragging = true);
+                window.addEventListener('mouseup', () => isDragging = false);
+                window.addEventListener('mousemove', moveHandle);
+
+                // Touch events
+                handle.addEventListener('touchstart', () => isDragging = true);
+                window.addEventListener('touchend', () => isDragging = false);
+                window.addEventListener('touchmove', moveHandle);
+            }
+        });
+
+        // -----------------------------------------------------
+        // LOGIQUE D'ENVOI WHATSAPP DU FORMULAIRE DE RDV
+        // -----------------------------------------------------
+        window.handleAppointment = function(e) {
+            e.preventDefault();
+            
+            // Formatage propre de la date FR
+            const formatDateFR = (dateStr) => {
+                const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+                return new Date(dateStr).toLocaleDateString('fr-FR', options);
+            };
+
+            // Récupération des valeurs
+            const name = document.getElementById('patientName').value.trim();
+            const type = document.getElementById('consultationType').value;
+            const date = document.getElementById('prefDate').value;
+            const time = document.getElementById('prefTime').value;
+            
+            // Validation basique
+            if(!name || !type || !date) {
+                alert("Veuillez remplir tous les champs du formulaire.");
+                return;
+            }
+
+            // Numéro WhatsApp cible de la clinique
+            const clinicPhone = "213557174235"; 
+            
+            // Construction du message WhatsApp optimisé pour la secrétaire
+            const message = `*NOUVELLE DEMANDE DE RENDEZ-VOUS*%0A%0A*Patient :* ${name}%0A*Motif :* ${type}%0A*Date souhaitée :* ${formatDateFR(date)}%0A*Créneau :* ${time}%0A%0ABonjour, est-ce que ce créneau est disponible ? Merci.`;
+            
+            // Redirection
+            const waUrl = `https://wa.me/${clinicPhone}?text=${message}`;
+            window.open(waUrl, '_blank');
+        };
+
+        // Fonction utilitaire pour déclencher le focus sur un service particulier depuis les boutons
+        window.openModalWithService = function(serviceName) {
+            // Remonter au formulaire de réservation en haut
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+            
+            setTimeout(() => {
+                const select = document.getElementById('consultationType');
+                if(select) {
+                    select.value = serviceName;
+                    select.focus();
+                    select.classList.add('ring-2', 'ring-medical-500', 'ring-offset-2');
+                    setTimeout(() => select.classList.remove('ring-2', 'ring-medical-500', 'ring-offset-2'), 1500);
+                }
+            }, 800);
+        };
+
+        // -----------------------------------------------------
+        // GESTION DE LA LIGHTBOX POUR GALERIE
+        // -----------------------------------------------------
+        const lightbox = document.getElementById('lightbox');
+        const lightboxImg = document.getElementById('lightbox-img');
+
+        window.openLightbox = function(imageSrc) {
+            if(!lightbox || !lightboxImg) return;
+            lightboxImg.src = imageSrc;
+            lightbox.classList.add('active');
+            document.body.style.overflow = 'hidden'; 
+        }
+
+        window.closeLightbox = function() {
+            if(!lightbox) return;
+            lightbox.classList.remove('active');
+            setTimeout(() => { lightboxImg.src = ''; }, 400); 
+            document.body.style.overflow = ''; 
+        }
+
+        document.addEventListener('keydown', function(event) {
+            if (event.key === "Escape" && lightbox && lightbox.classList.contains('active')) {
+                closeLightbox();
+            }
+        });
+    </script>
+</body>
+</html>

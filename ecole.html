@@ -1,0 +1,1559 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="icon" type="image/png" href="feuille.png">
+
+    <!-- ====================================================================== -->
+    <!-- SEO & META TAGS AVANCÉS                                                -->
+    <!-- ====================================================================== -->
+    <title>Groupe Scolaire Les Mimosas | École Privée à Birkhadem, Alger</title>
+    <meta name="description" content="Le Groupe Scolaire Les Mimosas à Birkhadem accompagne vos enfants de la crèche au lycée. Excellence académique, bilinguisme et épanouissement dans un cadre bienveillant et sécurisé.">
+    <meta name="keywords" content="École privée Birkhadem, Groupe Scolaire Les Mimosas, Crèche Alger, École Primaire, CEM, Lycée, Enseignement privé, Pédagogie, Bilinguisme">
+    <meta name="author" content="Groupe Scolaire Les Mimosas">
+    <meta name="robots" content="index, follow, max-image-preview:large">
+    <meta name="theme-color" content="#1e3a5f">
+    <link rel="canonical" href="https://www.ecole-lesmimosas.dz/">
+    
+    <!-- Open Graph / Réseaux Sociaux -->
+    <meta property="og:locale" content="fr_FR">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.ecole-lesmimosas.dz/">
+    <meta property="og:title" content="Groupe Scolaire Les Mimosas | L'Excellence à Birkhadem">
+    <meta property="og:description" content="Découvrez notre projet éducatif de la crèche au lycée. Un encadrement de qualité pour la réussite de vos enfants.">
+    <meta property="og:image" content="https://www.ecole-lesmimosas.dz/icon.jpg">
+    <meta property="og:site_name" content="Les Mimosas">
+    
+    <!-- ====================================================================== -->
+    <!-- DONNÉES STRUCTURÉES (JSON-LD) - ÉTABLISSEMENT SCOLAIRE                 -->
+    <!-- ====================================================================== -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "School",
+      "name": "Groupe Scolaire Les Mimosas",
+      "image": "https://www.ecole-lesmimosas.dz/icon.jpg",
+      "description": "Établissement scolaire privé accueillant les élèves de la crèche au lycée.",
+      "@id": "https://www.ecole-lesmimosas.dz",
+      "url": "https://www.ecole-lesmimosas.dz",
+      "telephone": "+213557174235",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Birkhadem",
+        "addressLocality": "Alger",
+        "addressCountry": "DZ"
+      },
+      "sameAs": [
+        "https://www.facebook.com/ecolelesmimosas"
+      ]
+    }
+    </script>
+
+    <!-- ====================================================================== -->
+    <!-- TYPOGRAPHIE & ICÔNES                                                   -->
+    <!-- ====================================================================== -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Nunito : Doux et arrondi pour le côté enfance/éducation. Inter : Pro et lisible. -->
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- ====================================================================== -->
+    <!-- TAILWIND CSS CONFIGURATION                                             -->
+    <!-- ====================================================================== -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        heading: ['Nunito', 'sans-serif'],
+                    },
+                    colors: {
+                        /* Palette stricte extraite du logo "Les Mimosas" */
+                        mimosa: {
+                            blue: {
+                                DEFAULT: '#1e3a5f', /* Bleu Nuit */
+                                50: '#f0f4f8',
+                                100: '#d9e2ec',
+                                200: '#bcccdc',
+                                300: '#9fb3c8',
+                                400: '#829ab1',
+                                500: '#627d98',
+                                600: '#486581',
+                                700: '#334e68',
+                                800: '#243b53',
+                                900: '#1e3a5f', 
+                                950: '#102a43',
+                            },
+                            yellow: {
+                                DEFAULT: '#d4af37', /* Jaune Or */
+                                50: '#fffdf0',
+                                100: '#fff9db',
+                                200: '#fff0b3',
+                                300: '#ffe680',
+                                400: '#fcd34d',
+                                500: '#f5b041',
+                                600: '#d4af37', 
+                                700: '#b89020',
+                                800: '#947012',
+                                900: '#7a5a0d',
+                            },
+                            green: {
+                                DEFAULT: '#2d5a27', /* Vert Feuillage */
+                                50: '#f2fcf5',
+                                100: '#e0f8e9',
+                                200: '#c2efd3',
+                                300: '#95e0b3',
+                                400: '#61ca8e',
+                                500: '#3ab06e',
+                                600: '#2d5a27', 
+                                700: '#21471d',
+                                800: '#1a3817',
+                                900: '#142d13',
+                            },
+                            sky: '#e0f2fe',
+                            pink: '#fce7f3',
+                            orange: '#ffedd5',
+                            yellowLight: '#fef9c3', 
+                            greenLight: '#e6f4ea', 
+                        }
+                    },
+                    boxShadow: {
+                        'soft': '0 10px 40px -10px rgba(30, 58, 95, 0.08)',
+                        'float': '0 20px 40px -10px rgba(212, 175, 55, 0.25)',
+                        'nav': '0 4px 20px -2px rgba(30, 58, 95, 0.1)',
+                        'card': '0 0 0 1px rgba(30, 58, 95, 0.05), 0 10px 20px -5px rgba(30, 58, 95, 0.08)',
+                    },
+                    animation: {
+                        'bounce-slow': 'bounce 4s infinite',
+                        'float': 'float 6s ease-in-out infinite',
+                        'float-delayed': 'float 6s ease-in-out 3s infinite',
+                        'wobble': 'wobble 8s ease-in-out infinite',
+                        'fade-in-up': 'fadeInUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards',
+                        'zoom-in': 'zoomIn 1.2s cubic-bezier(0.16, 1, 0.3, 1) forwards',
+                    },
+                    keyframes: {
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0) rotate(0deg)' },
+                            '50%': { transform: 'translateY(-20px) rotate(2deg)' },
+                        },
+                        wobble: {
+                            '0%, 100%': { borderRadius: '60% 40% 30% 70% / 60% 30% 70% 40%' },
+                            '50%': { borderRadius: '30% 70% 70% 30% / 50% 60% 30% 60%' },
+                        },
+                        fadeInUp: {
+                            '0%': { opacity: '0', transform: 'translateY(40px)' },
+                            '100%': { opacity: '1', transform: 'translateY(0)' },
+                        },
+                        zoomIn: {
+                            '0%': { opacity: '0', transform: 'scale(1.05)' },
+                            '100%': { opacity: '1', transform: 'scale(1)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- ====================================================================== -->
+    <!-- CUSTOM CSS AVANCÉ                                                      -->
+    <!-- ====================================================================== -->
+    <style>
+        /* Variables Globales */
+        :root {
+            --m-blue: #1e3a5f;
+            --m-yellow: #d4af37;
+            --m-green: #2d5a27;
+        }
+
+        html { scroll-behavior: smooth; }
+        body {
+            background-color: #ffffff;
+            color: #334155;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            overflow-x: hidden;
+            padding-top: 130px; /* Espace pour le header fixe */
+        }
+
+        /* ------------------------------------------------ */
+        /* Topbar & Navbar                                  */
+        /* ------------------------------------------------ */
+        #main-header {
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            background: rgba(255, 255, 255, 0.98);
+            backdrop-filter: blur(12px);
+        }
+        #top-bar {
+            transition: max-height 0.4s ease, opacity 0.3s ease, padding 0.4s ease;
+            max-height: 50px; overflow: hidden; opacity: 1;
+        }
+        .header-scrolled {
+            box-shadow: var(--tw-shadow-nav);
+        }
+        
+        .nav-link {
+            font-family: 'Nunito', sans-serif; font-size: 1.05rem;
+            font-weight: 700; color: #475569; position: relative;
+            transition: color 0.3s ease; padding: 0.5rem 0;
+        }
+        .nav-link:hover, .nav-link.active { color: var(--m-blue); }
+        .nav-link::after {
+            content: ''; position: absolute; bottom: 0; left: 0;
+            width: 0%; height: 4px; background-color: var(--m-yellow);
+            border-radius: 4px; transition: width 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .nav-link:hover::after, .nav-link.active::after { width: 100%; }
+
+        /* ------------------------------------------------ */
+        /* Formes Décoratives & Vagues (Enfantines)         */
+        /* ------------------------------------------------ */
+        .blob-shape {
+            animation: wobble 8s ease-in-out infinite;
+            overflow: hidden;
+        }
+        
+        .wave-bottom {
+            position: absolute; bottom: -1px; left: 0; width: 100%; overflow: hidden; line-height: 0; z-index: 10;
+        }
+        .wave-bottom svg { display: block; width: calc(100% + 1.3px); height: 80px; }
+        
+        .wave-top {
+            position: absolute; top: -1px; left: 0; width: 100%; overflow: hidden; line-height: 0; transform: rotate(180deg); z-index: 10;
+        }
+        .wave-top svg { display: block; width: calc(100% + 1.3px); height: 80px; }
+
+        .doodle-pattern {
+            background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%231e3a5f' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+        }
+
+        /* ------------------------------------------------ */
+        /* Cartes (Uniformisées) & Effets Hover             */
+        /* ------------------------------------------------ */
+        .hover-lift {
+            transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .hover-lift:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px -10px rgba(30, 58, 95, 0.15);
+        }
+
+        /* Design de carte unifié pour Niveaux & Infrastructures */
+        .mimosas-card {
+            background: #ffffff; 
+            border-radius: 2rem; 
+            padding: 2.5rem 2rem;
+            text-align: center; 
+            position: relative; 
+            overflow: hidden;
+            border: 2px solid #e2e8f0; 
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            cursor: pointer; 
+            z-index: 1; 
+            display: flex; 
+            flex-direction: column; 
+            height: 100%;
+        }
+        .mimosas-card::before {
+            content: ''; 
+            position: absolute; 
+            top: 0; left: 0; 
+            width: 100%; height: 10px;
+            background: var(--card-color, #1e3a5f); 
+            transition: height 0.4s ease; 
+            z-index: -1;
+        }
+        .mimosas-card:hover {
+            transform: translateY(-15px); 
+            border-color: transparent;
+            box-shadow: 0 25px 50px -12px rgba(30, 58, 95, 0.2);
+        }
+        .mimosas-card:hover::before { 
+            height: 100%; 
+            opacity: 0.05; 
+        }
+        
+        .icon-bounce { transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); }
+        .mimosas-card:hover .icon-bounce { transform: scale(1.3) rotate(10deg); }
+
+        /* ------------------------------------------------ */
+        /* Système d'Onglets (Tabs) pour les Programmes     */
+        /* ------------------------------------------------ */
+        .tab-content { display: none; animation: fadeInUp 0.5s ease-out forwards; opacity: 0; }
+        .tab-content.active { display: block; }
+        
+        .tab-btn {
+            padding: 1rem 2rem; border-radius: 2rem; font-family: 'Nunito', sans-serif;
+            font-weight: 800; font-size: 1.1rem; color: #64748b; background: #f8fafc;
+            border: 2px solid #e2e8f0; transition: all 0.3s ease; outline: none;
+            display: flex; items-center; justify-content: center; gap: 0.5rem;
+        }
+        .tab-btn:hover { background: #f1f5f9; color: var(--m-blue); transform: translateY(-2px); }
+        .tab-btn.active {
+            background: var(--m-blue); color: #ffffff; border-color: var(--m-blue);
+            box-shadow: 0 10px 25px -5px rgba(30, 58, 95, 0.4); transform: translateY(-2px);
+        }
+        .tab-btn.active .tab-icon { color: #d4af37; }
+
+        /* ------------------------------------------------ */
+        /* Galerie Filtrable & Lightbox                     */
+        /* ------------------------------------------------ */
+        .filter-btn {
+            padding: 0.6rem 1.5rem; border-radius: 2rem; font-family: 'Nunito', sans-serif;
+            font-weight: 700; color: #475569; background: #ffffff; border: 2px solid #e2e8f0;
+            transition: all 0.3s ease; outline: none;
+        }
+        .filter-btn:hover { color: #1e3a5f; border-color: #cbd5e1; }
+        .filter-btn.active {
+            background: #d4af37; color: #1e3a5f; border-color: #d4af37;
+            box-shadow: 0 4px 15px rgba(212, 175, 55, 0.3);
+        }
+
+        .gallery-item {
+            border-radius: 1.5rem; overflow: hidden; position: relative; cursor: pointer;
+            transition: all 0.4s ease; transform: scale(1); opacity: 1;
+        }
+        .gallery-item.hide {
+            display: none;
+        }
+        .gallery-item img {
+            width: 100%; height: 100%; object-fit: cover; transition: transform 0.6s ease;
+        }
+        .gallery-overlay {
+            position: absolute; inset: 0; background: rgba(30, 58, 95, 0.7);
+            display: flex; flex-direction: column; align-items: center; justify-content: center;
+            opacity: 0; transition: opacity 0.4s ease;
+        }
+        .gallery-item:hover img { transform: scale(1.1); }
+        .gallery-item:hover .gallery-overlay { opacity: 1; }
+        
+        /* Lightbox */
+        .lightbox {
+            position: fixed; inset: 0; z-index: 9999; background: rgba(16, 42, 67, 0.95);
+            display: flex; align-items: center; justify-content: center;
+            opacity: 0; pointer-events: none; transition: opacity 0.4s ease; backdrop-filter: blur(8px);
+        }
+        .lightbox.active { opacity: 1; pointer-events: auto; }
+        .lightbox img {
+            max-width: 90%; max-height: 85vh; object-fit: contain; border-radius: 1rem;
+            box-shadow: 0 25px 50px rgba(0,0,0,0.5); transform: scale(0.95); transition: transform 0.4s ease;
+            border: 4px solid white;
+        }
+        .lightbox.active img { transform: scale(1); }
+        .lightbox-close {
+            position: absolute; top: 2rem; right: 2rem; color: white; font-size: 2.5rem;
+            cursor: pointer; transition: color 0.3s ease; z-index: 10000;
+        }
+        .lightbox-close:hover { color: var(--m-yellow); }
+
+        /* ------------------------------------------------ */
+        /* Carousel Témoignages                             */
+        /* ------------------------------------------------ */
+        .testimonial-carousel {
+            display: flex; overflow-x: auto; scroll-snap-type: x mandatory;
+            scroll-behavior: smooth; gap: 2rem; padding-bottom: 2rem; padding-top: 1rem;
+            -ms-overflow-style: none; scrollbar-width: none;
+        }
+        .testimonial-carousel::-webkit-scrollbar { display: none; }
+        .testimonial-card {
+            scroll-snap-align: center; flex: 0 0 100%; min-width: 100%;
+        }
+        @media (min-width: 768px) {
+            .testimonial-card { flex: 0 0 calc(50% - 1rem); min-width: calc(50% - 1rem); }
+        }
+        @media (min-width: 1024px) {
+            .testimonial-card { flex: 0 0 calc(33.333% - 1.33rem); min-width: calc(33.333% - 1.33rem); }
+        }
+
+        /* ------------------------------------------------ */
+        /* Wizard Inscription (Modale multi-étapes)         */
+        /* ------------------------------------------------ */
+        .modal-overlay {
+            opacity: 0; visibility: hidden; transition: all 0.4s ease;
+            backdrop-filter: blur(8px); background: rgba(30, 58, 95, 0.85);
+        }
+        .modal-overlay.active { opacity: 1; visibility: visible; }
+        .modal-content {
+            transform: scale(0.95) translateY(30px); opacity: 0;
+            transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .modal-overlay.active .modal-content { transform: scale(1) translateY(0); opacity: 1; }
+        
+        .wizard-step { display: none; animation: fadeInUp 0.4s ease-out forwards; opacity: 0; }
+        .wizard-step.active { display: block; opacity: 1; }
+
+        .input-group { position: relative; margin-bottom: 1.5rem; }
+        .input-group label {
+            display: block; font-family: 'Nunito', sans-serif; font-weight: 700;
+            color: #334155; margin-bottom: 0.5rem; font-size: 0.9rem;
+        }
+        .input-group input, .input-group select, .input-group textarea {
+            width: 100%; border: 2px solid #e2e8f0; border-radius: 1rem;
+            padding: 1rem 1.2rem; font-family: 'Inter', sans-serif; font-size: 1rem;
+            transition: all 0.3s ease; outline: none; background: #f8fafc; color: #1e3a5f;
+            appearance: none;
+        }
+        .input-group input:focus, .input-group select:focus, .input-group textarea:focus {
+            border-color: #1e3a5f; background: #ffffff;
+            box-shadow: 0 0 0 4px rgba(30, 58, 95, 0.1);
+        }
+        .select-icon {
+            position: absolute; right: 1.2rem; top: 3.2rem; pointer-events: none; color: #64748b;
+        }
+
+        /* ------------------------------------------------ */
+        /* Utilitaires globaux                              */
+        /* ------------------------------------------------ */
+        .reveal { opacity: 0; transform: translateY(40px); transition: all 0.8s cubic-bezier(0.16, 1, 0.3, 1); }
+        .reveal.active { opacity: 1; transform: translateY(0); }
+        
+        a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible, textarea:focus-visible {
+            outline: 3px solid #d4af37; outline-offset: 2px; border-radius: 0.5rem;
+        }
+
+        /* Scrollbar styling */
+        ::-webkit-scrollbar { width: 10px; }
+        ::-webkit-scrollbar-track { background: #f1f5f9; }
+        ::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 5px; }
+        ::-webkit-scrollbar-thumb:hover { background: #1e3a5f; }
+    </style>
+</head>
+<body class="selection:bg-mimosa-yellow selection:text-mimosa-blue relative">
+
+    <!-- ====================================================================== -->
+    <!-- HEADER & NAVBAR FIXE                                                   -->
+    <!-- ====================================================================== -->
+    <header id="main-header" class="fixed top-0 left-0 w-full z-50 flex flex-col border-b border-slate-100">
+        
+        <!-- Barre supérieure de contact -->
+        <div id="top-bar" class="bg-mimosa-blue text-white w-full text-xs md:text-sm">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-2.5 flex justify-between items-center">
+                <div class="flex gap-6 font-medium">
+                    <span class="flex items-center gap-2"><i class="fa-solid fa-location-dot text-mimosa-yellow"></i> Birkhadem, Alger</span>
+                    <span class="hidden md:flex items-center gap-2"><i class="fa-solid fa-clock text-mimosa-yellow"></i> Dim - Jeu : 07h30 - 16h30</span>
+                </div>
+                <div class="flex gap-4 items-center">
+                    <span class="hidden sm:inline font-bold text-slate-300">Administration :</span>
+                    <a href="tel:+213557174235" class="hover:text-mimosa-yellow transition-colors font-bold tracking-wider">
+                        <i class="fa-solid fa-phone mr-1"></i> +213 55 71 74 235
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Navigation Principale -->
+        <nav id="navbar" class="w-full py-3 relative" aria-label="Menu principal">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex justify-between items-center">
+                    
+                    <!-- ESPACE RÉSERVÉ POUR LE LOGO : icon.jpg -->
+                    <!-- Le onerror permet d'afficher un logo de secours stylisé si icon.jpg n'est pas encore sur le serveur -->
+                    <a href="#" class="flex-shrink-0 flex items-center focus:outline-none group" aria-label="Accueil Les Mimosas">
+                        <img src="icon.jpg" alt="Logo Groupe Scolaire Les Mimosas" class="h-16 w-auto object-contain transform group-hover:scale-105 transition-transform duration-300" 
+                             onerror="this.onerror=null; this.outerHTML='<div class=\'flex items-center gap-3\'><div class=\'w-12 h-12 bg-mimosa-yellowLight rounded-full flex items-center justify-center border-2 border-mimosa-yellow\'><i class=\'fa-solid fa-leaf text-mimosa-green text-xl\'></i></div><div class=\'flex flex-col\'><span class=\'font-heading font-extrabold text-2xl text-mimosa-blue leading-none tracking-tight\'>LES MIMOSAS</span><span class=\'text-[10px] uppercase font-bold text-mimosa-yellow tracking-widest mt-0.5\'>Groupe Scolaire</span></div></div>';">
+                    </a>
+                    
+                    <!-- Menu Bureau -->
+                    <div class="hidden lg:flex space-x-8 items-center">
+                        <a href="#mot-directrice" class="nav-link">Notre Vision</a>
+                        <a href="#niveaux" class="nav-link">Enseignements</a>
+                        <a href="#infrastructures" class="nav-link">Infrastructures</a>
+                        <a href="#tarifs" class="nav-link">Inscriptions</a>
+                        
+                        <!-- CTA Pré-inscription (Ouvre le Wizard) -->
+                        <button onclick="openWizard()" class="ml-4 px-6 py-2.5 bg-mimosa-yellow text-mimosa-blue font-heading font-extrabold rounded-full hover:bg-yellow-500 transition-all duration-300 shadow-float hover:-translate-y-0.5 focus:outline-none flex items-center gap-2">
+                            <i class="fa-solid fa-graduation-cap"></i> S'inscrire
+                        </button>
+                    </div>
+
+                    <!-- Bouton Hamburger (Mobile) -->
+                    <div class="lg:hidden flex items-center">
+                        <button id="mobile-menu-btn" aria-expanded="false" class="text-mimosa-blue p-2 bg-mimosa-yellowLight hover:bg-yellow-100 rounded-xl transition-colors focus:outline-none">
+                            <i class="fa-solid fa-bars text-2xl" id="menu-icon"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Menu Mobile -->
+            <div id="mobile-menu" class="hidden lg:hidden bg-white border-t border-slate-100 absolute w-full shadow-2xl origin-top mt-3">
+                <div class="px-4 pt-4 pb-8 space-y-2">
+                    <a href="#mot-directrice" class="mobile-link block px-4 py-3 rounded-2xl text-base font-heading font-bold text-slate-700 hover:bg-mimosa-sky hover:text-mimosa-blue">Notre Vision</a>
+                    <a href="#niveaux" class="mobile-link block px-4 py-3 rounded-2xl text-base font-heading font-bold text-slate-700 hover:bg-mimosa-sky hover:text-mimosa-blue">Enseignements</a>
+                    <a href="#infrastructures" class="mobile-link block px-4 py-3 rounded-2xl text-base font-heading font-bold text-slate-700 hover:bg-mimosa-sky hover:text-mimosa-blue">Infrastructures</a>
+                    <a href="#tarifs" class="mobile-link block px-4 py-3 rounded-2xl text-base font-heading font-bold text-slate-700 hover:bg-mimosa-sky hover:text-mimosa-blue">Inscriptions & Tarifs</a>
+                    
+                    <div class="pt-4 mt-4 border-t border-slate-100">
+                        <button onclick="openWizard(); document.getElementById('mobile-menu').classList.add('hidden');" class="w-full flex items-center justify-center gap-2 px-4 py-4 rounded-2xl shadow-md text-base font-heading font-extrabold text-mimosa-blue bg-mimosa-yellow hover:bg-yellow-400">
+                            <i class="fa-solid fa-graduation-cap"></i> Pré-inscription 2026/2027
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- ====================================================================== -->
+        <!-- SECTION 1 : HERO BANNER (Accueil Doux et Attrayant)                    -->
+        <!-- ====================================================================== -->
+        <section class="relative pt-12 pb-32 lg:pt-20 lg:pb-48 overflow-hidden bg-gradient-to-b from-mimosa-yellowLight to-white">
+            
+            <!-- Éléments décoratifs ludiques flottants -->
+            <div class="absolute top-10 right-10 text-mimosa-yellow text-5xl opacity-40 animate-float"><i class="fa-solid fa-sun"></i></div>
+            <div class="absolute top-40 left-10 text-mimosa-green text-4xl opacity-30 animate-float-delayed"><i class="fa-solid fa-leaf"></i></div>
+            <div class="absolute bottom-20 right-1/4 text-mimosa-blue text-3xl opacity-20 animate-bounce-slow"><i class="fa-solid fa-pencil"></i></div>
+            <div class="absolute bottom-40 left-1/4 text-pink-300 text-6xl opacity-40 animate-float"><i class="fa-solid fa-shapes"></i></div>
+
+            <!-- Vague de fond bas -->
+            <div class="wave-bottom text-white">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ffffff" fill-opacity="1" d="M0,160L48,176C96,192,192,224,288,213.3C384,203,480,149,576,149.3C672,149,768,203,864,224C960,245,1056,235,1152,208C1248,181,1344,139,1392,117.3L1440,96L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
+            </div>
+
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+                <div class="flex flex-col lg:flex-row gap-12 items-center">
+                    
+                    <!-- Texte -->
+                    <div class="lg:w-1/2 text-center lg:text-left">
+                        <div class="animate-fade-in-up inline-flex items-center gap-2 px-5 py-2.5 rounded-full border border-mimosa-yellow bg-white text-mimosa-blue font-bold mb-6 shadow-sm text-sm">
+                            <i class="fa-solid fa-school-flag text-mimosa-yellow text-lg"></i> Inscriptions Ouvertes 2026/2027
+                        </div>
+                        <h1 class="animate-fade-in-up font-heading text-5xl md:text-6xl lg:text-7xl font-black mb-6 leading-[1.1] text-mimosa-blue" style="animation-delay: 0.1s;">
+                            Cultivons l'avenir de <br>
+                            <span class="text-mimosa-yellow relative">
+                                vos enfants.
+                                <!-- Petit soulignement fun -->
+                                <svg class="absolute w-full h-3 -bottom-1 left-0 text-mimosa-yellow opacity-50" viewBox="0 0 100 10" preserveAspectRatio="none"><path d="M0 5 Q 50 15 100 5" stroke="currentColor" stroke-width="4" fill="transparent"/></svg>
+                            </span>
+                        </h1>
+                        <p class="animate-fade-in-up text-lg text-slate-600 mb-8 font-medium leading-relaxed" style="animation-delay: 0.2s;">
+                            Situé à Birkhadem, le Groupe Scolaire <strong>Les Mimosas</strong> offre un environnement éducatif d'excellence. De la crèche au lycée, nous accompagnons chaque élève avec bienveillance, rigueur et passion.
+                        </p>
+                        
+                        <div class="animate-fade-in-up flex flex-col sm:flex-row justify-center lg:justify-start gap-4" style="animation-delay: 0.3s;">
+                            <button onclick="openWizard()" class="px-8 py-4 bg-mimosa-blue text-white font-heading font-bold text-lg rounded-full hover:bg-slate-800 transition-all shadow-soft transform hover:-translate-y-1 flex items-center justify-center gap-2">
+                                <i class="fa-solid fa-pen"></i> Inscrire mon enfant
+                            </button>
+                            <a href="#niveaux" class="px-8 py-4 bg-white text-mimosa-blue font-heading font-bold text-lg border-2 border-mimosa-blue rounded-full hover:bg-mimosa-sky transition-all flex items-center justify-center">
+                                Découvrir nos niveaux
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Image / Forme Blob -->
+                    <div class="lg:w-1/2 w-full animate-zoom-in" style="animation-delay: 0.4s;">
+                        <div class="relative w-full max-w-lg mx-auto">
+                            <!-- Blob SVG Forme douce en arrière plan -->
+                            <div class="blob-shape absolute inset-0 bg-mimosa-sky scale-110 transform -rotate-6"></div>
+                            <div class="blob-shape absolute inset-0 bg-mimosa-yellow scale-105 transform rotate-3 opacity-30"></div>
+                            
+                            <!-- Image principale -->
+                            <div class="blob-shape relative z-10 border-8 border-white shadow-xl overflow-hidden aspect-square bg-slate-100">
+                                <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Enfants souriants à l'école" class="w-full h-full object-cover">
+                            </div>
+                            
+                            <!-- Badges flottants -->
+                            <div class="absolute -bottom-6 -right-6 bg-mimosa-yellow text-mimosa-blue p-4 rounded-full font-heading font-bold shadow-float z-20 flex flex-col items-center justify-center w-32 h-32 transform rotate-12 animate-float">
+                                <i class="fa-solid fa-map-location-dot text-3xl mb-1"></i>
+                                <span class="text-sm">Birkhadem</span>
+                            </div>
+                            <div class="absolute -top-6 -left-6 bg-white text-mimosa-green p-4 rounded-full font-heading font-bold shadow-soft z-20 flex flex-col items-center justify-center w-24 h-24 transform -rotate-12 animate-float-delayed">
+                                <i class="fa-solid fa-language text-2xl mb-1"></i>
+                                <span class="text-[10px] uppercase">Bilingue</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ====================================================================== -->
+        <!-- SECTION 2 : CHIFFRES CLÉS (KPI Rassurants)                             -->
+        <!-- ====================================================================== -->
+        <section class="py-12 border-b border-slate-100 bg-white relative z-20">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-8 divide-x divide-slate-100 text-center">
+                    
+                    <div class="reveal px-4">
+                        <div class="flex justify-center items-baseline text-4xl md:text-5xl font-heading font-black text-mimosa-blue mb-2">
+                            4
+                        </div>
+                        <h3 class="text-xs md:text-sm text-slate-500 uppercase tracking-widest font-bold">Paliers d'enseignement</h3>
+                    </div>
+                    
+                    <div class="reveal px-4" style="transition-delay: 100ms;">
+                        <div class="flex justify-center items-baseline text-4xl md:text-5xl font-heading font-black text-mimosa-yellow mb-2">
+                            <i class="fa-solid fa-users text-3xl mr-2"></i>
+                        </div>
+                        <h3 class="text-xs md:text-sm text-slate-500 uppercase tracking-widest font-bold">Effectifs Réduits</h3>
+                    </div>
+                    
+                    <div class="reveal px-4" style="transition-delay: 200ms;">
+                        <div class="flex justify-center items-baseline text-4xl md:text-5xl font-heading font-black text-mimosa-green mb-2">
+                            100%
+                        </div>
+                        <h3 class="text-xs md:text-sm text-slate-500 uppercase tracking-widest font-bold">Taux de réussite (BEM/BAC)</h3>
+                    </div>
+                    
+                    <div class="reveal px-4" style="transition-delay: 300ms;">
+                        <div class="flex justify-center items-baseline text-4xl md:text-5xl font-heading font-black text-slate-800 mb-2">
+                            <i class="fa-solid fa-shield-halved text-3xl mr-2 text-mimosa-blue"></i>
+                        </div>
+                        <h3 class="text-xs md:text-sm text-slate-500 uppercase tracking-widest font-bold">Campus Sécurisé</h3>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+
+        <!-- ====================================================================== -->
+        <!-- SECTION 3 : LE PROJET ÉDUCATIF (Présentation & Valeurs)                -->
+        <!-- ====================================================================== -->
+        <section id="mot-directrice" class="py-24 bg-white relative overflow-hidden">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex flex-col lg:flex-row gap-16 items-center">
+                    
+                    <!-- Image -->
+                    <div class="lg:w-5/12 reveal">
+                        <div class="rounded-[2.5rem] overflow-hidden shadow-soft border-4 border-mimosa-sky relative">
+                            <img src="https://images.unsplash.com/photo-1577896851231-70ef18881754?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Pédagogie et enseignement" class="w-full h-auto object-cover transform hover:scale-105 transition-transform duration-700">
+                        </div>
+                        <!-- Décoration fond -->
+                        <div class="absolute -bottom-10 -left-10 w-40 h-40 bg-mimosa-yellow rounded-full mix-blend-multiply opacity-20 -z-10"></div>
+                    </div>
+
+                    <!-- Contenu -->
+                    <div class="lg:w-7/12 reveal" style="transition-delay: 200ms;">
+                        <span class="text-mimosa-green font-heading font-bold uppercase tracking-widest text-sm mb-3 block flex items-center gap-2">
+                            <i class="fa-solid fa-seedling"></i> Le Projet Éducatif
+                        </span>
+                        <h2 class="text-3xl md:text-4xl lg:text-5xl font-heading font-black text-mimosa-blue mb-6 leading-tight">
+                            Apprendre avec le sourire, <br>grandir avec assurance.
+                        </h2>
+                        <div class="w-24 h-2 bg-mimosa-yellow rounded-full mb-8"></div>
+                        
+                        <p class="text-slate-600 text-lg leading-relaxed mb-6">
+                            Au <strong>Groupe Scolaire Les Mimosas</strong>, nous considérons que l'école est le prolongement de la famille. Notre mission est d'offrir à vos enfants un cadre d'apprentissage où la rigueur académique rencontre la bienveillance.
+                        </p>
+                        <p class="text-slate-600 text-lg leading-relaxed mb-10">
+                            Notre logo n'a pas été choisi par hasard : <strong>Le mimosa</strong> symbolise la joie et l'épanouissement de la petite enfance. <strong>Le feuillage vert</strong> représente la croissance et l'évolution au primaire. Enfin, <strong>la plume et la toque</strong> incarnent l'excellence du savoir, objectif ultime de notre Lycée.
+                        </p>
+                        
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                            <div class="bg-mimosa-greenLight p-5 rounded-2xl border border-green-100 flex items-start gap-4">
+                                <div class="w-12 h-12 bg-white rounded-xl flex items-center justify-center text-mimosa-green text-xl shadow-sm flex-shrink-0">
+                                    <i class="fa-solid fa-language"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-heading font-bold text-mimosa-blue text-lg">Bilinguisme</h4>
+                                    <p class="text-sm text-slate-500 mt-1">Apprentissage renforcé des langues (Français/Anglais) dès la crèche.</p>
+                                </div>
+                            </div>
+                            <div class="bg-mimosa-sky p-5 rounded-2xl border border-blue-100 flex items-start gap-4">
+                                <div class="w-12 h-12 bg-white rounded-xl flex items-center justify-center text-blue-500 text-xl shadow-sm flex-shrink-0">
+                                    <i class="fa-solid fa-chalkboard-user"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-heading font-bold text-mimosa-blue text-lg">Suivi Personnalisé</h4>
+                                    <p class="text-sm text-slate-500 mt-1">Classes à effectifs réduits pour un accompagnement sur-mesure.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ====================================================================== -->
+        <!-- SECTION 4 : LES NIVEAUX (TABS INTERACTIFS DÉTAILLÉS)                   -->
+        <!-- ====================================================================== -->
+        <section id="niveaux" class="py-24 bg-surface-gray relative border-y border-slate-200 overflow-hidden">
+            
+            <div class="absolute top-0 right-0 w-full h-full bg-[url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0MCIgaGVpZ2h0PSI0MCI+CjxwYXRoIGQ9Ik0yMCAwTDIwIDQwTTAgMjBMMDAgMjAiIHN0cm9rZT0iI2UyZThmMCIgc3Ryb2tlLXdpZHRoPSIxIiBmaWxsPSJub25lIi8+Cjwvc3ZnPg==')] opacity-50"></div>
+
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+                
+                <div class="text-center max-w-3xl mx-auto mb-16 reveal">
+                    <span class="text-mimosa-blue font-heading font-bold uppercase tracking-widest text-sm mb-2 block">Parcours Scolaire</span>
+                    <h2 class="text-4xl md:text-5xl font-heading font-black text-mimosa-blue mb-4">De l'éveil à l'excellence.</h2>
+                    <p class="text-slate-600 text-lg">Sélectionnez un niveau pour découvrir notre programme pédagogique.</p>
+                </div>
+
+                <!-- Boutons des Onglets -->
+                <div class="reveal flex flex-wrap justify-center gap-3 sm:gap-6 mb-12">
+                    <button class="tab-btn active" data-target="tab-creche">
+                        <i class="fa-solid fa-shapes tab-icon text-pink-500"></i> Crèche & Préscolaire
+                    </button>
+                    <button class="tab-btn" data-target="tab-primaire">
+                        <i class="fa-solid fa-book-open-reader tab-icon text-mimosa-green"></i> Primaire
+                    </button>
+                    <button class="tab-btn" data-target="tab-cem">
+                        <i class="fa-solid fa-microscope tab-icon text-yellow-600"></i> Moyen (CEM)
+                    </button>
+                    <button class="tab-btn" data-target="tab-lycee">
+                        <i class="fa-solid fa-graduation-cap tab-icon text-mimosa-blue"></i> Lycée
+                    </button>
+                </div>
+
+                <!-- CONTENU 1 : Crèche -->
+                <div id="tab-creche" class="tab-content active reveal">
+                    <div class="bg-white rounded-[2.5rem] shadow-soft border border-slate-100 overflow-hidden flex flex-col md:flex-row">
+                        <div class="md:w-5/12 bg-pink-50 relative overflow-hidden flex items-center justify-center p-8">
+                            <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1564423246738-98e94a81e9f1?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80')] bg-cover bg-center opacity-40 mix-blend-multiply"></div>
+                            <div class="relative z-10 w-32 h-32 bg-white rounded-full flex items-center justify-center shadow-lg border-4 border-pink-200">
+                                <i class="fa-solid fa-shapes text-5xl text-pink-500"></i>
+                            </div>
+                        </div>
+                        <div class="md:w-7/12 p-8 md:p-12">
+                            <div class="inline-flex items-center px-3 py-1 bg-pink-100 text-pink-700 rounded-full text-xs font-bold uppercase tracking-wider mb-4">
+                                De 3 mois à 5 ans
+                            </div>
+                            <h3 class="text-3xl font-heading font-black text-mimosa-blue mb-4">Crèche & Préscolaire</h3>
+                            <p class="text-slate-600 leading-relaxed mb-6">
+                                Le premier pas vers l'autonomie. Notre espace crèche est un cocon douillet conçu pour la sécurité et l'éveil psychomoteur de vos tout-petits. Le cycle préscolaire prépare doucement à l'école par le jeu.
+                            </p>
+                            <ul class="space-y-4 mb-8">
+                                <li class="flex items-start">
+                                    <i class="fa-solid fa-puzzle-piece text-pink-500 mt-1 mr-3 text-lg"></i>
+                                    <div><strong class="text-mimosa-blue block">Activités d'éveil</strong><span class="text-sm text-slate-500">Motricité fine, peinture, chant et jeux éducatifs.</span></div>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fa-solid fa-ear-listen text-pink-500 mt-1 mr-3 text-lg"></i>
+                                    <div><strong class="text-mimosa-blue block">Initiation linguistique</strong><span class="text-sm text-slate-500">Bain linguistique en Arabe, Français et Anglais.</span></div>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fa-solid fa-user-nurse text-pink-500 mt-1 mr-3 text-lg"></i>
+                                    <div><strong class="text-mimosa-blue block">Encadrement spécialisé</strong><span class="text-sm text-slate-500">Éducatrices de la petite enfance formées et attentionnées.</span></div>
+                                </li>
+                            </ul>
+                            <button onclick="openWizardWithLevel('Crèche')" class="px-6 py-3 bg-pink-500 text-white font-heading font-bold rounded-xl hover:bg-pink-600 transition-colors shadow-md">
+                                Pré-inscrire en Crèche <i class="fa-solid fa-arrow-right ml-2"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CONTENU 2 : Primaire -->
+                <div id="tab-primaire" class="tab-content reveal">
+                    <div class="bg-white rounded-[2.5rem] shadow-soft border border-slate-100 overflow-hidden flex flex-col md:flex-row">
+                        <div class="md:w-5/12 bg-mimosa-greenLight relative overflow-hidden flex items-center justify-center p-8">
+                            <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1497633762265-9d179a990aa6?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80')] bg-cover bg-center opacity-40 mix-blend-multiply"></div>
+                            <div class="relative z-10 w-32 h-32 bg-white rounded-full flex items-center justify-center shadow-lg border-4 border-green-200">
+                                <i class="fa-solid fa-book-open-reader text-5xl text-mimosa-green"></i>
+                            </div>
+                        </div>
+                        <div class="md:w-7/12 p-8 md:p-12">
+                            <div class="inline-flex items-center px-3 py-1 bg-green-100 text-green-700 rounded-full text-xs font-bold uppercase tracking-wider mb-4">
+                                De la 1ère AP à la 5ème AP
+                            </div>
+                            <h3 class="text-3xl font-heading font-black text-mimosa-blue mb-4">École Primaire</h3>
+                            <p class="text-slate-600 leading-relaxed mb-6">
+                                L'âge des apprentissages fondamentaux. Nous construisons des bases solides en lecture, écriture et mathématiques, tout en développant la curiosité naturelle de l'enfant.
+                            </p>
+                            <ul class="space-y-4 mb-8">
+                                <li class="flex items-start">
+                                    <i class="fa-solid fa-book text-mimosa-green mt-1 mr-3 text-lg"></i>
+                                    <div><strong class="text-mimosa-blue block">Socle solide</strong><span class="text-sm text-slate-500">Maîtrise parfaite de la langue arabe et des mathématiques.</span></div>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fa-solid fa-comments text-mimosa-green mt-1 mr-3 text-lg"></i>
+                                    <div><strong class="text-mimosa-blue block">Bilinguisme actif</strong><span class="text-sm text-slate-500">Programme intensif en Français et Anglais avec des enseignants dédiés.</span></div>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fa-solid fa-robot text-mimosa-green mt-1 mr-3 text-lg"></i>
+                                    <div><strong class="text-mimosa-blue block">Ateliers Extra-scolaires</strong><span class="text-sm text-slate-500">Initiation à l'informatique, robotique ludique et arts plastiques.</span></div>
+                                </li>
+                            </ul>
+                            <button onclick="openWizardWithLevel('Primaire')" class="px-6 py-3 bg-mimosa-green text-white font-heading font-bold rounded-xl hover:bg-green-700 transition-colors shadow-md">
+                                Pré-inscrire au Primaire <i class="fa-solid fa-arrow-right ml-2"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CONTENU 3 : CEM -->
+                <div id="tab-cem" class="tab-content reveal">
+                    <div class="bg-white rounded-[2.5rem] shadow-soft border border-slate-100 overflow-hidden flex flex-col md:flex-row">
+                        <div class="md:w-5/12 bg-yellow-50 relative overflow-hidden flex items-center justify-center p-8">
+                            <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1427504494785-319ce51bf36f?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80')] bg-cover bg-center opacity-40 mix-blend-multiply"></div>
+                            <div class="relative z-10 w-32 h-32 bg-white rounded-full flex items-center justify-center shadow-lg border-4 border-yellow-200">
+                                <i class="fa-solid fa-microscope text-5xl text-yellow-600"></i>
+                            </div>
+                        </div>
+                        <div class="md:w-7/12 p-8 md:p-12">
+                            <div class="inline-flex items-center px-3 py-1 bg-yellow-100 text-yellow-700 rounded-full text-xs font-bold uppercase tracking-wider mb-4">
+                                De la 1ère AM à la 4ème AM
+                            </div>
+                            <h3 class="text-3xl font-heading font-black text-mimosa-blue mb-4">Enseignement Moyen (CEM)</h3>
+                            <p class="text-slate-600 leading-relaxed mb-6">
+                                Le cycle de la transition et de la méthode. Nous aidons les adolescents à structurer leur pensée, à gagner en autonomie et préparons rigoureusement l'examen du BEM.
+                            </p>
+                            <ul class="space-y-4 mb-8">
+                                <li class="flex items-start">
+                                    <i class="fa-solid fa-brain text-yellow-600 mt-1 mr-3 text-lg"></i>
+                                    <div><strong class="text-mimosa-blue block">Méthodologie</strong><span class="text-sm text-slate-500">Apprendre à apprendre, organisation du travail personnel.</span></div>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fa-solid fa-flask text-yellow-600 mt-1 mr-3 text-lg"></i>
+                                    <div><strong class="text-mimosa-blue block">Sciences & Pratique</strong><span class="text-sm text-slate-500">Accès aux laboratoires pour des travaux pratiques (Physique, Sciences).</span></div>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fa-solid fa-medal text-yellow-600 mt-1 mr-3 text-lg"></i>
+                                    <div><strong class="text-mimosa-blue block">Préparation au BEM</strong><span class="text-sm text-slate-500">Évaluations continues, examens blancs et cours de soutien intégrés.</span></div>
+                                </li>
+                            </ul>
+                            <button onclick="openWizardWithLevel('CEM')" class="px-6 py-3 bg-yellow-500 text-white font-heading font-bold rounded-xl hover:bg-yellow-600 transition-colors shadow-md">
+                                Pré-inscrire au CEM <i class="fa-solid fa-arrow-right ml-2"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CONTENU 4 : Lycée -->
+                <div id="tab-lycee" class="tab-content reveal">
+                    <div class="bg-white rounded-[2.5rem] shadow-soft border border-slate-100 overflow-hidden flex flex-col md:flex-row">
+                        <div class="md:w-5/12 bg-blue-50 relative overflow-hidden flex items-center justify-center p-8">
+                            <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80')] bg-cover bg-center opacity-40 mix-blend-multiply"></div>
+                            <div class="relative z-10 w-32 h-32 bg-white rounded-full flex items-center justify-center shadow-lg border-4 border-blue-200">
+                                <i class="fa-solid fa-graduation-cap text-5xl text-mimosa-blue"></i>
+                            </div>
+                        </div>
+                        <div class="md:w-7/12 p-8 md:p-12">
+                            <div class="inline-flex items-center px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-xs font-bold uppercase tracking-wider mb-4">
+                                De la 1ère AS à la Terminale
+                            </div>
+                            <h3 class="text-3xl font-heading font-black text-mimosa-blue mb-4">Le Lycée</h3>
+                            <p class="text-slate-600 leading-relaxed mb-6">
+                                La voie vers l'université et l'avenir professionnel. Nous offrons un encadrement de très haut niveau, avec des professeurs triés sur le volet, pour exceller à l'examen du Baccalauréat.
+                            </p>
+                            <ul class="space-y-4 mb-8">
+                                <li class="flex items-start">
+                                    <i class="fa-solid fa-user-tie text-mimosa-blue mt-1 mr-3 text-lg"></i>
+                                    <div><strong class="text-mimosa-blue block">Corps professoral d'élite</strong><span class="text-sm text-slate-500">Enseignants chevronnés spécialisés dans la préparation au BAC.</span></div>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fa-solid fa-chart-line text-mimosa-blue mt-1 mr-3 text-lg"></i>
+                                    <div><strong class="text-mimosa-blue block">Soutien Intensif</strong><span class="text-sm text-slate-500">Volumes horaires renforcés dans les matières essentielles de la filière.</span></div>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fa-solid fa-compass text-mimosa-blue mt-1 mr-3 text-lg"></i>
+                                    <div><strong class="text-mimosa-blue block">Orientation Universitaire</strong><span class="text-sm text-slate-500">Accompagnement et conseils pour le choix des études supérieures.</span></div>
+                                </li>
+                            </ul>
+                            <button onclick="openWizardWithLevel('Lycée')" class="px-6 py-3 bg-mimosa-blue text-white font-heading font-bold rounded-xl hover:bg-blue-800 transition-colors shadow-md">
+                                Pré-inscrire au Lycée <i class="fa-solid fa-arrow-right ml-2"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ====================================================================== -->
+        <!-- SECTION 5 : INFRASTRUCTURES & COMMODITÉS                               -->
+        <!-- ====================================================================== -->
+        <section id="infrastructures" class="py-24 bg-white relative">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                
+                <div class="text-center max-w-3xl mx-auto mb-16 reveal">
+                    <span class="text-mimosa-green font-heading font-bold uppercase tracking-widest text-sm mb-2 block">Notre Campus</span>
+                    <h2 class="text-4xl font-heading font-black text-mimosa-blue mb-4">Un environnement pensé pour eux.</h2>
+                    <p class="text-slate-600 text-lg">L'établissement Les Mimosas dispose d'infrastructures modernes garantissant confort et sécurité.</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 reveal">
+                    
+                    <article class="mimosas-card p-6 flex flex-col justify-start">
+                        <div class="w-16 h-16 mx-auto bg-mimosa-sky rounded-xl flex items-center justify-center mb-6 text-blue-500 text-2xl">
+                            <i class="fa-solid fa-utensils"></i>
+                        </div>
+                        <h3 class="text-xl font-heading font-bold text-mimosa-blue mb-3">Cantine Scolaire</h3>
+                        <p class="text-sm text-slate-600">Des repas équilibrés, préparés sur place par notre chef, validés par un nutritionniste pour une alimentation saine.</p>
+                    </article>
+
+                    <article class="mimosas-card p-6 flex flex-col justify-start" style="--card-color: #d4af37;">
+                        <div class="w-16 h-16 mx-auto bg-mimosa-yellowLight rounded-xl flex items-center justify-center mb-6 text-mimosa-yellow text-2xl">
+                            <i class="fa-solid fa-bus"></i>
+                        </div>
+                        <h3 class="text-xl font-heading font-bold text-mimosa-blue mb-3">Transport</h3>
+                        <p class="text-sm text-slate-600">Un service de ramassage scolaire sécurisé couvrant Birkhadem et ses environs (plusieurs lignes disponibles).</p>
+                    </article>
+
+                    <article class="mimosas-card p-6 flex flex-col justify-start" style="--card-color: #2d5a27;">
+                        <div class="w-16 h-16 mx-auto bg-mimosa-greenLight rounded-xl flex items-center justify-center mb-6 text-mimosa-green text-2xl">
+                            <i class="fa-solid fa-flask"></i>
+                        </div>
+                        <h3 class="text-xl font-heading font-bold text-mimosa-blue mb-3">Laboratoires</h3>
+                        <p class="text-sm text-slate-600">Salles de TP entièrement équipées (Sciences, Physique-Chimie, Informatique) pour la pratique des collégiens et lycéens.</p>
+                    </article>
+
+                    <article class="mimosas-card p-6 flex flex-col justify-start" style="--card-color: #fce7f3;">
+                        <div class="w-16 h-16 mx-auto bg-pink-50 rounded-xl flex items-center justify-center mb-6 text-pink-500 text-2xl">
+                            <i class="fa-solid fa-volleyball"></i>
+                        </div>
+                        <h3 class="text-xl font-heading font-bold text-mimosa-blue mb-3">Espaces de Vie</h3>
+                        <p class="text-sm text-slate-600">Cours de récréation séparées par niveau, bibliothèque riche et terrains de sport pour se dépenser en toute sécurité.</p>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ====================================================================== -->
+        <!-- SECTION 6 : GALERIE PHOTOS (Filtrable avec JS)                         -->
+        <!-- ====================================================================== -->
+        <section id="galerie" class="py-24 bg-surface-gray border-y border-slate-200 relative">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                
+                <div class="text-center mb-12 reveal">
+                    <h2 class="text-3xl md:text-4xl font-heading font-black text-mimosa-blue mb-4">La vie aux Mimosas</h2>
+                </div>
+
+                <!-- Filtres -->
+                <div class="flex flex-wrap justify-center gap-3 mb-10 reveal">
+                    <button class="filter-btn active" data-filter="all">Tout voir</button>
+                    <button class="filter-btn" data-filter="activites">Nos Activités</button>
+                    <button class="filter-btn" data-filter="creche">Coin Crèche</button>
+                </div>
+
+                <!-- Grille Images (Liens fiables Unsplash) -->
+                <div class="grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-6 reveal">
+                    
+                    <div class="gallery-item aspect-square filter-item activites" onclick="openLightbox('https://images.unsplash.com/photo-1580582932707-520aed937b7b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80')">
+                        <img src="https://images.unsplash.com/photo-1580582932707-520aed937b7b?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Salle de classe">
+                        <div class="gallery-overlay"><i class="fa-solid fa-magnifying-glass-plus text-3xl text-white"></i></div>
+                    </div>
+                    
+                    <div class="gallery-item aspect-square filter-item activites" onclick="openLightbox('https://images.unsplash.com/photo-1503676382389-4809596d5290?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80')">
+                        <img src="https://images.unsplash.com/photo-1503676382389-4809596d5290?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Enfants étudiant">
+                        <div class="gallery-overlay"><i class="fa-solid fa-magnifying-glass-plus text-3xl text-white"></i></div>
+                    </div>
+
+                    <!-- Image Crèche -->
+                    <div class="gallery-item aspect-square filter-item creche md:col-span-1 md:row-span-2" onclick="openLightbox('https://images.unsplash.com/photo-1516627145497-ae6968895b74?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80')">
+                        <img src="https://images.unsplash.com/photo-1516627145497-ae6968895b74?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Espace jeux crèche">
+                        <div class="gallery-overlay"><i class="fa-solid fa-magnifying-glass-plus text-3xl text-white"></i></div>
+                    </div>
+
+                    <div class="gallery-item aspect-square filter-item activites" onclick="openLightbox('https://images.unsplash.com/photo-1562774053-701939374585?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80')">
+                        <img src="https://images.unsplash.com/photo-1562774053-701939374585?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Bibliothèque">
+                        <div class="gallery-overlay"><i class="fa-solid fa-magnifying-glass-plus text-3xl text-white"></i></div>
+                    </div>
+
+                    <div class="gallery-item aspect-square filter-item activites" onclick="openLightbox('https://images.unsplash.com/photo-1509062522246-3755977927d7?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80')">
+                        <img src="https://images.unsplash.com/photo-1509062522246-3755977927d7?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Cours de dessin">
+                        <div class="gallery-overlay"><i class="fa-solid fa-magnifying-glass-plus text-3xl text-white"></i></div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ====================================================================== -->
+        <!-- SECTION 7 : TARIFS ET PROCÉDURES                                       -->
+        <!-- ====================================================================== -->
+        <section id="tarifs" class="py-24 bg-white relative">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+                
+                <div class="text-center mb-16 reveal">
+                    <span class="text-mimosa-green font-heading font-bold uppercase tracking-widest text-sm mb-2 block">Dossier et Formalités</span>
+                    <h2 class="text-4xl font-heading font-black text-mimosa-blue mb-4">Inscriptions & Tarifs</h2>
+                    <p class="text-slate-600">Rejoignez la famille Les Mimosas.</p>
+                </div>
+
+                <!-- Table des infos -->
+                <div class="bg-surface-gray rounded-3xl border border-slate-200 overflow-hidden shadow-soft reveal mb-10">
+                    <div class="p-6 md:p-8 border-b border-slate-200 bg-white flex items-center gap-4">
+                        <div class="w-12 h-12 bg-mimosa-sky rounded-full flex items-center justify-center text-blue-500 text-xl"><i class="fa-solid fa-folder-open"></i></div>
+                        <div>
+                            <h3 class="font-heading font-bold text-xl text-mimosa-blue">Dossier à fournir</h3>
+                            <p class="text-sm text-slate-500">Pour valider l'inscription définitive de l'élève.</p>
+                        </div>
+                    </div>
+                    <ul class="p-6 md:p-8 space-y-4 text-sm text-slate-700 font-medium">
+                        <li class="flex items-center"><i class="fa-solid fa-check text-mimosa-green mr-3"></i> Extrait de naissance de l'enfant.</li>
+                        <li class="flex items-center"><i class="fa-solid fa-check text-mimosa-green mr-3"></i> Carnet de vaccination à jour.</li>
+                        <li class="flex items-center"><i class="fa-solid fa-check text-mimosa-green mr-3"></i> 4 photos d'identité récentes.</li>
+                        <li class="flex items-center"><i class="fa-solid fa-check text-mimosa-green mr-3"></i> Certificat de scolarité (et/ou exeat) de l'établissement précédent.</li>
+                        <li class="flex items-center"><i class="fa-solid fa-check text-mimosa-green mr-3"></i> Copie de la pièce d'identité des parents.</li>
+                    </ul>
+                </div>
+
+                <div class="text-center reveal">
+                    <p class="text-slate-600 mb-6">Nos tarifs (Frais de scolarité, cantine, transport) varient en fonction du cycle scolaire. Nous vous invitons à nous contacter pour obtenir un devis détaillé.</p>
+                    <button onclick="openWizard()" class="px-8 py-4 bg-mimosa-blue text-white font-heading font-bold rounded-full hover:bg-slate-800 transition-colors shadow-soft">
+                        <i class="fa-regular fa-calendar-check mr-2"></i> Prendre Rendez-vous (Inscriptions)
+                    </button>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ====================================================================== -->
+        <!-- SECTION 8 : FAQ (Questions des Parents)                                -->
+        <!-- ====================================================================== -->
+        <section id="faq" class="py-24 bg-surface-gray border-t border-slate-200">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+                
+                <div class="text-center mb-16 reveal">
+                    <h2 class="text-3xl font-heading font-black text-mimosa-blue mb-4">Questions Fréquentes</h2>
+                    <p class="text-slate-600">Tout ce que les parents nous demandent le plus souvent.</p>
+                </div>
+                
+                <div class="space-y-4 reveal" role="tablist">
+                    
+                    <article class="bg-white border border-slate-200 rounded-2xl overflow-hidden shadow-sm transition-colors duration-300 hover:border-mimosa-yellow">
+                        <button class="faq-toggle w-full px-6 py-5 text-left flex justify-between items-center focus:outline-none" aria-expanded="false" role="tab" aria-controls="faq-content-1">
+                            <span class="font-heading font-bold text-mimosa-blue text-lg pr-4">Quels sont les horaires d'ouverture et de fermeture ?</span>
+                            <div class="w-8 h-8 rounded-full bg-slate-50 flex items-center justify-center flex-shrink-0 text-mimosa-yellow transition-transform duration-300 icon-container" aria-hidden="true">
+                                <i class="fa-solid fa-plus"></i>
+                            </div>
+                        </button>
+                        <div id="faq-content-1" role="tabpanel" class="faq-content hidden px-6 pb-5 text-slate-600 border-t border-slate-100 pt-4 leading-relaxed text-sm">
+                            <p>L'école accueille les élèves du Dimanche au Jeudi de <strong>07h30 à 16h30</strong>. La crèche bénéficie d'horaires aménagés pour faciliter l'organisation des parents qui travaillent.</p>
+                        </div>
+                    </article>
+
+                    <article class="bg-white border border-slate-200 rounded-2xl overflow-hidden shadow-sm transition-colors duration-300 hover:border-mimosa-yellow">
+                        <button class="faq-toggle w-full px-6 py-5 text-left flex justify-between items-center focus:outline-none" aria-expanded="false" role="tab" aria-controls="faq-content-2">
+                            <span class="font-heading font-bold text-mimosa-blue text-lg pr-4">Le service de transport couvre-t-il d'autres communes que Birkhadem ?</span>
+                            <div class="w-8 h-8 rounded-full bg-slate-50 flex items-center justify-center flex-shrink-0 text-mimosa-yellow transition-transform duration-300 icon-container" aria-hidden="true">
+                                <i class="fa-solid fa-plus"></i>
+                            </div>
+                        </button>
+                        <div id="faq-content-2" role="tabpanel" class="faq-content hidden px-6 pb-5 text-slate-600 border-t border-slate-100 pt-4 leading-relaxed text-sm">
+                            <p>Oui. Notre flotte de bus scolaires couvre Birkhadem, mais aussi les communes limitrophes (Saoula, Tixeraïne, Les Vergers...). Contactez l'administration pour vérifier si votre quartier est desservi.</p>
+                        </div>
+                    </article>
+
+                    <article class="bg-white border border-slate-200 rounded-2xl overflow-hidden shadow-sm transition-colors duration-300 hover:border-mimosa-yellow">
+                        <button class="faq-toggle w-full px-6 py-5 text-left flex justify-between items-center focus:outline-none" aria-expanded="false" role="tab" aria-controls="faq-content-3">
+                            <span class="font-heading font-bold text-mimosa-blue text-lg pr-4">Y a-t-il des réductions pour les fratries (frères et sœurs) ?</span>
+                            <div class="w-8 h-8 rounded-full bg-slate-50 flex items-center justify-center flex-shrink-0 text-mimosa-yellow transition-transform duration-300 icon-container" aria-hidden="true">
+                                <i class="fa-solid fa-plus"></i>
+                            </div>
+                        </button>
+                        <div id="faq-content-3" role="tabpanel" class="faq-content hidden px-6 pb-5 text-slate-600 border-t border-slate-100 pt-4 leading-relaxed text-sm">
+                            <p>Oui, le Groupe Scolaire Les Mimosas propose des tarifs préférentiels (réductions) sur les frais de scolarité à partir du deuxième enfant inscrit au sein de l'établissement.</p>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ====================================================================== -->
+    <!-- FOOTER                                                                 -->
+    <!-- ====================================================================== -->
+    <footer id="contact" class="bg-slate-50 pt-16 pb-8 border-t border-slate-200 text-slate-600 text-sm mt-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
+                
+                <!-- Colonne Marque -->
+                <div class="lg:col-span-1">
+                    <a href="#" class="flex items-center gap-3 mb-6 focus:outline-none">
+                        <!-- ESPACE RÉSERVÉ POUR LE LOGO (Footer) -->
+                        <img src="icon.jpg" alt="Logo Les Mimosas" class="h-12 w-auto object-contain rounded" onerror="this.onerror=null; this.outerHTML='<div class=\'w-10 h-10 bg-mimosa-yellow rounded-full flex items-center justify-center text-white\'><i class=\'fa-solid fa-leaf\'></i></div>';">
+                        <span class="font-heading font-extrabold text-xl text-mimosa-blue">Les Mimosas</span>
+                    </a>
+                    <p class="leading-relaxed mb-6">
+                        Groupe Scolaire Privé à Birkhadem (Alger). Crèche, Primaire, Moyen (CEM) et Lycée.
+                    </p>
+                    <div class="flex gap-3">
+                        <a href="#" class="w-10 h-10 rounded-full bg-white border border-slate-200 flex items-center justify-center text-slate-400 hover:bg-mimosa-blue hover:text-white transition-colors shadow-sm"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-white border border-slate-200 flex items-center justify-center text-slate-400 hover:bg-mimosa-blue hover:text-white transition-colors shadow-sm"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+                
+                <!-- Colonne Niveaux -->
+                <div>
+                    <h4 class="font-heading font-bold text-mimosa-blue mb-6 text-lg">Nos Niveaux</h4>
+                    <ul class="space-y-3 font-medium">
+                        <li><a href="#" onclick="openModalWithLevel('Crèche'); return false;" class="hover:text-mimosa-yellow transition-colors"><i class="fa-solid fa-chevron-right text-[10px] mr-2 text-mimosa-yellow"></i> Crèche / Pré-scolaire</a></li>
+                        <li><a href="#" onclick="openModalWithLevel('Primaire'); return false;" class="hover:text-mimosa-green transition-colors"><i class="fa-solid fa-chevron-right text-[10px] mr-2 text-mimosa-green"></i> École Primaire</a></li>
+                        <li><a href="#" onclick="openModalWithLevel('CEM'); return false;" class="hover:text-yellow-600 transition-colors"><i class="fa-solid fa-chevron-right text-[10px] mr-2 text-yellow-600"></i> Enseignement Moyen (CEM)</a></li>
+                        <li><a href="#" onclick="openModalWithLevel('Lycée'); return false;" class="hover:text-mimosa-blue transition-colors"><i class="fa-solid fa-chevron-right text-[10px] mr-2 text-mimosa-blue"></i> Lycée</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Colonne Contact -->
+                <div class="lg:col-span-2">
+                    <h4 class="font-heading font-bold text-mimosa-blue mb-6 text-lg">Nous Contacter</h4>
+                    <ul class="space-y-4">
+                        <li class="flex items-start gap-3 bg-white p-3 rounded-xl border border-slate-100 shadow-sm">
+                            <i class="fa-solid fa-location-dot mt-1 text-mimosa-blue text-lg w-6 text-center"></i>
+                            <span class="leading-relaxed text-slate-700"><strong>Groupe Scolaire Les Mimosas</strong><br>Birkhadem, Alger, Algérie</span>
+                        </li>
+                        <li class="flex items-start gap-3 bg-white p-3 rounded-xl border border-slate-100 shadow-sm">
+                            <i class="fa-solid fa-phone mt-1 text-mimosa-blue text-lg w-6 text-center"></i>
+                            <span class="leading-relaxed text-slate-700">Direction : +213 (0) 55 71 74 235<br>Crèche : +213 (0) 55 71 74 235</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-slate-200 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-xs">
+                <p>&copy; <span id="copyright-year">2026</span> Groupe Scolaire Les Mimosas. Tous droits réservés.</p>
+                <p class="text-slate-400">Développé avec soin par <strong>Innovate IT</strong></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ====================================================================== -->
+    <!-- BOUTON FLOTTANT WHATSAPP                                               -->
+    <!-- ====================================================================== -->
+    <a href="https://wa.me/213557174235?text=Bonjour%20la%20direction%20des%20Mimosas,%20je%20souhaite%20des%20renseignements." target="_blank" class="fixed bottom-6 right-6 w-16 h-16 bg-[#25D366] text-white rounded-full flex items-center justify-center text-4xl shadow-lg hover:scale-110 transition-transform z-40 animate-bounce" aria-label="Contacter sur WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <!-- ====================================================================== -->
+    <!-- LIGHTBOX (Galerie d'images en plein écran)                             -->
+    <!-- ====================================================================== -->
+    <div id="lightbox" class="lightbox" onclick="closeLightbox()" aria-hidden="true" role="dialog" aria-modal="true">
+        <button class="lightbox-close" onclick="closeLightbox()" aria-label="Fermer l'image">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+        <img id="lightbox-img" src="" alt="Aperçu grand format">
+    </div>
+
+    <!-- ====================================================================== -->
+    <!-- MODALE INTERACTIVE WIZARD (Générateur d'inscription multi-étapes)      -->
+    <!-- ====================================================================== -->
+    <div id="contactModal" class="fixed inset-0 z-[100] modal-overlay flex items-center justify-center p-4" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+        
+        <!-- Overlay cliquable -->
+        <div class="absolute inset-0 bg-mimosa-blue/80 backdrop-blur-md" onclick="closeModal()"></div>
+        
+        <!-- Fenêtre Modale (Grande taille pour le Wizard) -->
+        <div class="bg-white rounded-[2rem] shadow-2xl max-w-2xl w-full relative z-10 modal-content overflow-hidden border border-slate-100 flex flex-col max-h-[90vh]">
+            
+            <!-- Barre supérieure & Bouton de fermeture -->
+            <div class="flex justify-between items-center p-6 border-b border-slate-100 bg-mimosa-sky/30">
+                <h3 id="modal-title" class="text-xl font-heading font-extrabold text-mimosa-blue flex items-center gap-2">
+                    <i class="fa-solid fa-graduation-cap text-mimosa-yellow"></i> Dossier de Pré-inscription
+                </h3>
+                <button onclick="closeModal()" id="close-modal-btn" aria-label="Fermer la fenêtre" class="w-10 h-10 bg-white border border-slate-200 hover:bg-slate-100 rounded-full flex items-center justify-center text-slate-500 hover:text-slate-900 transition-colors focus:outline-none">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+            
+            <!-- Contenu défilable : Wizard multi-étapes -->
+            <div class="p-6 md:p-10 overflow-y-auto">
+                
+                <!-- Step Indicator -->
+                <div class="flex items-center justify-center mb-8">
+                    <div class="flex items-center w-full max-w-sm">
+                        <div id="indicator-1" class="w-8 h-8 rounded-full bg-mimosa-blue text-white flex items-center justify-center font-bold text-sm z-10 transition-colors">1</div>
+                        <div class="flex-1 h-1 bg-slate-200 mx-2 rounded-full relative"><div id="line-1" class="absolute top-0 left-0 h-full bg-mimosa-blue w-0 transition-all duration-300"></div></div>
+                        <div id="indicator-2" class="w-8 h-8 rounded-full bg-slate-200 text-slate-500 flex items-center justify-center font-bold text-sm z-10 transition-colors">2</div>
+                        <div class="flex-1 h-1 bg-slate-200 mx-2 rounded-full relative"><div id="line-2" class="absolute top-0 left-0 h-full bg-mimosa-blue w-0 transition-all duration-300"></div></div>
+                        <div id="indicator-3" class="w-8 h-8 rounded-full bg-slate-200 text-slate-500 flex items-center justify-center font-bold text-sm z-10 transition-colors"><i class="fa-solid fa-check"></i></div>
+                    </div>
+                </div>
+
+                <!-- Formulaire interactif -->
+                <form id="wizardForm" onsubmit="event.preventDefault();">
+                    
+                    <!-- STEP 1 : Informations Enfant -->
+                    <div id="step-1" class="wizard-step active">
+                        <h4 class="text-2xl font-heading font-bold text-slate-900 mb-2 text-center">Profil de l'élève</h4>
+                        <p class="text-slate-500 text-center mb-6 text-sm">Pour l'année scolaire 2026/2027.</p>
+                        
+                        <div class="space-y-4">
+                            <div class="input-group">
+                                <label for="childName">Nom & Prénom de l'enfant</label>
+                                <input type="text" id="childName" placeholder="Ex: Anis Benali" required>
+                            </div>
+                            <div class="flex gap-4">
+                                <div class="w-1/2 input-group">
+                                    <label for="childAge">Âge</label>
+                                    <input type="number" id="childAge" placeholder="Ex: 8" required min="0" max="20">
+                                </div>
+                                <div class="w-1/2 input-group">
+                                    <label for="childLevel">Niveau demandé</label>
+                                    <select id="childLevel" required>
+                                        <option value="" disabled selected>Sélectionnez...</option>
+                                        <option value="Crèche / Pré-scolaire">Crèche / Préscolaire</option>
+                                        <option value="Primaire (1AP à 5AP)">Primaire (1AP à 5AP)</option>
+                                        <option value="Moyen / CEM (1AM à 4AM)">Moyen / CEM (1AM à 4AM)</option>
+                                        <option value="Lycée (1AS à Terminale)">Lycée (1AS à Terminale)</option>
+                                    </select>
+                                    <i class="fa-solid fa-chevron-down select-icon"></i>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="mt-8 flex justify-end">
+                            <button type="button" onclick="nextStep(2)" class="px-8 py-3 bg-mimosa-blue text-white font-heading font-bold rounded-xl hover:bg-slate-800 transition-colors focus:outline-none shadow-nav">
+                                Suivant <i class="fa-solid fa-arrow-right ml-2"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- STEP 2 : Contact Parent & Services -->
+                    <div id="step-2" class="wizard-step">
+                        <h4 class="text-2xl font-heading font-bold text-slate-900 mb-2 text-center">Informations Parent</h4>
+                        <p class="text-slate-500 text-center mb-6 text-sm">Comment pouvons-nous vous joindre ?</p>
+                        
+                        <div class="space-y-4">
+                            <div class="input-group">
+                                <label for="parentName">Votre Nom (Parent/Tuteur)</label>
+                                <input type="text" id="parentName" placeholder="Ex: Mr. Benali" required>
+                            </div>
+                            
+                            <!-- Options (Cantine/Transport) stylisées -->
+                            <label class="block font-heading font-bold text-slate-700 mb-2 text-sm">Services optionnels souhaités :</label>
+                            <div class="flex flex-col sm:flex-row gap-4 mb-4">
+                                <label class="flex items-center gap-3 p-3 border-2 border-slate-200 rounded-xl cursor-pointer hover:border-mimosa-yellow transition-colors flex-1 bg-slate-50">
+                                    <input type="checkbox" id="optCantine" value="Cantine" class="w-5 h-5 text-mimosa-blue focus:ring-mimosa-yellow border-gray-300 rounded">
+                                    <span class="font-medium text-slate-700 flex items-center gap-2"><i class="fa-solid fa-utensils text-mimosa-yellow"></i> Cantine</span>
+                                </label>
+                                <label class="flex items-center gap-3 p-3 border-2 border-slate-200 rounded-xl cursor-pointer hover:border-mimosa-yellow transition-colors flex-1 bg-slate-50">
+                                    <input type="checkbox" id="optTransport" value="Transport" class="w-5 h-5 text-mimosa-blue focus:ring-mimosa-yellow border-gray-300 rounded">
+                                    <span class="font-medium text-slate-700 flex items-center gap-2"><i class="fa-solid fa-bus text-mimosa-yellow"></i> Transport</span>
+                                </label>
+                            </div>
+                        </div>
+                        
+                        <div class="mt-8 flex justify-between">
+                            <button type="button" onclick="prevStep(1)" class="px-6 py-3 bg-slate-100 text-slate-600 font-bold rounded-xl hover:bg-slate-200 transition-colors focus:outline-none">
+                                <i class="fa-solid fa-arrow-left mr-2"></i> Retour
+                            </button>
+                            <button type="button" onclick="finalizeWizard()" class="px-8 py-3 bg-[#25D366] text-white font-heading font-bold rounded-xl hover:bg-[#128C7E] transition-colors focus:outline-none shadow-float flex items-center">
+                                Envoyer <i class="fa-brands fa-whatsapp text-xl ml-3"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- STEP 3 : Redirection (Automatique) -->
+                    <div id="step-3" class="wizard-step text-center py-8">
+                        <div class="w-20 h-20 bg-mimosa-sky rounded-full flex items-center justify-center text-mimosa-blue mx-auto mb-6">
+                            <i class="fa-solid fa-circle-notch fa-spin text-4xl"></i>
+                        </div>
+                        <h4 class="text-2xl font-heading font-bold text-slate-900 mb-2">Préparation du dossier...</h4>
+                        <p class="text-slate-500 mb-6">Ouverture de WhatsApp pour envoyer votre demande à la Direction.</p>
+                        <a id="wa-redirect-link" href="#" target="_blank" class="text-mimosa-blue font-bold hover:underline">Cliquez ici si rien ne se passe.</a>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- ====================================================================== -->
+    <!-- MOTEUR JAVASCRIPT (Vanilla JS)                                         -->
+    <!-- ====================================================================== -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            
+            // 1. DATE DYNAMIQUE DU COPYRIGHT
+            const yearSpan = document.getElementById('copyright-year');
+            if(yearSpan) {
+                yearSpan.textContent = new Date().getFullYear();
+            }
+
+            // 2. GESTION DU MENU MOBILE
+            const mobileBtn = document.getElementById('mobile-menu-btn');
+            const mobileMenu = document.getElementById('mobile-menu');
+            const iconMenu = document.getElementById('menu-icon');
+
+            function toggleMobileMenu() {
+                const isExpanded = mobileBtn.getAttribute('aria-expanded') === 'true';
+                mobileBtn.setAttribute('aria-expanded', !isExpanded);
+                mobileMenu.classList.toggle('hidden');
+                
+                if(!isExpanded) {
+                    iconMenu.classList.remove('fa-bars');
+                    iconMenu.classList.add('fa-xmark');
+                } else {
+                    iconMenu.classList.remove('fa-xmark');
+                    iconMenu.classList.add('fa-bars');
+                }
+            }
+
+            if(mobileBtn) mobileBtn.addEventListener('click', toggleMobileMenu);
+
+            const mobileLinks = document.querySelectorAll('.mobile-link');
+            mobileLinks.forEach(link => {
+                link.addEventListener('click', () => {
+                    if (!mobileMenu.classList.contains('hidden')) toggleMobileMenu();
+                });
+            });
+
+            // 3. EFFETS AU DÉFILEMENT (Navbar & Progress Bar)
+            const navbar = document.getElementById('navbar');
+            const topBar = document.getElementById('top-bar');
+
+            function handleScroll() {
+                if (window.scrollY > 20) {
+                    navbar.classList.add('navbar-scrolled');
+                    if(topBar) {
+                        topBar.style.maxHeight = '0px';
+                        topBar.style.opacity = '0';
+                        topBar.style.padding = '0';
+                    }
+                } else {
+                    navbar.classList.remove('navbar-scrolled');
+                    if(topBar) {
+                        topBar.style.maxHeight = '50px';
+                        topBar.style.opacity = '1';
+                        topBar.style.padding = '0.5rem 0';
+                    }
+                }
+            }
+
+            window.addEventListener('scroll', handleScroll, { passive: true });
+            handleScroll();
+
+            // 4. SYSTÈME D'ONGLETS (Niveaux Scolaires)
+            const tabBtns = document.querySelectorAll('.tab-btn');
+            const tabContents = document.querySelectorAll('.tab-content');
+
+            tabBtns.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    tabBtns.forEach(b => b.classList.remove('active'));
+                    tabContents.forEach(c => c.classList.remove('active'));
+
+                    btn.classList.add('active');
+                    const targetId = btn.getAttribute('data-target');
+                    const targetContent = document.getElementById(targetId);
+                    if(targetContent) targetContent.classList.add('active');
+                });
+            });
+
+            // 5. ACCORDÉON FAQ
+            const faqToggles = document.querySelectorAll('.faq-toggle');
+            
+            faqToggles.forEach(toggle => {
+                toggle.addEventListener('click', () => {
+                    const content = document.getElementById(toggle.getAttribute('aria-controls'));
+                    const icon = toggle.querySelector('i');
+                    const isExpanded = toggle.getAttribute('aria-expanded') === 'true';
+                    
+                    toggle.setAttribute('aria-expanded', !isExpanded);
+                    
+                    if (!isExpanded) {
+                        content.classList.remove('hidden');
+                        icon.classList.remove('fa-plus');
+                        icon.classList.add('fa-minus');
+                        toggle.classList.add('text-mimosa-yellow');
+                    } else {
+                        content.classList.add('hidden');
+                        icon.classList.remove('fa-minus');
+                        icon.classList.add('fa-plus');
+                        toggle.classList.remove('text-mimosa-yellow');
+                    }
+                });
+            });
+
+            // 6. FILTRES DE LA GALERIE
+            const filterBtns = document.querySelectorAll('.filter-btn');
+            const galleryItems = document.querySelectorAll('.filter-item');
+
+            filterBtns.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    // Update active button
+                    filterBtns.forEach(b => b.classList.remove('active'));
+                    btn.classList.add('active');
+                    
+                    const filterValue = btn.getAttribute('data-filter');
+                    
+                    // Filter items
+                    galleryItems.forEach(item => {
+                        if (filterValue === 'all' || item.classList.contains(filterValue)) {
+                            item.classList.remove('hide');
+                            // Simple animation reset
+                            item.style.opacity = '0';
+                            setTimeout(() => { item.style.opacity = '1'; }, 50);
+                        } else {
+                            item.classList.add('hide');
+                        }
+                    });
+                });
+            });
+
+            // 7. ANIMATIONS AU DÉFILEMENT (Reveal)
+            const revealElements = document.querySelectorAll('.reveal');
+            const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+            if(!prefersReducedMotion && 'IntersectionObserver' in window) {
+                const revealOptions = { threshold: 0.1, rootMargin: "0px 0px -50px 0px" };
+                const revealOnScroll = new IntersectionObserver((entries, observer) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            entry.target.classList.add('active');
+                            observer.unobserve(entry.target);
+                        }
+                    });
+                }, revealOptions);
+
+                revealElements.forEach(el => revealOnScroll.observe(el));
+            } else {
+                revealElements.forEach(el => el.classList.add('active'));
+            }
+        });
+
+        // -----------------------------------------------------
+        // 8. GESTION DE LA MODALE & DU WIZARD D'INSCRIPTION
+        // -----------------------------------------------------
+        const modal = document.getElementById('contactModal');
+        let previousActiveElement;
+
+        window.openWizard = function() {
+            if(!modal) return;
+            previousActiveElement = document.activeElement;
+            goToStep(1); 
+            modal.classList.add('active');
+            modal.setAttribute('aria-hidden', 'false');
+            document.body.style.overflow = 'hidden';
+            setTimeout(() => {
+                const closeBtn = document.getElementById('close-modal-btn');
+                if(closeBtn) closeBtn.focus();
+            }, 100);
+        };
+
+        window.closeModal = function() {
+            if(!modal) return;
+            modal.classList.remove('active');
+            modal.setAttribute('aria-hidden', 'true');
+            document.body.style.overflow = ''; 
+            if(previousActiveElement) previousActiveElement.focus();
+        };
+
+        document.addEventListener('keydown', function(event) {
+            if (event.key === "Escape" && modal && modal.classList.contains('active')) {
+                closeModal();
+            }
+        });
+
+        // Fonction pour ouvrir la modale et pré-sélectionner un niveau depuis une carte
+        window.openModalWithLevel = function(levelName) {
+            openWizard();
+            setTimeout(() => {
+                const select = document.getElementById('childLevel');
+                if(select) {
+                    // Chercher l'option qui correspond
+                    Array.from(select.options).forEach(opt => {
+                        if(opt.value.includes(levelName)) {
+                            select.value = opt.value;
+                        }
+                    });
+                }
+            }, 100);
+        };
+
+        // Logique UI du Wizard
+        function goToStep(stepNum) {
+            document.querySelectorAll('.wizard-step').forEach(step => step.classList.remove('active'));
+            document.getElementById(`step-${stepNum}`).classList.add('active');
+            
+            if(stepNum >= 1) {
+                document.getElementById('indicator-1').className = "w-8 h-8 rounded-full bg-mimosa-blue text-white flex items-center justify-center font-bold text-sm z-10 transition-colors";
+            }
+            if(stepNum >= 2) {
+                document.getElementById('line-1').style.width = "100%";
+                setTimeout(() => {
+                    document.getElementById('indicator-2').className = "w-8 h-8 rounded-full bg-mimosa-blue text-white flex items-center justify-center font-bold text-sm z-10 transition-colors";
+                }, 300);
+            } else {
+                document.getElementById('line-1').style.width = "0%";
+                document.getElementById('indicator-2').className = "w-8 h-8 rounded-full bg-slate-200 text-slate-500 flex items-center justify-center font-bold text-sm z-10 transition-colors";
+            }
+            if(stepNum >= 3) {
+                document.getElementById('line-2').style.width = "100%";
+                setTimeout(() => {
+                    document.getElementById('indicator-3').className = "w-8 h-8 rounded-full bg-[#25D366] text-white flex items-center justify-center font-bold text-sm z-10 transition-colors";
+                }, 300);
+            } else {
+                document.getElementById('line-2').style.width = "0%";
+                document.getElementById('indicator-3').className = "w-8 h-8 rounded-full bg-slate-200 text-slate-500 flex items-center justify-center font-bold text-sm z-10 transition-colors";
+            }
+        }
+
+        window.nextStep = function(stepNum) {
+            // Basic validation for step 1
+            if(stepNum === 2) {
+                const cName = document.getElementById('childName').value.trim();
+                const cAge = document.getElementById('childAge').value.trim();
+                const cLevel = document.getElementById('childLevel').value;
+                if(!cName || !cAge || !cLevel) {
+                    alert("Veuillez remplir les informations de l'élève.");
+                    return;
+                }
+            }
+            goToStep(stepNum); 
+        };
+        window.prevStep = function(stepNum) { goToStep(stepNum); };
+
+        window.finalizeWizard = function() {
+            // Validation finale
+            const pName = document.getElementById('parentName').value.trim();
+            if(!pName) {
+                alert("Veuillez saisir votre nom.");
+                return;
+            }
+
+            goToStep(3);
+            
+            // Récupération globale
+            const cName = document.getElementById('childName').value.trim();
+            const cAge = document.getElementById('childAge').value.trim();
+            const cLevel = document.getElementById('childLevel').value;
+            
+            // Services optionnels
+            const optCantine = document.getElementById('optCantine').checked ? "Oui" : "Non";
+            const optTransport = document.getElementById('optTransport').checked ? "Oui" : "Non";
+            
+            // Téléphone du secrétariat
+            const phone = "213557174235"; 
+            
+            const message = `*DEMANDE DE PRÉ-INSCRIPTION*%0A%0A*Parent :* ${pName}%0A*Élève :* ${cName} (${cAge} ans)%0A*Niveau demandé :* ${cLevel}%0A%0A*Options :*%0A- Cantine : ${optCantine}%0A- Transport : ${optTransport}%0A%0ABonjour, je souhaite connaître les démarches et tarifs pour cette inscription.`;
+            
+            const waUrl = `https://wa.me/${phone}?text=${message}`;
+            
+            document.getElementById('wa-redirect-link').href = waUrl;
+            
+            setTimeout(() => {
+                window.open(waUrl, '_blank');
+                setTimeout(closeModal, 1000);
+            }, 1500);
+        };
+
+        // -----------------------------------------------------
+        // 9. GESTION DE LA LIGHTBOX POUR GALERIE
+        // -----------------------------------------------------
+        const lightbox = document.getElementById('lightbox');
+        const lightboxImg = document.getElementById('lightbox-img');
+
+        window.openLightbox = function(imageSrc) {
+            if(!lightbox || !lightboxImg) return;
+            lightboxImg.src = imageSrc;
+            lightbox.classList.add('active');
+            document.body.style.overflow = 'hidden'; 
+        }
+
+        window.closeLightbox = function() {
+            if(!lightbox) return;
+            lightbox.classList.remove('active');
+            setTimeout(() => { lightboxImg.src = ''; }, 400); 
+            document.body.style.overflow = ''; 
+        }
+
+        document.addEventListener('keydown', function(event) {
+            if (event.key === "Escape" && lightbox && lightbox.classList.contains('active')) {
+                closeLightbox();
+            }
+        });
+    </script>
+</body>
+</html>

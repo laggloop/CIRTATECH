@@ -1,0 +1,1083 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="icon" type="image/png" href="hotel.png">
+
+    <!-- ====================================================================== -->
+    <!-- SEO & META TAGS                                                        -->
+    <!-- ====================================================================== -->
+    <title>Hôtel Dar El Aaz - فندق دار العز | Séjour de Prestige & Restaurant Spécialité Poisson</title>
+    <meta name="description" content="Bienvenue à l'Hôtel Dar El Aaz. Profitez d'un séjour de confort et de notre restaurant spécialité poisson. Réservez votre chambre directement en ligne.">
+    <meta name="keywords" content="Hôtel Dar El Aaz, فندق دار العز, Hôtel Algérie, Réservation Hôtel, Restaurant Poisson, Hébergement de luxe">
+    <meta name="author" content="Hôtel Dar El Aaz">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#7f1d1d">
+    
+    <!-- Open Graph (Facebook, WhatsApp) -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Hôtel Dar El Aaz | Réservez votre séjour">
+    <meta property="og:description" content="Découvrez nos chambres confortables et notre restaurant spécialité poisson.">
+    <meta property="og:image" content="hotel-facade.jpg"> <!-- À remplacer par la vraie image de l'hôtel -->
+    
+    <!-- ====================================================================== -->
+    <!-- DONNÉES STRUCTURÉES (JSON-LD) POUR LE RÉFÉRENCEMENT LOCAL GOOGLE       -->
+    <!-- ====================================================================== -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Hotel",
+      "name": "Hôtel Dar El Aaz",
+      "alternateName": "فندق دار العز",
+      "image": "hotel-facade.jpg",
+      "description": "Hôtel de confort avec restaurant spécialité poisson intégré.",
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "DZ"
+      },
+      "telephone": "+213560990863",
+      "priceRange": "$$",
+      "starRating": {
+        "@type": "Rating",
+        "ratingValue": "4"
+      },
+      "amenityFeature": [
+        {
+          "@type": "LocationFeatureSpecification",
+          "name": "Restaurant Spécialité Poisson",
+          "value": "True"
+        },
+        {
+          "@type": "LocationFeatureSpecification",
+          "name": "Free Wi-Fi",
+          "value": "True"
+        }
+      ]
+    }
+    </script>
+
+    <!-- ====================================================================== -->
+    <!-- TYPOGRAPHIE & ICÔNES                                                   -->
+    <!-- ====================================================================== -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Playfair Display pour l'élégance (titres), Lato pour la lisibilité (textes) -->
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Amiri:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- ====================================================================== -->
+    <!-- TAILWIND CSS CONFIGURATION                                             -->
+    <!-- ====================================================================== -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Lato', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
+                        arabic: ['Amiri', 'serif'],
+                    },
+                    colors: {
+                        brand: {
+                            light: '#fdf2f8',
+                            50: '#fef2f2',
+                            100: '#fee2e2',
+                            200: '#fecaca',
+                            300: '#fca5a5',
+                            400: '#f87171',
+                            500: '#ef4444',
+                            600: '#dc2626',
+                            700: '#b91c1c',
+                            800: '#991b1b',
+                            900: '#7f1d1d', /* Bordeaux profond inspiré de l'enseigne */
+                            950: '#450a0a',
+                        },
+                        gold: {
+                            300: '#fcd34d',
+                            400: '#fbbf24',
+                            500: '#f59e0b',
+                            600: '#d97706', /* Or chaud pour les accents */
+                            700: '#b45309',
+                        },
+                        whatsapp: {
+                            DEFAULT: '#25D366',
+                            hover: '#128C7E',
+                        },
+                        surface: {
+                            light: '#fafafa',
+                            dark: '#171717',
+                        }
+                    },
+                    boxShadow: {
+                        'elegant': '0 10px 40px -10px rgba(127, 29, 29, 0.15)',
+                        'gold': '0 4px 20px -2px rgba(217, 119, 6, 0.3)',
+                    },
+                    animation: {
+                        'fade-in-up': 'fadeInUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards',
+                        'zoom-in': 'zoomIn 1.5s cubic-bezier(0.16, 1, 0.3, 1) forwards',
+                    },
+                    keyframes: {
+                        fadeInUp: {
+                            '0%': { opacity: '0', transform: 'translateY(30px)' },
+                            '100%': { opacity: '1', transform: 'translateY(0)' },
+                        },
+                        zoomIn: {
+                            '0%': { opacity: '0', transform: 'scale(1.05)' },
+                            '100%': { opacity: '1', transform: 'scale(1)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- ====================================================================== -->
+    <!-- CUSTOM CSS                                                             -->
+    <!-- ====================================================================== -->
+    <style>
+        /* Variables */
+        :root {
+            --primary-color: #7f1d1d; /* Bordeaux */
+            --accent-color: #d97706;  /* Or */
+        }
+
+        /* Base */
+        body {
+            background-color: #ffffff;
+            color: #3f3f46;
+            -webkit-font-smoothing: antialiased;
+            overflow-x: hidden;
+        }
+
+        /* Typographie spécifique */
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Playfair Display', serif;
+        }
+        .arabic-text {
+            font-family: 'Amiri', serif;
+            direction: rtl;
+        }
+
+        /* Navigation Transitions */
+        .navbar-wrapper {
+            transition: all 0.4s ease;
+            background-color: transparent;
+            padding-top: 1.5rem;
+            padding-bottom: 1.5rem;
+        }
+        .navbar-scrolled {
+            background-color: rgba(255, 255, 255, 0.98);
+            backdrop-filter: blur(10px);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+            padding-top: 0.75rem;
+            padding-bottom: 0.75rem;
+        }
+        .navbar-scrolled .nav-link { color: #3f3f46; }
+        .navbar-scrolled .nav-link:hover { color: var(--primary-color); }
+        .navbar-scrolled .logo-text { color: var(--primary-color); }
+        .navbar-scrolled .logo-text-ar { color: var(--accent-color); }
+        .navbar-scrolled #mobile-menu-btn { color: #3f3f46; }
+
+        /* Lien Navigation Base (sur fond sombre image) */
+        .nav-link {
+            color: #ffffff;
+            position: relative;
+            transition: color 0.3s ease;
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            font-size: 0.875rem;
+        }
+        .nav-link::after {
+            content: ''; position: absolute; width: 0; height: 2px;
+            bottom: -4px; left: 0; background-color: var(--accent-color);
+            transition: width 0.3s ease;
+        }
+        .nav-link:hover::after { width: 100%; }
+
+        /* Séparateur Ornatif */
+        .separator-ornament {
+            display: flex; align-items: center; justify-content: center; margin: 1.5rem 0;
+        }
+        .separator-ornament::before, .separator-ornament::after {
+            content: ''; width: 60px; height: 1px; background-color: var(--accent-color); opacity: 0.5;
+        }
+        .separator-ornament i {
+            color: var(--accent-color); margin: 0 15px; font-size: 0.8rem;
+        }
+
+        /* Widget de réservation simulé */
+        .booking-widget {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-radius: 0.5rem;
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+            border-top: 4px solid var(--primary-color);
+        }
+        
+        .date-input-wrapper {
+            position: relative;
+        }
+        .date-input-wrapper input[type="date"] {
+            appearance: none;
+            -webkit-appearance: none;
+            color: #3f3f46;
+            font-family: 'Lato', sans-serif;
+            font-size: 1rem;
+            background: transparent;
+            padding-right: 2rem;
+        }
+        /* Custom calendar icon behavior */
+        .date-input-wrapper input[type="date"]::-webkit-calendar-picker-indicator {
+            background: transparent; bottom: 0; color: transparent; cursor: pointer;
+            height: auto; left: 0; position: absolute; right: 0; top: 0; width: auto;
+        }
+
+        /* Cartes Chambres */
+        .room-card {
+            transition: all 0.5s ease;
+            overflow: hidden;
+            border: 1px solid #f4f4f5;
+        }
+        .room-card .room-img {
+            transition: transform 0.7s ease;
+        }
+        .room-card:hover {
+            box-shadow: 0 20px 40px -10px rgba(0, 0, 0, 0.1);
+            transform: translateY(-5px);
+        }
+        .room-card:hover .room-img {
+            transform: scale(1.05);
+        }
+
+        /* Effet Parallax */
+        .parallax-bg {
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        /* Galerie Lightbox */
+        .gallery-item {
+            cursor: pointer;
+            overflow: hidden;
+            position: relative;
+            border-radius: 0.5rem;
+        }
+        .gallery-item img {
+            transition: transform 0.5s ease;
+        }
+        .gallery-item::after {
+            content: '\f00e'; /* fa-magnifying-glass-plus */
+            font-family: 'Font Awesome 6 Free';
+            font-weight: 900;
+            position: absolute;
+            top: 50%; left: 50%;
+            transform: translate(-50%, -50%) scale(0);
+            color: white; font-size: 2rem; opacity: 0;
+            transition: all 0.3s ease; z-index: 10;
+        }
+        .gallery-overlay {
+            position: absolute; inset: 0;
+            background: rgba(127, 29, 29, 0.6); /* Bordeaux overlay */
+            opacity: 0; transition: opacity 0.3s ease;
+        }
+        .gallery-item:hover img { transform: scale(1.1); }
+        .gallery-item:hover .gallery-overlay { opacity: 1; }
+        .gallery-item:hover::after { opacity: 1; transform: translate(-50%, -50%) scale(1); }
+
+        /* Lightbox Modale */
+        .lightbox {
+            position: fixed; inset: 0; z-index: 9999;
+            background: rgba(0, 0, 0, 0.95);
+            display: flex; align-items: center; justify-content: center;
+            opacity: 0; pointer-events: none; transition: opacity 0.3s ease;
+        }
+        .lightbox.active { opacity: 1; pointer-events: auto; }
+        .lightbox img {
+            max-width: 90%; max-height: 90vh; object-fit: contain;
+            box-shadow: 0 0 50px rgba(0,0,0,0.5); border: 2px solid #333;
+        }
+        .lightbox-close {
+            position: absolute; top: 20px; right: 30px;
+            color: white; font-size: 2.5rem; cursor: pointer;
+            transition: color 0.3s ease;
+        }
+        .lightbox-close:hover { color: var(--accent-color); }
+
+        /* Bouton Flottant WhatsApp */
+        .float-wa {
+            position: fixed; bottom: 30px; right: 30px;
+            background-color: #25D366; color: white;
+            width: 60px; height: 60px; border-radius: 50px;
+            text-align: center; font-size: 35px;
+            box-shadow: 0px 4px 20px rgba(37, 211, 102, 0.4);
+            z-index: 1000; transition: all 0.3s ease;
+            display: flex; align-items: center; justify-content: center;
+            animation: pulse-wa 2s infinite;
+        }
+        .float-wa:hover {
+            transform: scale(1.1); background-color: #128C7E;
+            box-shadow: 0px 6px 25px rgba(37, 211, 102, 0.6);
+        }
+        @keyframes pulse-wa {
+            0% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7); }
+            70% { box-shadow: 0 0 0 15px rgba(37, 211, 102, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
+        }
+
+        /* Utilitaires Animation au scroll */
+        .reveal { opacity: 0; transform: translateY(30px); transition: all 0.8s ease-out; }
+        .reveal.active { opacity: 1; transform: translateY(0); }
+
+        /* Custom inputs */
+        .custom-select {
+            appearance: none;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='%237f1d1d'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M19 9l-7 7-7-7'%3E%3C/path%3E%3C/svg%3E");
+            background-repeat: no-repeat;
+            background-position: right 0.75rem center;
+            background-size: 1rem;
+        }
+
+        /* Scrollbar */
+        ::-webkit-scrollbar { width: 10px; }
+        ::-webkit-scrollbar-track { background: #f4f4f5; }
+        ::-webkit-scrollbar-thumb { background: #d4d4d8; border-radius: 5px; }
+        ::-webkit-scrollbar-thumb:hover { background: var(--primary-color); }
+    </style>
+</head>
+<body class="selection:bg-brand-900 selection:text-white">
+
+    <!-- ====================================================================== -->
+    <!-- EN-TÊTE & NAVIGATION STRATÉGIQUE                                       -->
+    <!-- ====================================================================== -->
+    <header>
+        <nav id="navbar" class="fixed w-full z-50 navbar-wrapper" aria-label="Menu principal">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex justify-between items-center">
+                    
+                    <!-- Logo & Nom Hôtel -->
+                    <a href="#" class="flex-shrink-0 flex items-center gap-3 focus:outline-none" aria-label="Accueil Hôtel Dar El Aaz">
+                        <!-- Icone décorative de l'hôtel -->
+                        <div class="w-12 h-12 border-2 border-gold-500 rounded-full flex items-center justify-center bg-white/10 backdrop-blur-sm">
+                            <i class="fa-solid fa-hotel text-gold-500 text-xl"></i>
+                        </div>
+                        <div class="flex flex-col">
+                            <span class="logo-text font-serif font-bold text-2xl tracking-wider text-white uppercase transition-colors">Dar El Aaz</span>
+                            <span class="logo-text-ar arabic-text text-gold-500 text-sm mt-[-4px] transition-colors">فندق دار العز</span>
+                        </div>
+                    </a>
+                    
+                    <!-- Menu Bureau -->
+                    <div class="hidden lg:flex space-x-8 items-center">
+                        <a href="#about" class="nav-link focus:outline-none">L'Hôtel</a>
+                        <a href="#chambres" class="nav-link focus:outline-none">Chambres</a>
+                        <a href="#restaurant" class="nav-link focus:outline-none">Restaurant</a>
+                        <a href="#galerie" class="nav-link focus:outline-none">Galerie</a>
+                        <a href="#contact" class="nav-link focus:outline-none">Contact</a>
+                        
+                        <!-- CTA Réservation Rapide -->
+                        <button onclick="document.getElementById('booking-engine').scrollIntoView({behavior: 'smooth'})" class="ml-4 px-6 py-2.5 bg-gold-600 hover:bg-gold-700 text-white font-serif tracking-widest text-sm uppercase transition-colors rounded shadow-gold focus:outline-none">
+                            Réserver
+                        </button>
+                    </div>
+
+                    <!-- Bouton Menu Mobile -->
+                    <div class="lg:hidden flex items-center">
+                        <button id="mobile-menu-btn" aria-expanded="false" class="text-white hover:text-gold-500 focus:outline-none p-2 transition-colors">
+                            <i class="fa-solid fa-bars text-2xl" id="menu-icon"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Menu Mobile Déroulant -->
+            <div id="mobile-menu" class="hidden lg:hidden bg-white border-t border-gray-100 absolute w-full shadow-2xl mt-4 origin-top transition-all">
+                <div class="px-4 pt-4 pb-8 space-y-1">
+                    <a href="#about" class="mobile-link block px-4 py-3 text-base font-serif text-gray-800 hover:bg-brand-50 hover:text-brand-900 border-b border-gray-50">L'Hôtel</a>
+                    <a href="#chambres" class="mobile-link block px-4 py-3 text-base font-serif text-gray-800 hover:bg-brand-50 hover:text-brand-900 border-b border-gray-50">Nos Chambres</a>
+                    <a href="#restaurant" class="mobile-link block px-4 py-3 text-base font-serif text-gray-800 hover:bg-brand-50 hover:text-brand-900 border-b border-gray-50">Restaurant Spécialité</a>
+                    <a href="#galerie" class="mobile-link block px-4 py-3 text-base font-serif text-gray-800 hover:bg-brand-50 hover:text-brand-900 border-b border-gray-50">Galerie Photos</a>
+                    <a href="#contact" class="mobile-link block px-4 py-3 text-base font-serif text-gray-800 hover:bg-brand-50 hover:text-brand-900">Contact & Accès</a>
+                    
+                    <div class="pt-4 mt-2">
+                        <a href="https://wa.me/213560990863" target="_blank" class="w-full inline-flex items-center justify-center px-4 py-4 shadow-md text-base font-bold text-white bg-whatsapp hover:bg-whatsapp-hover transition-colors rounded">
+                            <i class="fa-brands fa-whatsapp mr-2 text-xl"></i> Réserver sur WhatsApp
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- ====================================================================== -->
+        <!-- SECTION 1 : HERO BANNER & MOTEUR DE RÉSERVATION                        -->
+        <!-- ====================================================================== -->
+        <!-- Note : Remplacer l'URL de background par une belle photo de chambre ou de la façade -->
+        <section class="relative min-h-screen flex items-center justify-center bg-gray-900 overflow-hidden parallax-bg" style="background-image: url('https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SK6aiUKOGqLk1ISmnbOMsp7hj_3dhBer33DNTVXnPJTpS1_VYPrgTAZnq0M68t2XFYq5R7IWkknRaQqPzwvA1mVOUVQMA1Lpmwfwds-bx_6DqTH6jJN94Gc2b_zllj68DtCybU03vrtic=s680-w680-h510-rw');">
+            
+            <!-- Overlay sombre pour lisibilité du texte -->
+            <div class="absolute inset-0 bg-black/60"></div>
+            
+            <!-- Dégradé Bordeaux en bas pour la transition -->
+            <div class="absolute bottom-0 left-0 w-full h-32 bg-gradient-to-t from-brand-900/90 to-transparent"></div>
+            
+            <div class="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-20 flex flex-col items-center">
+                
+                <!-- Titre Central -->
+                <div class="text-center mb-16 animate-fade-in-up">
+                    <div class="flex justify-center items-center gap-4 mb-4">
+                        <span class="w-12 h-[1px] bg-gold-500"></span>
+                        <span class="text-gold-500 tracking-[0.2em] uppercase text-sm font-semibold">Hôtel 4 Étoiles</span>
+                        <span class="w-12 h-[1px] bg-gold-500"></span>
+                    </div>
+                    <h1 class="text-5xl md:text-7xl lg:text-8xl text-white mb-6 text-shadow-lg leading-tight">
+                        Bienvenue à <br>
+                        <span class="text-gold-400 font-serif italic font-normal">Dar El Aaz</span>
+                    </h1>
+                    <p class="arabic-text text-3xl md:text-4xl text-white/90 mb-6 drop-shadow-md">
+                        مرحباً بكم في فندق دار العز
+                    </p>
+                    <p class="text-lg md:text-xl text-gray-200 max-w-2xl mx-auto font-light tracking-wide">
+                        L'élégance, le confort et une gastronomie marine d'exception en plein cœur de la ville.
+                    </p>
+                </div>
+
+                <!-- ========================================== -->
+                <!-- MOTEUR DE RÉSERVATION INTELLIGENT          -->
+                <!-- ========================================== -->
+                <div id="booking-engine" class="w-full max-w-5xl booking-widget p-4 md:p-6 animate-zoom-in" style="animation-delay: 0.3s;">
+                    <form id="reservation-form" onsubmit="handleReservation(event)" class="flex flex-col md:flex-row gap-4 items-end">
+                        
+                        <!-- Check-in -->
+                        <div class="w-full md:w-1/4">
+                            <label for="checkin" class="block text-xs font-bold text-gray-500 uppercase tracking-wider mb-2"><i class="fa-regular fa-calendar-check text-brand-900 mr-1"></i> Arrivée</label>
+                            <div class="date-input-wrapper bg-gray-50 border border-gray-200 rounded px-3 py-2 focus-within:border-brand-900 transition-colors">
+                                <input type="date" id="checkin" name="checkin" class="w-full focus:outline-none bg-transparent" required>
+                            </div>
+                        </div>
+                        
+                        <!-- Check-out -->
+                        <div class="w-full md:w-1/4">
+                            <label for="checkout" class="block text-xs font-bold text-gray-500 uppercase tracking-wider mb-2"><i class="fa-regular fa-calendar-xmark text-brand-900 mr-1"></i> Départ</label>
+                            <div class="date-input-wrapper bg-gray-50 border border-gray-200 rounded px-3 py-2 focus-within:border-brand-900 transition-colors">
+                                <input type="date" id="checkout" name="checkout" class="w-full focus:outline-none bg-transparent" required>
+                            </div>
+                        </div>
+                        
+                        <!-- Guests -->
+                        <div class="w-full md:w-1/4">
+                            <label for="guests" class="block text-xs font-bold text-gray-500 uppercase tracking-wider mb-2"><i class="fa-solid fa-user-group text-brand-900 mr-1"></i> Personnes</label>
+                            <select id="guests" name="guests" class="w-full bg-gray-50 border border-gray-200 rounded px-3 py-2.5 focus:outline-none focus:border-brand-900 custom-select transition-colors">
+                                <option value="1 Adulte">1 Adulte</option>
+                                <option value="2 Adultes" selected>2 Adultes</option>
+                                <option value="2 Adultes + 1 Enfant">2 Adultes + 1 Enfant</option>
+                                <option value="Famille">Famille (3+)</option>
+                            </select>
+                        </div>
+                        
+                        <!-- Submit to WhatsApp -->
+                        <div class="w-full md:w-1/4">
+                            <button type="submit" class="w-full bg-brand-900 hover:bg-brand-800 text-white font-serif uppercase tracking-widest py-3 rounded transition-colors shadow-elegant flex items-center justify-center gap-2">
+                                Vérifier <i class="fa-brands fa-whatsapp text-lg"></i>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+                
+            </div>
+            
+            <!-- Scroll Down Indicator -->
+            <a href="#about" class="absolute bottom-10 left-1/2 transform -translate-x-1/2 text-white/70 hover:text-gold-500 transition-colors animate-bounce">
+                <i class="fa-solid fa-chevron-down text-3xl"></i>
+            </a>
+        </section>
+
+        <!-- ====================================================================== -->
+        <!-- SECTION 2 : PRÉSENTATION DE L'HÔTEL                                    -->
+        <!-- ====================================================================== -->
+        <section id="about" class="py-24 bg-surface-light relative">
+            <!-- Motif décoratif fond -->
+            <div class="absolute top-0 left-0 w-64 h-64 bg-brand-50 rounded-br-full opacity-50 pointer-events-none"></div>
+
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+                <div class="flex flex-col lg:flex-row gap-16 items-center">
+                    
+                    <!-- Texte -->
+                    <div class="lg:w-1/2 reveal">
+                        <h4 class="text-gold-600 font-bold uppercase tracking-widest text-sm mb-4">À propos de nous</h4>
+                        <h2 class="text-4xl md:text-5xl font-serif text-brand-900 mb-6 leading-tight">
+                            Un havre de paix alliant modernité et tradition.
+                        </h2>
+                        
+                        <div class="separator-ornament justify-start"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                        
+                        <p class="text-gray-600 leading-relaxed mb-6">
+                            L'<strong>Hôtel Dar El Aaz (فندق دار العز)</strong> vous ouvre ses portes pour un séjour inoubliable. Conçu pour répondre aux attentes des voyageurs d'affaires comme des familles en vacances, notre établissement offre des chambres spacieuses, une literie de haute qualité et un service irréprochable.
+                        </p>
+                        <p class="text-gray-600 leading-relaxed mb-8">
+                            Notre atout majeur ? Le célèbre <strong>Restaurant Dar El Aaz</strong> intégré à l'hôtel, reconnu pour sa spécialité de poissons frais, où vous pourrez déguster les meilleures pêches de la région dans un cadre convivial et élégant.
+                        </p>
+                        
+                        <!-- Mini Stats / Features -->
+                        <div class="grid grid-cols-2 gap-6 border-t border-gray-200 pt-8">
+                            <div>
+                                <i class="fa-solid fa-bed text-3xl text-gold-500 mb-3"></i>
+                                <h5 class="font-serif font-bold text-xl text-gray-900">Chambres Premium</h5>
+                                <p class="text-sm text-gray-500 mt-1">Confort et équipements modernes.</p>
+                            </div>
+                            <div>
+                                <i class="fa-solid fa-fish-fins text-3xl text-gold-500 mb-3"></i>
+                                <h5 class="font-serif font-bold text-xl text-gray-900">Spécialité Poisson</h5>
+                                <p class="text-sm text-gray-500 mt-1">Restaurant gastronomique sur place.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Images Composition -->
+                    <div class="lg:w-1/2 relative reveal">
+                        <div class="relative z-10 rounded-lg overflow-hidden shadow-elegant border-4 border-white">
+                            <!-- Remplacer par photo réception ou intérieur -->
+                            <img src="https://images.unsplash.com/photo-1566665797739-1674de7a421a?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Intérieur de l'Hôtel Dar El Aaz" class="w-full h-auto object-cover hover:scale-105 transition-transform duration-700">
+                        </div>
+                        <div class="absolute -bottom-12 -left-12 w-2/3 rounded-lg overflow-hidden shadow-elegant border-4 border-white z-20 hidden md:block">
+                            <!-- Remplacer par photo du plat de poisson du restaurant -->
+                            <img src="https://images.unsplash.com/photo-1615141982883-c7da0e698a0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Restaurant Spécialité Poisson" class="w-full h-auto object-cover hover:scale-105 transition-transform duration-700">
+                        </div>
+                        
+                        <!-- Badge "Welcome" inspiré de la vitrine -->
+                        <div class="absolute top-10 -right-10 bg-brand-900 text-white p-6 rounded-full w-32 h-32 flex items-center justify-center shadow-gold z-30 animate-pulse-slow hidden md:flex flex-col">
+                            <span class="font-serif font-bold text-lg">Welcome</span>
+                            <span class="arabic-text text-sm text-gold-400">مرحبا بكم</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ====================================================================== -->
+        <!-- SECTION 3 : NOS CHAMBRES                                               -->
+        <!-- ====================================================================== -->
+        <section id="chambres" class="py-24 bg-white relative">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                
+                <div class="text-center max-w-3xl mx-auto mb-16 reveal">
+                    <h4 class="text-gold-600 font-bold uppercase tracking-widest text-sm mb-4">Hébergement</h4>
+                    <h2 class="text-4xl md:text-5xl font-serif text-brand-900 mb-4">Nos Chambres & Suites</h2>
+                    <div class="separator-ornament"><i class="fa-solid fa-key"></i></div>
+                    <p class="text-gray-600">Choisissez l'espace qui correspond à vos besoins pour un repos absolu.</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    
+                    <!-- Chambre Standard -->
+                    <article class="room-card bg-white rounded-lg reveal">
+                        <div class="relative overflow-hidden h-64">
+                            <img src="https://images.unsplash.com/photo-1611892440504-42a792e24d32?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Chambre Standard Dar El Aaz" class="room-img w-full h-full object-cover">
+                            <div class="absolute top-4 right-4 bg-white/90 backdrop-blur px-3 py-1 rounded text-xs font-bold text-brand-900 uppercase">Standard</div>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-2xl font-serif text-gray-900 mb-2">Chambre Classique</h3>
+                            <p class="text-gray-500 text-sm mb-4 line-clamp-2">Idéale pour les courts séjours professionnels. Un espace fonctionnel avec literie confortable et bureau.</p>
+                            
+                            <!-- Équipements -->
+                            <div class="flex flex-wrap gap-3 mb-6 border-b border-gray-100 pb-4">
+                                <span class="text-gray-600 text-xs flex items-center" title="Wi-Fi Gratuit"><i class="fa-solid fa-wifi text-gold-500 mr-1.5"></i> Wi-Fi</span>
+                                <span class="text-gray-600 text-xs flex items-center" title="Climatisation"><i class="fa-solid fa-snowflake text-gold-500 mr-1.5"></i> Clim</span>
+                                <span class="text-gray-600 text-xs flex items-center" title="Télévision"><i class="fa-solid fa-tv text-gold-500 mr-1.5"></i> TV HD</span>
+                                <span class="text-gray-600 text-xs flex items-center" title="Douche"><i class="fa-solid fa-shower text-gold-500 mr-1.5"></i> Douche</span>
+                            </div>
+                            
+                            <a href="https://wa.me/213560990863?text=Bonjour,%20je%20souhaite%20réserver%20une%20Chambre%20Classique%20à%20l'hôtel%20Dar%20El%20Aaz." target="_blank" class="block w-full text-center bg-gray-900 hover:bg-brand-900 text-white py-3 transition-colors font-serif uppercase tracking-wider text-sm rounded">
+                                Réserver <i class="fa-brands fa-whatsapp ml-2"></i>
+                            </a>
+                        </div>
+                    </article>
+
+                    <!-- Chambre Confort -->
+                    <article class="room-card bg-white rounded-lg reveal shadow-lg border-gold-300 relative transform md:-translate-y-4">
+                        <div class="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-gold-500 text-white px-4 py-1 rounded-full text-xs font-bold uppercase tracking-wider z-10">Recommandée</div>
+                        <div class="relative overflow-hidden h-64">
+                            <img src="https://images.unsplash.com/photo-1590490360182-c33d57733427?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Chambre Confort Dar El Aaz" class="room-img w-full h-full object-cover">
+                            <div class="absolute top-4 right-4 bg-white/90 backdrop-blur px-3 py-1 rounded text-xs font-bold text-brand-900 uppercase">Confort</div>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-2xl font-serif text-gray-900 mb-2">Chambre Double Supérieure</h3>
+                            <p class="text-gray-500 text-sm mb-4 line-clamp-2">Parfaite pour les couples. Espace généreux, décoration élégante et vue dégagée.</p>
+                            
+                            <div class="flex flex-wrap gap-3 mb-6 border-b border-gray-100 pb-4">
+                                <span class="text-gray-600 text-xs flex items-center"><i class="fa-solid fa-wifi text-gold-500 mr-1.5"></i> Wi-Fi</span>
+                                <span class="text-gray-600 text-xs flex items-center"><i class="fa-solid fa-snowflake text-gold-500 mr-1.5"></i> Clim</span>
+                                <span class="text-gray-600 text-xs flex items-center"><i class="fa-solid fa-tv text-gold-500 mr-1.5"></i> TV HD</span>
+                                <span class="text-gray-600 text-xs flex items-center"><i class="fa-solid fa-mug-hot text-gold-500 mr-1.5"></i> Petit-déj</span>
+                            </div>
+                            
+                            <a href="https://wa.me/213560990863?text=Bonjour,%20je%20souhaite%20réserver%20une%20Chambre%20Double%20Supérieure%20à%20l'hôtel%20Dar%20El%20Aaz." target="_blank" class="block w-full text-center bg-brand-900 hover:bg-brand-800 text-white py-3 transition-colors font-serif uppercase tracking-wider text-sm rounded shadow-elegant">
+                                Réserver <i class="fa-brands fa-whatsapp ml-2"></i>
+                            </a>
+                        </div>
+                    </article>
+
+                    <!-- Suite -->
+                    <article class="room-card bg-white rounded-lg reveal">
+                        <div class="relative overflow-hidden h-64">
+                            <img src="https://images.unsplash.com/photo-1578683010236-d716f9a3f461?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Suite Dar El Aaz" class="room-img w-full h-full object-cover">
+                            <div class="absolute top-4 right-4 bg-brand-900/90 backdrop-blur text-white px-3 py-1 rounded text-xs font-bold uppercase">Suite</div>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-2xl font-serif text-gray-900 mb-2">Suite Prestige</h3>
+                            <p class="text-gray-500 text-sm mb-4 line-clamp-2">L'expérience ultime. Salon séparé, literie King Size, et service en chambre prioritaire.</p>
+                            
+                            <div class="flex flex-wrap gap-3 mb-6 border-b border-gray-100 pb-4">
+                                <span class="text-gray-600 text-xs flex items-center"><i class="fa-solid fa-wifi text-gold-500 mr-1.5"></i> Wi-Fi</span>
+                                <span class="text-gray-600 text-xs flex items-center"><i class="fa-solid fa-couch text-gold-500 mr-1.5"></i> Salon</span>
+                                <span class="text-gray-600 text-xs flex items-center"><i class="fa-solid fa-bath text-gold-500 mr-1.5"></i> Baignoire</span>
+                                <span class="text-gray-600 text-xs flex items-center"><i class="fa-solid fa-bell-concierge text-gold-500 mr-1.5"></i> Room Service</span>
+                            </div>
+                            
+                            <a href="https://wa.me/213560990863?text=Bonjour,%20je%20souhaite%20réserver%20la%20Suite%20Prestige%20à%20l'hôtel%20Dar%20El%20Aaz." target="_blank" class="block w-full text-center bg-gray-900 hover:bg-brand-900 text-white py-3 transition-colors font-serif uppercase tracking-wider text-sm rounded">
+                                Réserver <i class="fa-brands fa-whatsapp ml-2"></i>
+                            </a>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ====================================================================== -->
+        <!-- SECTION 4 : LE RESTAURANT (Mise en avant "Spécialité Poisson")         -->
+        <!-- ====================================================================== -->
+        <section id="restaurant" class="py-24 bg-brand-900 relative text-white overflow-hidden parallax-bg" style="background-image: url('https://images.unsplash.com/photo-1544025162-850901e18820?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');">
+            
+            <!-- Overlay sombre bordeaux -->
+            <div class="absolute inset-0 bg-brand-950/80 backdrop-blur-sm"></div>
+
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+                <div class="flex flex-col lg:flex-row items-center gap-12">
+                    
+                    <!-- Colonne Contenu -->
+                    <div class="lg:w-1/2 reveal">
+                        <div class="inline-flex items-center gap-2 px-3 py-1 border border-gold-500 text-gold-400 rounded-full text-xs font-bold uppercase tracking-wider mb-6">
+                            <i class="fa-solid fa-utensils"></i> Le Goût du Large
+                        </div>
+                        <h2 class="text-4xl md:text-6xl font-serif mb-6 leading-tight text-white">
+                            Restaurant Dar El Aaz
+                        </h2>
+                        <h3 class="text-2xl text-gold-500 font-serif italic mb-6">"Spécialité Poisson"</h3>
+                        <p class="text-gray-300 leading-relaxed mb-6">
+                            Ne cherchez plus où dîner. Au rez-de-chaussée de l'hôtel, notre restaurant vous accueille dans une ambiance chaleureuse. Notre chef sélectionne quotidiennement les meilleurs poissons frais de la région pour vous préparer des plats savoureux, grillades maritimes et fritures traditionnelles.
+                        </p>
+                        <ul class="space-y-3 mb-8">
+                            <li class="flex items-center text-gray-200"><i class="fa-solid fa-fish text-gold-500 w-6"></i> Arrivage frais quotidien.</li>
+                            <li class="flex items-center text-gray-200"><i class="fa-solid fa-fire-burner text-gold-500 w-6"></i> Cuissons traditionnelles et grillades.</li>
+                            <li class="flex items-center text-gray-200"><i class="fa-solid fa-mug-saucer text-gold-500 w-6"></i> Ouvert pour les clients de l'hôtel et visiteurs.</li>
+                        </ul>
+                        <a href="#contact" class="inline-block px-8 py-3 bg-gold-600 hover:bg-gold-700 text-white font-serif uppercase tracking-wider rounded transition-colors shadow-gold">
+                            Réserver une table
+                        </a>
+                    </div>
+                    
+                    <!-- Colonne Images (Grille style menu) -->
+                    <div class="lg:w-1/2 w-full grid grid-cols-2 gap-4 reveal" style="transition-delay: 200ms;">
+                        <img src="https://images.unsplash.com/photo-1580476262798-bddd9f4b7369?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Poisson grillé Dar El Aaz" class="w-full h-48 object-cover rounded-lg shadow-lg border-2 border-brand-800">
+                        <img src="https://images.unsplash.com/photo-1594041680534-e8c8cdebd659?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Plat de fruits de mer" class="w-full h-48 object-cover rounded-lg shadow-lg border-2 border-brand-800 mt-8">
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ====================================================================== -->
+        <!-- SECTION 5 : SERVICES & COMMODITÉS                                      -->
+        <!-- ====================================================================== -->
+        <section class="py-20 bg-surface-light border-y border-gray-100">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-16 reveal">
+                    <h2 class="text-3xl font-serif text-brand-900 mb-4">Pour votre confort</h2>
+                    <p class="text-gray-500">Des services pensés pour rendre votre séjour agréable.</p>
+                </div>
+
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+                    <div class="text-center reveal">
+                        <div class="w-16 h-16 mx-auto bg-brand-50 text-brand-900 rounded-full flex items-center justify-center text-2xl mb-4 transition-transform hover:scale-110 hover:bg-brand-900 hover:text-white border border-brand-100">
+                            <i class="fa-solid fa-wifi"></i>
+                        </div>
+                        <h4 class="font-bold text-gray-900">Wi-Fi Haut Débit</h4>
+                        <p class="text-xs text-gray-500 mt-2">Gratuit dans tout l'hôtel</p>
+                    </div>
+                    
+                    <div class="text-center reveal" style="transition-delay: 100ms;">
+                        <div class="w-16 h-16 mx-auto bg-brand-50 text-brand-900 rounded-full flex items-center justify-center text-2xl mb-4 transition-transform hover:scale-110 hover:bg-brand-900 hover:text-white border border-brand-100">
+                            <i class="fa-solid fa-square-parking"></i>
+                        </div>
+                        <h4 class="font-bold text-gray-900">Parking Sécurisé</h4>
+                        <p class="text-xs text-gray-500 mt-2">Pour nos résidents</p>
+                    </div>
+
+                    <div class="text-center reveal" style="transition-delay: 200ms;">
+                        <div class="w-16 h-16 mx-auto bg-brand-50 text-brand-900 rounded-full flex items-center justify-center text-2xl mb-4 transition-transform hover:scale-110 hover:bg-brand-900 hover:text-white border border-brand-100">
+                            <i class="fa-solid fa-bell-concierge"></i>
+                        </div>
+                        <h4 class="font-bold text-gray-900">Réception 24/7</h4>
+                        <p class="text-xs text-gray-500 mt-2">Toujours à votre écoute</p>
+                    </div>
+
+                    <div class="text-center reveal" style="transition-delay: 300ms;">
+                        <div class="w-16 h-16 mx-auto bg-brand-50 text-brand-900 rounded-full flex items-center justify-center text-2xl mb-4 transition-transform hover:scale-110 hover:bg-brand-900 hover:text-white border border-brand-100">
+                            <i class="fa-solid fa-mug-hot"></i>
+                        </div>
+                        <h4 class="font-bold text-gray-900">Petit-Déjeuner</h4>
+                        <p class="text-xs text-gray-500 mt-2">Riche et varié</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ====================================================================== -->
+        <!-- SECTION 6 : GALERIE PHOTOS                                             -->
+        <!-- ====================================================================== -->
+        <section id="galerie" class="py-24 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                
+                <div class="text-center max-w-3xl mx-auto mb-16 reveal">
+                    <h4 class="text-gold-600 font-bold uppercase tracking-widest text-sm mb-4">En Images</h4>
+                    <h2 class="text-4xl md:text-5xl font-serif text-brand-900 mb-4">Galerie de l'Hôtel</h2>
+                    <div class="separator-ornament"><i class="fa-solid fa-camera"></i></div>
+                </div>
+
+                <!-- Grille Masonry simplifiée avec Grid CSS -->
+                <div class="grid grid-cols-2 md:grid-cols-3 gap-4 reveal">
+                    
+                    <!-- Img 1 -->
+                    <div class="gallery-item md:col-span-2 md:row-span-2 aspect-video md:aspect-auto" onclick="openLightbox('https://images.unsplash.com/photo-1542314831-c6a4d27ce6a2?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80')">
+                        <img src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SK6aiUKOGqLk1ISmnbOMsp7hj_3dhBer33DNTVXnPJTpS1_VYPrgTAZnq0M68t2XFYq5R7IWkknRaQqPzwvA1mVOUVQMA1Lpmwfwds-bx_6DqTH6jJN94Gc2b_zllj68DtCybU03vrtic=s680-w680-h510-rw" alt="Façade de l'hôtel" class="w-full h-full object-cover">
+                        <div class="gallery-overlay"></div>
+                    </div>
+                    
+                    <!-- Img 2 -->
+                    <div class="gallery-item aspect-square" onclick="openLightbox('https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80')">
+                        <img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Détail chambre" class="w-full h-full object-cover">
+                        <div class="gallery-overlay"></div>
+                    </div>
+                    
+                    <!-- Img 3 -->
+                    <div class="gallery-item aspect-square" onclick="openLightbox('https://images.unsplash.com/photo-1514933651103-005eec06c04b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80')">
+                        <img src="https://images.unsplash.com/photo-1514933651103-005eec06c04b?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Restaurant Dar El Aaz" class="w-full h-full object-cover">
+                        <div class="gallery-overlay"></div>
+                    </div>
+                    
+                    <!-- Img 4 -->
+                    <div class="gallery-item aspect-square" onclick="openLightbox('https://images.unsplash.com/photo-1631049307264-da0ec9d70304?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80')">
+                        <img src="https://images.unsplash.com/photo-1631049307264-da0ec9d70304?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Salle de bain" class="w-full h-full object-cover">
+                        <div class="gallery-overlay"></div>
+                    </div>
+                    
+                    <!-- Img 5 -->
+                    <div class="gallery-item md:col-span-2 aspect-video" onclick="openLightbox('https://images.unsplash.com/photo-1600565193348-f74bd3c7ccdf?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80')">
+                        <img src="https://images.unsplash.com/photo-1600565193348-f74bd3c7ccdf?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Réception et Lounge" class="w-full h-full object-cover">
+                        <div class="gallery-overlay"></div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ====================================================================== -->
+        <!-- SECTION 7 : CONTACT & CARTE                                            -->
+        <!-- ====================================================================== -->
+        <section id="contact" class="py-24 bg-surface-light border-t border-gray-200">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                
+                <div class="flex flex-col lg:flex-row gap-12 bg-white rounded-2xl shadow-elegant overflow-hidden reveal">
+                    
+                    <!-- Informations de Contact -->
+                    <div class="lg:w-1/3 p-10 bg-brand-900 text-white flex flex-col justify-between">
+                        <div>
+                            <h3 class="text-3xl font-serif mb-2">Nous trouver</h3>
+                            <p class="text-brand-200 mb-8">N'hésitez pas à nous contacter pour toute demande de réservation ou d'information.</p>
+                            
+                            <ul class="space-y-6">
+                                <li class="flex items-start">
+                                    <i class="fa-solid fa-location-dot mt-1 w-6 text-gold-500 text-xl"></i>
+                                    <div>
+                                        <h4 class="font-bold text-white uppercase text-sm tracking-wider">Adresse</h4>
+                                        <p class="text-brand-100 mt-1">Hôtel Dar El Aaz<br>02 Rue Des Frères Harieche, ERRABTA, Rte rabta, Jijel 18000<br>Algérie</p>
+                                    </div>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fa-solid fa-phone mt-1 w-6 text-gold-500 text-xl"></i>
+                                    <div>
+                                        <h4 class="font-bold text-white uppercase text-sm tracking-wider">Téléphone / Réception</h4>
+                                        <p class="text-brand-100 mt-1">+213 56 09 90 863</p>
+                                    </div>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fa-brands fa-whatsapp mt-1 w-6 text-gold-500 text-xl"></i>
+                                    <div>
+                                        <h4 class="font-bold text-white uppercase text-sm tracking-wider">WhatsApp Direct</h4>
+                                        <a href="https://wa.me/213560990863" target="_blank" class="text-brand-100 hover:text-white transition-colors mt-1 block">
+                                            +213 56 09 90 863
+                                        </a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                        <div class="mt-10">
+                            <h4 class="font-bold text-white uppercase text-sm tracking-wider mb-3">Suivez-nous</h4>
+                            <div class="flex gap-4">
+                                <a href="#" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-gold-500 transition-colors"><i class="fa-brands fa-facebook-f"></i></a>
+                                <a href="#" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-gold-500 transition-colors"><i class="fa-brands fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Carte Google Maps -->
+                    <div class="lg:w-2/3 min-h-[400px]">
+                        <!-- Remplacer le src par l'iframe Google Maps exacte de l'hôtel -->
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d102341.35327299066!2d3.0118542095066914!3d36.72121703565345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x128fad6796eeb835%3A0x6b1981fb7ed99f7d!2sAlger!5e0!3m2!1sfr!2sdz!4v1700000000000!5m2!1sfr!2sdz" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ====================================================================== -->
+    <!-- PIED DE PAGE (FOOTER)                                                  -->
+    <!-- ====================================================================== -->
+    <footer class="bg-gray-900 pt-16 pb-8 border-t-4 border-brand-900 text-gray-400">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
+                
+                <!-- Colonne 1 : À propos -->
+                <div class="lg:col-span-1">
+                    <a href="#" class="flex flex-col mb-4">
+                        <span class="font-serif font-bold text-xl tracking-wider text-white uppercase">Dar El Aaz</span>
+                        <span class="arabic-text text-gold-500 text-sm mt-[-2px]">فندق دار العز</span>
+                    </a>
+                    <p class="text-sm leading-relaxed mb-4">
+                        Votre adresse de choix pour un séjour alliant confort moderne et restauration de qualité (Spécialité Poisson).
+                    </p>
+                </div>
+                
+                <!-- Colonne 2 : Liens Utiles -->
+                <div>
+                    <h4 class="text-white font-serif font-bold mb-4 uppercase tracking-wider text-sm">Liens Rapides</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#about" class="hover:text-gold-500 transition-colors"><i class="fa-solid fa-angle-right text-xs mr-2 text-brand-700"></i> L'Hôtel</a></li>
+                        <li><a href="#chambres" class="hover:text-gold-500 transition-colors"><i class="fa-solid fa-angle-right text-xs mr-2 text-brand-700"></i> Les Chambres</a></li>
+                        <li><a href="#restaurant" class="hover:text-gold-500 transition-colors"><i class="fa-solid fa-angle-right text-xs mr-2 text-brand-700"></i> Restaurant</a></li>
+                        <li><a href="#galerie" class="hover:text-gold-500 transition-colors"><i class="fa-solid fa-angle-right text-xs mr-2 text-brand-700"></i> Galerie Photos</a></li>
+                    </ul>
+                </div>
+
+                <!-- Colonne 3 : Légal -->
+                <div>
+                    <h4 class="text-white font-serif font-bold mb-4 uppercase tracking-wider text-sm">Informations</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#" class="hover:text-gold-500 transition-colors"><i class="fa-solid fa-angle-right text-xs mr-2 text-brand-700"></i> Mentions Légales</a></li>
+                        <li><a href="#" class="hover:text-gold-500 transition-colors"><i class="fa-solid fa-angle-right text-xs mr-2 text-brand-700"></i> Politique de Confidentialité</a></li>
+                        <li><a href="#" class="hover:text-gold-500 transition-colors"><i class="fa-solid fa-angle-right text-xs mr-2 text-brand-700"></i> Règlement intérieur</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Colonne 4 : Réservation WA -->
+                <div>
+                    <h4 class="text-white font-serif font-bold mb-4 uppercase tracking-wider text-sm">Réservation Rapide</h4>
+                    <p class="text-sm mb-4">Notre réception est disponible sur WhatsApp pour prendre vos réservations.</p>
+                    <a href="https://wa.me/213560990863" target="_blank" class="inline-flex items-center justify-center w-full px-4 py-2 bg-whatsapp hover:bg-whatsapp-hover text-white font-bold transition-colors rounded">
+                        <i class="fa-brands fa-whatsapp text-xl mr-2"></i> Contacter l'hôtel
+                    </a>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-xs">
+                <p>&copy; <span id="current-year"></span> Hôtel Dar El Aaz. Tous droits réservés.</p>
+                <!-- La signature de ton entreprise freelance -->
+                <p class="text-gray-500">
+                    Développé avec <i class="fa-solid fa-heart text-brand-900 mx-1"></i> par <span class="font-bold text-gray-400">CIRTATECH IT</span>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ====================================================================== -->
+    <!-- LIGHTBOX POUR LA GALERIE PHOTOS                                        -->
+    <!-- ====================================================================== -->
+    <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+        <span class="lightbox-close" onclick="closeLightbox()">&times;</span>
+        <img id="lightbox-img" src="" alt="Image agrandie">
+    </div>
+
+    <!-- ====================================================================== -->
+    <!-- BOUTON FLOTTANT WHATSAPP                                               -->
+    <!-- ====================================================================== -->
+    <a href="https://wa.me/213560990863" target="_blank" class="float-wa" aria-label="Discuter sur WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <!-- ====================================================================== -->
+    <!-- MOTEUR JAVASCRIPT (Vanilla JS Performant)                              -->
+    <!-- ====================================================================== -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            
+            // 1. Année dynamique du Footer
+            const yearSpan = document.getElementById('current-year');
+            if(yearSpan) yearSpan.textContent = new Date().getFullYear();
+
+            // 2. Initialisation des dates (Moteur de réservation)
+            const checkinInput = document.getElementById('checkin');
+            const checkoutInput = document.getElementById('checkout');
+            
+            if(checkinInput && checkoutInput) {
+                const today = new Date();
+                const tomorrow = new Date(today);
+                tomorrow.setDate(tomorrow.getDate() + 1);
+                
+                // Format YYYY-MM-DD
+                const formatDate = (date) => {
+                    return date.toISOString().split('T')[0];
+                };
+
+                checkinInput.min = formatDate(today);
+                checkinInput.value = formatDate(today);
+                
+                checkoutInput.min = formatDate(tomorrow);
+                checkoutInput.value = formatDate(tomorrow);
+
+                // Empêcher de sélectionner un checkout avant le checkin
+                checkinInput.addEventListener('change', () => {
+                    const checkinDate = new Date(checkinInput.value);
+                    const newCheckoutMin = new Date(checkinDate);
+                    newCheckoutMin.setDate(newCheckoutMin.getDate() + 1);
+                    checkoutInput.min = formatDate(newCheckoutMin);
+                    
+                    if(new Date(checkoutInput.value) <= checkinDate) {
+                        checkoutInput.value = formatDate(newCheckoutMin);
+                    }
+                });
+            }
+
+            // 3. Gestion du Menu Mobile
+            const mobileBtn = document.getElementById('mobile-menu-btn');
+            const mobileMenu = document.getElementById('mobile-menu');
+            const iconMenu = document.getElementById('menu-icon');
+
+            function toggleMobileMenu() {
+                const isExpanded = mobileBtn.getAttribute('aria-expanded') === 'true';
+                mobileBtn.setAttribute('aria-expanded', !isExpanded);
+                mobileMenu.classList.toggle('hidden');
+                
+                if(!isExpanded) {
+                    iconMenu.classList.remove('fa-bars');
+                    iconMenu.classList.add('fa-xmark');
+                } else {
+                    iconMenu.classList.remove('fa-xmark');
+                    iconMenu.classList.add('fa-bars');
+                }
+            }
+
+            if(mobileBtn) mobileBtn.addEventListener('click', toggleMobileMenu);
+
+            const mobileLinks = document.querySelectorAll('.mobile-link');
+            mobileLinks.forEach(link => {
+                link.addEventListener('click', () => {
+                    if (!mobileMenu.classList.contains('hidden')) toggleMobileMenu();
+                });
+            });
+
+            // 4. Effet Navbar au Scroll
+            const navbar = document.getElementById('navbar');
+            
+            function handleScroll() {
+                if (window.scrollY > 50) {
+                    navbar.classList.add('navbar-scrolled');
+                    navbar.classList.remove('py-6');
+                } else {
+                    navbar.classList.remove('navbar-scrolled');
+                    navbar.classList.add('py-6');
+                }
+            }
+
+            window.addEventListener('scroll', handleScroll, { passive: true });
+            handleScroll();
+
+            // 5. Animations d'apparition (Intersection Observer)
+            const revealElements = document.querySelectorAll('.reveal');
+            
+            if('IntersectionObserver' in window) {
+                const revealOptions = { threshold: 0.1, rootMargin: "0px 0px -50px 0px" };
+                const revealOnScroll = new IntersectionObserver((entries, observer) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            entry.target.classList.add('active');
+                            observer.unobserve(entry.target);
+                        }
+                    });
+                }, revealOptions);
+
+                revealElements.forEach(el => revealOnScroll.observe(el));
+            } else {
+                revealElements.forEach(el => el.classList.add('active'));
+            }
+        });
+
+        // 6. Gestion du Formulaire de Réservation -> WhatsApp
+        window.handleReservation = function(e) {
+            e.preventDefault();
+            
+            // Formatage dates pour affichage FR
+            const formatDateFR = (dateStr) => {
+                const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+                return new Date(dateStr).toLocaleDateString('fr-FR', options);
+            };
+
+            const checkin = document.getElementById('checkin').value;
+            const checkout = document.getElementById('checkout').value;
+            const guests = document.getElementById('guests').value;
+            
+            // Le numéro du client (à remplacer)
+            const phoneNumber = "213560990863"; 
+            
+            const message = `Bonjour Hôtel Dar El Aaz,%0AJe souhaite vérifier la disponibilité pour une réservation.%0A%0A*Arrivée :* ${formatDateFR(checkin)}%0A*Départ :* ${formatDateFR(checkout)}%0A*Pour :* ${guests}%0A%0AMerci de m'indiquer vos tarifs.`;
+            
+            const waUrl = `https://wa.me/${phoneNumber}?text=${message}`;
+            window.open(waUrl, '_blank');
+        };
+
+        // 7. Lightbox Gallery
+        const lightbox = document.getElementById('lightbox');
+        const lightboxImg = document.getElementById('lightbox-img');
+
+        window.openLightbox = function(imageSrc) {
+            lightboxImg.src = imageSrc;
+            lightbox.classList.add('active');
+            document.body.style.overflow = 'hidden'; // Stop scroll
+        }
+
+        window.closeLightbox = function() {
+            lightbox.classList.remove('active');
+            setTimeout(() => { lightboxImg.src = ''; }, 300); // Clear after animation
+            document.body.style.overflow = ''; // Restore scroll
+        }
+
+        // Fermer lightbox avec Echap
+        document.addEventListener('keydown', function(event) {
+            if (event.key === "Escape" && lightbox.classList.contains('active')) {
+                closeLightbox();
+            }
+        });
+    </script>
+</body>
+</html>
